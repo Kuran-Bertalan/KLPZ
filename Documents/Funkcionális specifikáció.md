@@ -6,3 +6,8 @@ hogy megengedhetné magának, vagy csak egyszerűen nem szándékozik rá tekint
 Ezért gondoltuk - én és munkatársaim -, hogy nem lenne rossz ötlet elkészíteni egy olyan internetes oldalt, 
 ahol az egyén képes szerencsejátékokkal játszani anélkül, 
 hogy bármilyen fizetőeszközt vagy vagyont bele kelljen áldozni a szenvedélyükbe.
+A játékokhoz tartozni fog egy szabályrendszeroldal is ahonnan az is meg tudja tanulni az aktuális játék alapjait aki soha életében nem játszott még velük. 
+A játékokban álltalában (a szerencsén kívül természetesen) a játékos legnagyobb képessége a valószínűségszámítás lesz, 
+így amelyik játékosnak jobb matematikai tudása van, nagyobb eséllyel nyer.
+A játékos a gép ellen mérettetheti meg a játékokban szerzett tapasztalatait, és szerezhet még több gyakorlatot bennük.
+A játékot webes felületen fogjuk elkészíteni, regisztráció és belépés után játszhatunk is a szerencsejátékokkal.
