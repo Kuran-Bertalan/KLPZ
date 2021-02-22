@@ -85,3 +85,8 @@ A próba telepítést követően egy meghívott tesztközönséggel zajlik, szim
 Biztonsági tesztelésre akkor van szükség, ha a rendszer szenzitív (pl. személyes vagy pénzügyi) adatokat kezel, vagy szabadon elérhető az internetről. 
 **Módszere:**
 A tesztet egy megbízott külső cég végzi.
+
+### 3.7 Go live teszt
+A go-live teszt egy próbaélesítés, melynek során a korábbi rendszerek továbbra is üzemelnek annak érdekében, hogy az élesítéskor keletkező problémák ne befolyásolják a normál üzemi működést.
+**Módszere:**
+A próbatelepítés a megrendelő által választott webtárhelyen történik, a programot a jövőben üzemeltető adminisztrátorok közreműködésével élesítik.
