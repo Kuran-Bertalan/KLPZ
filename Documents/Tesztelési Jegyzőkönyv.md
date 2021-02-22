@@ -65,3 +65,8 @@ Ezen adatok többségét úgynevett "Lorem Ipsum" típusú, véletlenül generá
 A prototípus tesztelés (vagy másik nevén modultesztelés) célja a rendszer már működő moduljainak önálló tesztelése, a modulon belüli hibák azonosításának és kiküszöbölésének érdekében. 
 **Módszere:** 
 A szegmensek validálása egyénileg történik. A tesztelés viszont a szegmensek függőségeire is kiterjed.
+
+### 3.3 Integrációs teszt
+Az integrációs teszt célja a rendszer más rendszerekhez történő illesztésének vizsgálata, a több rendszeren keresztül átívelő funkciók tesztelésének érdekében. Az adatmigrációs tesztelés az integrációs teszteléshez tartozik, ennek lényege, hogy a bevezetendő rendszerbe áttöltik azokat az adatokat, amelyekkel a rendszer dolgozni fog, és letesztelik a betöltött adatok, illetve az adatokat kezelő funkciók helyességét. 
+**Módszere:**
+A program adatbázisába valós adatok kerülnek betöltésre.
