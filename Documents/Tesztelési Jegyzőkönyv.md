@@ -43,4 +43,11 @@ Ez a fejezet a teszteléshez szükséges erőforrásokat fejti ki.
 |---|---|---|
 |  **Tesztelő, Teszt-koordinátor:** |  A teszt végrehajtása, észrevételek dokumentálása, teszt dokumentáció archiválása.Tesztterv készítése.  A tesztterv jóváhagyatása a projektmenedzserrel.  A teszt forgatókönyvek létrehozása  inkonzisztenciák kezelése.  Helyes és időbeni hibakezelés.  Szükség esetén problémák delegálása a projekt menedzsernek.  Végső riport készítése.  Teszt dokumentum archiválása.  Az észrevételek státuszának követése, ill. dokumentálása |  |
 | **Szakértő:**  |  A szakértő az észrevételeket elemzi és megoldást javasol. |   |
-|**Projektvezető:**| Tesztterv jóváhagyása  Teszt forgatókönyv (testscript)| Balogh Dániel - Vajda Krisztián - Soós Gergő |
+|**Projektvezető:**| Tesztterv jóváhagyása  Teszt forgatókönyv (testscript)| <ul><li>Balogh Dániel</li><li>Vajda Krisztián</li><li>Soós Gergő</li></ul>|
+
+### 2.2 Tesztadatok
+A teszt végrehajtásához szükséges rekordok (tesztadatok) száma: 4
+A tesztadatok elkészítéséért és feltöltéséért felelős személy: Zsadányi Rózsa
+
+A tesztadatoknak az alábbi követelményeknek kell megfelelniük:
+- Az adatbázisba felvitt adatoknak csakis az UTF-8 kódtáblában található karaktereket szabad tartalmaznia.
