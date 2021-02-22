@@ -46,8 +46,11 @@ Ez a fejezet a teszteléshez szükséges erőforrásokat fejti ki.
 |**Projektvezető:**| Tesztterv jóváhagyása  Teszt forgatókönyv (testscript)| <ul><li>Balogh Dániel</li><li>Vajda Krisztián</li><li>Soós Gergő</li></ul>|
 
 ### 2.2 Tesztadatok
-A teszt végrehajtásához szükséges rekordok (tesztadatok) száma: 4
-A tesztadatok elkészítéséért és feltöltéséért felelős személy: Zsadányi Rózsa
+A teszt végrehajtásához szükséges rekordok (tesztadatok) száma: ---
+A tesztadatok elkészítéséért és feltöltéséért felelős személy: ---
 
 A tesztadatoknak az alábbi követelményeknek kell megfelelniük:
 - Az adatbázisba felvitt adatoknak csakis az UTF-8 kódtáblában található karaktereket szabad tartalmaznia.
+
+## 3 Tesztelési terv
+Ez a fejezet leírja a teszt típusát, a metodikáját és a riportkészítés módszerét. Emellett meghatározza a tesztelvárásokat, a teszt-esetek elvárt eredményeit, sikerességének kritériumait, a kockázatok kezelését és a hatáskörön kívül eseteket.
