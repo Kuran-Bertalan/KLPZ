@@ -29,3 +29,8 @@ A tesztelés célja a projektben megtalálható felépítésbeli, vagy formaterv
 
 - A tesztelési terv célja a tesztelés teljeskörűségének biztosítása, a tesztelés során alkalmazott eljárások és megoldások meghatározása.
 - A teszt végrehajtásáért ez esetben a test manager felel, és a tesztelést az általa összeállított tesztcsapat hajtja végre a 2.1. fejezetben meghatározott módon.
+
+### 1.2 Elvárások
+#### A teszttervvel szemben felállított alap elvárások:
+- Az olvasó ismeri az alapdokumentumokat, amelyek meghatározzák a rendszert. 
+- Az **KLPZ_afp2** projektcsapat felelős a tesztadatok előállításáért.
