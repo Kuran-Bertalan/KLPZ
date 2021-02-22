@@ -102,7 +102,7 @@ A tesztelési feladat a következő teszt-eseteket foglalja magában:
 A tesztelési jelentést a tesztkoordinátor készíti el. Ez egy részletes áttekintése a lefutott teszteknek, azok eredményeinek, státuszának és a megjegyzéseknek.
 A tesztkoordinátor juttatja el a projektmenedzsernek a tesztelési jelentést. 
 
-## 5 Tesztjegyzőkönyv
+## 5. Tesztjegyzőkönyv
 ### 5.1 Tesztelési jegyzőkönyv - 1. Példa
 
 |   |   |
@@ -150,3 +150,7 @@ A tesztkoordinátor juttatja el a projektmenedzsernek a tesztelési jelentést.
 |  Név: |   |
 |  Szervezeti egység/ beosztás: |  |
 |  Dátum: |    |
+
+## #1: GUI teszt:
+## #2:Adatbázis teszt:
+## #3:Adatbázis Connection teszt:
