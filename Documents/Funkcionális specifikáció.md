@@ -11,3 +11,7 @@ A játékokban álltalában (a szerencsén kívül természetesen) a játékos l
 így amelyik játékosnak jobb matematikai tudása van, nagyobb eséllyel nyer.
 A játékos a gép ellen mérettetheti meg a játékokban szerzett tapasztalatait, és szerezhet még több gyakorlatot bennük.
 A játékot webes felületen fogjuk elkészíteni, regisztráció és belépés után játszhatunk is a szerencsejátékokkal.
+## 2. Jelenlegi helyzet
+A megrendelő egy egyszerű és könnyen kezelhető alkalmazást szeretne, 
+ahol a szerencsejátékok kedvelői képesek élvezni azokat anélkül, hogy az idejüknél többet kellene rá költeni. 
+Az említett szoftvert a megrendelő webes felületen szeretné használni, regisztrációval és azután belépéssel.
