@@ -15,3 +15,8 @@ A játékot webes felületen fogjuk elkészíteni, regisztráció és belépés 
 A megrendelő egy egyszerű és könnyen kezelhető alkalmazást szeretne, 
 ahol a szerencsejátékok kedvelői képesek élvezni azokat anélkül, hogy az idejüknél többet kellene rá költeni. 
 Az említett szoftvert a megrendelő webes felületen szeretné használni, regisztrációval és azután belépéssel.
+Az ügyfél ragaszkodott egy egyszerű és könnyen megérthető de mindent átfogó szabályzati oldalhoz azért, 
+hogy aki nem ért a játékokhoz is, megtudja tanulni az alapokat. 
+Az ügyfél ragaszkodott még ahhoz is, hogy az oldal szabványos legyen, 
+és ez mellett még egy modern dizájnt és külsőt is kapjon. Jelenleg a program létrehozásához, 
+elkészítéséhez szükséges adatokat, tevékenységeket discord segítségével, minden héten, hetente többször is egyeztetjük.
