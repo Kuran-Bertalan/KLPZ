@@ -95,3 +95,9 @@ A próbatelepítés a megrendelő által választott webtárhelyen történik, a
 A tesztelési feladat a következő teszt-eseteket foglalja magában:
 - Fejlesztői teszt
 - Prototípus (modul)
+
+## 4 Tesztelési ütemterv, függőségek – tesztforgatókönyv
+
+### 4.1 Tesztelési jelentés
+A tesztelési jelentést a tesztkoordinátor készíti el. Ez egy részletes áttekintése a lefutott teszteknek, azok eredményeinek, státuszának és a megjegyzéseknek.
+A tesztkoordinátor juttatja el a projektmenedzsernek a tesztelési jelentést. 
