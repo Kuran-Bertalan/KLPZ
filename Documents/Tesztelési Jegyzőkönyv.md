@@ -23,4 +23,9 @@
 | Balogh Dániel | Projekt Manager |
 
 ## 1. Bevezetés
-A tesztelés célja a projektben megtalálható felépítésbeli, vagy formatervezési hibák feltárása.
+A tesztelés célja a projektben megtalálható felépítésbeli, vagy formatervezési hibák feltárása.	
+
+### 1.1 Tesztelési terv hatóköre, célja:
+
+- A tesztelési terv célja a tesztelés teljeskörűségének biztosítása, a tesztelés során alkalmazott eljárások és megoldások meghatározása.
+- A teszt végrehajtásáért ez esetben a test manager felel, és a tesztelést az általa összeállított tesztcsapat hajtja végre a 2.1. fejezetben meghatározott módon.
