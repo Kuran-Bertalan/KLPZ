@@ -20,3 +20,8 @@ hogy aki nem ért a játékokhoz is, megtudja tanulni az alapokat.
 Az ügyfél ragaszkodott még ahhoz is, hogy az oldal szabványos legyen, 
 és ez mellett még egy modern dizájnt és külsőt is kapjon. Jelenleg a program létrehozásához, 
 elkészítéséhez szükséges adatokat, tevékenységeket discord segítségével, minden héten, hetente többször is egyeztetjük.
+|Szerencsejátékok|
+|--------|
+|Blackjack|
+|Poker|
+|Slot Machine|
