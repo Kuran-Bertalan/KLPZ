@@ -21,3 +21,6 @@
 | Soós Gergő | Projekt Manager |
 | Vajda Krisztián | Projekt Manager |
 | Balogh Dániel | Projekt Manager |
+
+## 1. Bevezetés
+A tesztelés célja a projektben megtalálható felépítésbeli, vagy formatervezési hibák feltárása.
