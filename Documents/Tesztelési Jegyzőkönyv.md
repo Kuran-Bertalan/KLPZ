@@ -34,3 +34,6 @@ A tesztelés célja a projektben megtalálható felépítésbeli, vagy formaterv
 #### A teszttervvel szemben felállított alap elvárások:
 - Az olvasó ismeri az alapdokumentumokat, amelyek meghatározzák a rendszert. 
 - Az **KLPZ_afp2** projektcsapat felelős a tesztadatok előállításáért.
+
+## 2 Szükséges erőforrások
+Ez a fejezet a teszteléshez szükséges erőforrásokat fejti ki.
