@@ -35,7 +35,7 @@ A tesztelés célja a projektben megtalálható felépítésbeli, vagy formaterv
 - Az olvasó ismeri az alapdokumentumokat, amelyek meghatározzák a rendszert. 
 - Az **KLPZ_afp2** projektcsapat felelős a tesztadatok előállításáért.
 
-## 2 Szükséges erőforrások
+## 2. Szükséges erőforrások
 Ez a fejezet a teszteléshez szükséges erőforrásokat fejti ki.
 
 ### 2.1 Feladatkörök és felelősségek (tesztcsapat meghatározása)
@@ -52,7 +52,7 @@ A tesztadatok elkészítéséért és feltöltéséért felelős személy: ---
 A tesztadatoknak az alábbi követelményeknek kell megfelelniük:
 - Az adatbázisba felvitt adatoknak csakis az UTF-8 kódtáblában található karaktereket szabad tartalmaznia.
 
-## 3 Tesztelési terv
+## 3. Tesztelési terv
 Ez a fejezet leírja a teszt típusát, a metodikáját és a riportkészítés módszerét. Emellett meghatározza a tesztelvárásokat, a teszt-esetek elvárt eredményeit, sikerességének kritériumait, a kockázatok kezelését és a hatáskörön kívül eseteket.
 
 ### 3.1 Fejlesztői teszt
@@ -90,3 +90,8 @@ A tesztet egy megbízott külső cég végzi.
 A go-live teszt egy próbaélesítés, melynek során a korábbi rendszerek továbbra is üzemelnek annak érdekében, hogy az élesítéskor keletkező problémák ne befolyásolják a normál üzemi működést.
 **Módszere:**
 A próbatelepítés a megrendelő által választott webtárhelyen történik, a programot a jövőben üzemeltető adminisztrátorok közreműködésével élesítik.
+
+### 3.8 Tesztelési feladatok, teszt-esetek leírása
+A tesztelési feladat a következő teszt-eseteket foglalja magában:
+- Fejlesztői teszt
+- Prototípus (modul)
