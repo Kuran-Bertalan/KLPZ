@@ -1,5 +1,4 @@
-﻿
-# Rendszertervek
+﻿# Rendszertervek
 
 ## 1. Rendszer célja
 
@@ -16,3 +15,30 @@ Külön fel lesznek tüntetve a játékszabályok az egyes játékokra, mely bel
 Ha a játékosnak elfogy az egyenlege akkor 5 perc várakozási idő után ingyen 500 zseton adódik a számlájához, ez a bónusz, csak akkor lép érvénybe, ha a játékosnak ténylegesen elfogy, azaz 0 zsetonnal rendelkezik.
 
 
+## 2. Projekt terv
+
+Projekt szerepkörök, felelősségek
+
+| Szerepkör | Személy|
+|---|:-|
+| - Senior fejlesztők: | Balogh Dániel, Soós Gergó,   Vajda Krisztián |
+|    - Junior fejlesztők: | Kurán Bertalan, Lehóczky Csaba, Pusztai Dominik Tamás, Zsadányi Rózsa |
+##
+|  Felelőségek  |  |
+|---|:-|
+| Senior fejlesztő: | A junior fejlesztők munkájának felügyelete és megkönnyítése tanácsadás által, segíthetnek kisebb projektelemek elkészítésében is. |
+| Junior fejlesztő: | A projekt elkészítése. Projekt munkások és felelősségeik |
+##
+| Funkció / Story | Feladat / Task| Prioritás| Becslés | Aktuális becslés|Eltelt idő|Hátralévő idő|
+|---|---|---|---|---|---|---|
+| Követelmény specifikáció||0|7|7|0|6|
+| Funkcionális specifikáció||0|7|7|0|6|
+| Rendszerterv||0|7|7|0|6|
+| Adattárolás|Adatmodell megtervezése|0|4|4|0|4|
+| |Adatbázis megvalósítása a szerveren|1|3|3|0|3|
+| Login felület|Felület kinézete|1|4|4|0|4|
+| BlackJack|Játék elkészítése|3|10|10|0|10|
+| Poker|Játék elkészítése|3|10|10|0|10|
+| Slot Machine(Nyerőgép)|Játék elkészítése|3|10|10|0|10|
+
+A projektet weblapra fejlesztjük front- és back -end segítségével. Az elkülönített feladatokon más-más emberek dolgoznak.
