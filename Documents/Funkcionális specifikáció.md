@@ -28,3 +28,9 @@ elkészítéséhez szükséges adatokat, tevékenységeket discord segítségév
 ## 3. Vágyálom rendszer
 A fejlesztőcsapat célja egy valósággal megegyező szerencsejáték oldal létrehozása, 
 melyben három fajta szerencsejátékot tudunk játszani. 
+|Szerencsejátékok|Blackjack|Poker|Slot Machine|
+|----|---|----|----|
+|Alapszabályok|A játékmenet során a játékosnál lévő lapok összértéke több legyen az osztó lapjainak összértékénél, 
+anélkül, hogy meghaladná a 21-et.|
+A játékosok a  nyílt vagy zárt kártyáikból a legjobbat kihozva elvigyék az asztal közepén lévő kasszát.| 
+A játékos a kívánt téttel a szerencsére bízva, a "kar" segítségével megpörgeti a nyerőgépet, és az ez által kiadja a eredményt.|
