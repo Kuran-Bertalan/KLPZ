@@ -25,3 +25,6 @@ elkészítéséhez szükséges adatokat, tevékenységeket discord segítségév
 |Blackjack|
 |Poker|
 |Slot Machine|
+## 3. Vágyálom rendszer
+A fejlesztőcsapat célja egy valósággal megegyező szerencsejáték oldal létrehozása, 
+melyben három fajta szerencsejátékot tudunk játszani. 
