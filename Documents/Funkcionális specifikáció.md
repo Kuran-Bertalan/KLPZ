@@ -20,7 +20,7 @@ hogy aki nem ért a játékokhoz is, megtudja tanulni az alapokat.
 Az ügyfél ragaszkodott még ahhoz is, hogy az oldal szabványos legyen, 
 és ez mellett még egy modern dizájnt és külsőt is kapjon. Jelenleg a program létrehozásához, 
 elkészítéséhez szükséges adatokat, tevékenységeket discord segítségével, minden héten, hetente többször is egyeztetjük.
-|Szerencsejátékok|
+|**Szerencsejátékok**|
 |--------|
 |Blackjack|
 |Poker|
@@ -28,9 +28,12 @@ elkészítéséhez szükséges adatokat, tevékenységeket discord segítségév
 ## 3. Vágyálom rendszer
 A fejlesztőcsapat célja egy valósággal megegyező szerencsejáték oldal létrehozása, 
 melyben három fajta szerencsejátékot tudunk játszani. 
-|Szerencsejátékok|Blackjack|Poker|Slot Machine|
-|----|---|----|----|
-|Alapszabályok|A játékmenet során a játékosnál lévő lapok összértéke több legyen az osztó lapjainak összértékénél, 
-anélkül, hogy meghaladná a 21-et.|
-A játékosok a  nyílt vagy zárt kártyáikból a legjobbat kihozva elvigyék az asztal közepén lévő kasszát.| 
-A játékos a kívánt téttel a szerencsére bízva, a "kar" segítségével megpörgeti a nyerőgépet, és az ez által kiadja a eredményt.|
+|**Szerencsejátékok**|Blackjack|Poker|Slot Machine|
+|----|----|----|----|
+|**Alapszabályok**|A játékmenet során a játékosnál lévő lapok összértéke több legyen az osztó lapjainak összértékénél, anélkül, hogy meghaladná a 21-et.|A játékosok a  nyílt vagy zárt kártyáikból a legjobbat kihozva elvigyék az asztal közepén lévő kasszát.| A játékos a kívánt téttel a szerencsére bízva, a "kar" segítségével megpörgeti a nyerőgépet, és az ez által kiadja a eredményt.|
+Az "asztaloknál" egyértelműen látható, hogy mekkora a minimális és a maximális tét, 
+mely a játékos által felrakható. 
+A könnyű regisztráció után egy letisztult bejelentkező panel segítségével a felhasználó könnyű szerrel be tud jelentkezi a saját felhasználói fiókjába. 
+A játékok kezdetén a játékosok beteszik a tétjüket az úgynevezett fogadó zónájukba, és aki nyer, az nyeri az összes tétet. 
+A játékosoknak lehetőségük van követni a zsetonjaik számának gyarapodását illetve annak elvesztését, 
+ezek mellet egy toplista is található lesz ahol a játékosok láthatják, hogy melyik játékosnak van a legtöbb pontja.
