@@ -79,3 +79,12 @@ A könnyű regisztrációs előnynek köszönhetően, percek alatt már a játé
 a zsetonok száma mentésre kerül, ez által nem kell minden alkalommal újból és újból az elejétől kezdeni a játékot, 
 ennek köszönhetően a felhasználók nagyobb kedvvel fogják alkalmazni a program adta lehetőségeket. 
 Az oldalon a megadott játékok mellett található lesz mindegyikhez egy-egy szabályzat és a felhasználók zsetonjainak számát összevető ranglista oldal is. 
+
+
+## 7. Használati esetek
+A Játékos az alábbi tevékenységeket végezheti általánosan:
+
+-   Regisztrálhat és törölhet fiókokat
+-   Öt percenként ingyen 25 zsetont kérhet
+-   Megtekintheti a zsetonjai számát
+- 	Megtekintheti a ranglistát
