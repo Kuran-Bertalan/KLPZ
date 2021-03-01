@@ -24,3 +24,4 @@ Szűrők --> Segítségükkel a felhasználó szűkebb körben kereshet bejegyz�
 Profil --> A felhasználó itt testre szabhatja saját profilképét, készíthet rövid leírást magáról, hogy jobban megismerjék.
 
 Feliratkozás felület --> A felhasználót értesíti az oldal, ha a bejegyzésnél új hozzászólás történt, vagy szavaztak az általa készített szavazáson.
+## Rendszerre vonatkozó törvények
