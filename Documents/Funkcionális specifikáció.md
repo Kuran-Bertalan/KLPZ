@@ -112,3 +112,12 @@ A Játékos az alábbi tevékenységeket végezheti a Poker játékban:
 - 	A játékot bármely pillanatban abbahagyhatja az oldal bezárásával, ilyenkor automatikusan kilép a bejelentkezett fiókból, a bejelentkezetett fiók zsetonjainak száma mentődik.
 - 	Megtekintheti az aktuális játék eredményét a képernyőn megjelenő "Nyertél xy zsetont!", "Vesztettél xy zsetont!".
 - 	Lehetősége van a nyerőgép karjának "meghúzására".
+
+## 8. Képernyőtervek
+Fontosabb képernyők:
+- regisztráció / bejelentkezés
+![](img/register_login.png)
+- adatmódosítás
+![](img/profile.png)
+- részlet a "Blackjack" játékből
+![](img/game.png)
