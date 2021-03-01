@@ -14,3 +14,13 @@ Tervezünk egy kezdőfelületet, amin a felhasználó egy email-ben kapott kódd
 A projekt célja egy olyan weboldal létrehozása, ahol az otthon ragadt, szórakozni vágyó felhasználókhoz eljuttassuk a szerencsejáték izgalmai. A cél egy könnyen átlátható és felhasználóbarát fórum létrehozása, ahol a felhasználók a regisztráció után belépnek a saját szerencsejáték oldalukra, amit a háttérben, általuk nem tapasztalható módon pár alapvető szűrés segítségével állítunk be. Itt könnyen megtalálhatják a pontjaikat. Minden győzelmet, veszteséget külön mappában helyezkedik el. Ezeket minden héten átlagoljuk és ezt tudomásukra juttatjuk a felhasználóknak. Itt értesítéseket kapnak arról, hogy mennyire fejlődnek, estleg egy kevésbé szerencsés hullámban vannak.
 ## Funkcionális követelmények
 A felhasználót az oldal betöltésekor a bejelentkező felület fogadja, amin keresztül be tud lépni az oldalra. A bejelentkezéshez a "Bejelentkezés" gombra kattintva be kell írnia az egyéni, 6 karakterből álló kódját, majd jelszavát. Ha sikeresen bejelentkezett, akkor számára elérhető minden funkció, amire jogosultsága van. A jobb felső sarokban a felhasználó név alatt legördülő menüben jelenik meg a "Profil", ahol a saját adatai ellenőrizheti a felhasználó. Ez alatt találhatóak a további lehetőségek: "Beállítások", ahol többek között a jelszavát is meg tudja majd változtatni. Ebből a menüből érhető el az üzenet, a blog és a kitűző is. Az egyéni kódjával egy sorban, a bal oldalon található a "Jussom" legördülő menü. Ebben található minden játékmenet a felhasználónak. Az induló összeg minden egyes körnél és azok végén nyert, vesztett összege, és ezek átlaga. Bal sarokban található a chat, amin a játékosok sajátbarátaikkal, vagy az oldalon megismerkedett játékosokkal.
+## Fogalomtár
+Reszponzív felület –-> PC-n igazodik a képernyőhöz a felület mérete, azaz különböző méretarányú és felbontású kijelzőkön is probléma nélkül megjeleníthető.
+
+Feliratkozás --> A felhasználók feliratkozhatnak bejegyzésekre, amiknél kommenteltek, vagy megjelölték. Jelzi, ha új hozzászólás történt.
+
+Szűrők --> Segítségükkel a felhasználó szűkebb körben kereshet bejegyzéseket, hozzászólásokat, melyekből csak azokat adja ki a kereső mező, amik megfelelnek a beállított feltételeknek.
+
+Profil --> A felhasználó itt testre szabhatja saját profilképét, készíthet rövid leírást magáról, hogy jobban megismerjék.
+
+Feliratkozás felület --> A felhasználót értesíti az oldal, ha a bejegyzésnél új hozzászólás történt, vagy szavaztak az általa készített szavazáson.
