@@ -65,3 +65,9 @@ ezeknek a hátránya, hogy:
 -   Személyazonosság kiadása
 -   Bankkártya használata
 
+Ezért arra jutottunk, én és a munkatársaim, hogy egy ingyenes, 
+könnyű regisztrációs, szerencsén - de később természetesen tapasztalaton - alapuló alkalmi játékokat szimuláló oldalt hozzunk létre, 
+amely felkelti azon emberek érdeklődését akiket mindig érdekeltek 
+a szerencsejátékok viszont nem szerettek volna rájuk költeni, vagy akármilyen más veszteséget elszenvedni. 
+Ezért mi egyszerű játékok megalkotására törekszünk, amelyek nem mellesleg ingyenesek, 
+élvezhetőek és még kifinomultak is, ezenfelül pedig a legkevesebb úgynevezett "bug"-al rendelkezők. 
