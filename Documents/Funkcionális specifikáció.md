@@ -89,7 +89,7 @@ A Játékos az alábbi tevékenységeket végezheti általánosan:
 -   Megtekintheti a zsetonjai számát
 - 	Megtekintheti a ranglistát
 
-A Játékos az alábbi tevékenységeket végezheti a Blackjack játékban:
+A Játékos az alábbi tevékenységeket végezheti a "Blackjack" játékban:
 
 -   Játék felületen, az ”osztótól” géptől lapot kérhet
 -   Abbahagyhatja a lapkérést
@@ -99,10 +99,16 @@ A Játékos az alábbi tevékenységeket végezheti a Blackjack játékban:
 -   Lehetősége van játék közben használni a súgót, mely megjeleníti melyik lap, mennyi pontot ér.
 -   Két kártyás huszonegy (blackjack) esetén a feltett tét másfélszeresét (1,5x) nyeri a játékos.
 
-A Játékos az alábbi tevékenységeket végezheti a Poker játékban:
+A Játékos az alábbi tevékenységeket végezheti a "Poker" játékban:
 
 -  	A játékot bármely pillanatban abbahagyhatja az oldal bezárásával, ilyenkor automatikusan kilép a bejelentkezett fiókból, a bejelentkezetett fiók zsetonjainak száma mentődik.
 - 	Lehetősége van játék közben használni a súgót, mely megjeleníti melyik lap, mennyi pontot ér.
 - 	Megtekintheti az aktuális játék eredményét a képernyőn megjelenő "Nyertél xy zsetont!", "Vesztettél xy zsetont!".
 -   Lehetősége van eldobni a kártyáit.
 - 	Ki tudja teríteni a kártyáit.
+
+A Játékos az alábbi tevékenységeket végezheti a Poker játékban:
+
+- 	A játékot bármely pillanatban abbahagyhatja az oldal bezárásával, ilyenkor automatikusan kilép a bejelentkezett fiókból, a bejelentkezetett fiók zsetonjainak száma mentődik.
+- 	Megtekintheti az aktuális játék eredményét a képernyőn megjelenő "Nyertél xy zsetont!", "Vesztettél xy zsetont!".
+- 	Lehetősége van a nyerőgép karjának "meghúzására".
