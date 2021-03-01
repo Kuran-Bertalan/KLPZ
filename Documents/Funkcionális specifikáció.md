@@ -137,7 +137,7 @@ A játékos 3 lépés közül választhat:
 
 Ha a játékos végzett, az osztó lapjait felfedve meghatározzuk a kör nyertesét. 
 Ha a játékos nyert, a tét értéke hozzáadódik zsetonjai számához, ellenkező esetben levonódik belőle. 
-Ha elfogytak a zsetonjai, a játék véget ér. A játékot az admin tudja újraandítani minden játékosnak.
+Ha elfogytak a zsetonjai, a játék véget ér. A játékot az admin tudja újraindítani minden játékosnak.
 
 ### Játékmenet forgatókönyve: Póker
 
@@ -152,4 +152,18 @@ A játékos 2 lépés közül választhat:
 
 Ha a játékos végzett, összevetjük a két játékos lapjait és akinek a legjobb "keze" van az nyert.
 Ha a játékos nyert, a tét értéke hozzáadódik zsetonjai számához, ellenkező esetben levonódik belőle. 
-Ha elfogytak a zsetonjai, a játék véget ér. A játékot az admin tudja újraandítani minden játékosnak.
+Ha elfogytak a zsetonjai, a játék véget ér. A játékot az admin tudja újraindítani minden játékosnak.
+
+### Játékmenet forgatókönyve: Slot Machine/Nyerőgép
+
+Szereplők: Webalkalmazás, SQL adattábla
+
+Bejelentkezve lehet játékot indítani. A játékos tétet választ, majd meghúzza a nyerőgép karját.
+
+A játékos 2 lépés közül választhat:
+
+-   **Again**  (folytatás): a játékos újra játszik, újabb tétet kell tennie.
+-   **Leave**  (befejezés): a játékos "feláll" a nyerőgéptől, ezáltal otthagyja azt.
+
+Ha a játékosnak kedvezett a szerencse és a nyerőgép akkor megnyeri a feltett tét dupláját, ellenkező esetben pedig bukja mindet.
+Ha elfogytak a zsetonjai, a játék véget ér. A játékot az admin tudja újraindítani minden játékosnak.
