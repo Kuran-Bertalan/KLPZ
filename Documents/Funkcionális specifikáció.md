@@ -54,7 +54,6 @@ HTML-ben írjuk meg az oldal leíró részét, és ezzel szabványosítjuk azt.
 CSS-el adunk az oldalunknak külsőt, amivel igényesen, dizájnosan és modernek fog kinézni.
 
 ## 5.Jelenlegi üzleti folyamatok modellje
-
 A mai világban a legtöbb embernek nincs elegendő ideje, kockázatértékelése vagy pénzbeli, 
 vagyoni és értéki háttere ahhoz, hogy egy élvezhető, szerencsén (vagy egy kis/nagy tapasztalaton) alapuló, 
 könnyen kezelhető alkalmi játékokkal játsszon, anélkül hogy ki kellene mozdulnia az illető komfortzónájából, 
