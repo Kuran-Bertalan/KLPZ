@@ -34,9 +34,10 @@ A fejlesztőcsapat célja egy valósággal megegyező szerencsejáték oldal lé
 melyben három fajta szerencsejátékot tudunk játszani. 
 
 Szerencsejátékok:
--Blackjack: A játékmenet során a játékosnál lévő lapok összértéke több legyen az osztó lapjainak összértékénél, anélkül, hogy meghaladná a 21-et.
--Póker: A játékosok a  nyílt vagy zárt kártyáikból a legjobbat kihozva elvigyék az asztal közepén lévő kasszát.
--Slot Machine: A játékos a kívánt téttel a szerencsére bízva, a "kar" segítségével megpörgeti a nyerőgépet, és az ez által kiadja a eredményt.
+
+- Blackjack: A játékmenet során a játékosnál lévő lapok összértéke több legyen az osztó lapjainak összértékénél, anélkül, hogy meghaladná a 21-et.
+- Póker: A játékosok a  nyílt vagy zárt kártyáikból a legjobbat kihozva elvigyék az asztal közepén lévő kasszát.
+- Slot Machine: A játékos a kívánt téttel a szerencsére bízva, a "kar" segítségével megpörgeti a nyerőgépet, és az ez által kiadja a eredményt.
 
 Az "asztaloknál" egyértelműen látható, hogy mekkora a minimális és a maximális tét, 
 mely a játékos által felrakható. 
@@ -46,9 +47,21 @@ A játékosoknak lehetőségük van követni a zsetonjaik számának gyarapodás
 ezek mellet egy toplista is található lesz ahol a játékosok láthatják, hogy melyik játékosnak van a legtöbb pontja.
 
 ## 4. Feltételek
-
 Az alkalmazásunk létrehozásának alapfeltétele, a JavaScript, 
 vagy valamilyen más webprogramozási nyelv. 
 SQL adatbázist használtunk, ahol elmentjük a regisztrált adatokat és a zsetonok számát, amikből ranglistát képezünk. 
 HTML-ben írjuk meg az oldal leíró részét, és ezzel szabványosítjuk azt. 
 CSS-el adunk az oldalunknak külsőt, amivel igényesen, dizájnosan és modernek fog kinézni.
+
+## 5.Jelenlegi üzleti folyamatok modellje
+
+A mai világban a legtöbb embernek nincs elegendő ideje, kockázatértékelése vagy pénzbeli, 
+vagyoni és értéki háttere ahhoz, hogy egy élvezhető, szerencsén (vagy egy kis/nagy tapasztalaton) alapuló, 
+könnyen kezelhető alkalmi játékokkal játsszon, anélkül hogy ki kellene mozdulnia az illető komfortzónájából, 
+bár van rengeteg és még annál is több online felületen elérhető ”szerencsejáték”- okkal foglalkozó weboldal, 
+ezeknek a hátránya, hogy:
+
+-   Bonyolult regisztráció
+-   Személyazonosság kiadása
+-   Bankkártya használata
+
