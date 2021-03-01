@@ -98,3 +98,11 @@ A Játékos az alábbi tevékenységeket végezheti a Blackjack játékban:
 -   A játékot bármely pillanatban abbahagyhatja az oldal bezárásával, ilyenkor automatikusan kilép a bejelentkezett fiókból, a bejelentkezetett fiók zsetonjainak száma mentődik.
 -   Lehetősége van játék közben használni a súgót, mely megjeleníti melyik lap, mennyi pontot ér.
 -   Két kártyás huszonegy (blackjack) esetén a feltett tét másfélszeresét (1,5x) nyeri a játékos.
+
+A Játékos az alábbi tevékenységeket végezheti a Poker játékban:
+
+-  	A játékot bármely pillanatban abbahagyhatja az oldal bezárásával, ilyenkor automatikusan kilép a bejelentkezett fiókból, a bejelentkezetett fiók zsetonjainak száma mentődik.
+- 	Lehetősége van játék közben használni a súgót, mely megjeleníti melyik lap, mennyi pontot ér.
+- 	Megtekintheti az aktuális játék eredményét a képernyőn megjelenő "Nyertél xy zsetont!", "Vesztettél xy zsetont!".
+-   Lehetősége van eldobni a kártyáit.
+- 	Ki tudja teríteni a kártyáit.
