@@ -88,3 +88,13 @@ A Játékos az alábbi tevékenységeket végezheti általánosan:
 -   Öt percenként ingyen 25 zsetont kérhet
 -   Megtekintheti a zsetonjai számát
 - 	Megtekintheti a ranglistát
+
+A Játékos az alábbi tevékenységeket végezheti a Blackjack játékban:
+
+-   Játék felületen, az ”osztótól” géptől lapot kérhet
+-   Abbahagyhatja a lapkérést
+-   Megtekintheti az aktuális játék eredményét a képernyőn megjelenő "Nyertél xy zsetont!", "Vesztettél xy zsetont!"
+-   Lehetősége van eldobni a kártyáit
+-   A játékot bármely pillanatban abbahagyhatja az oldal bezárásával, ilyenkor automatikusan kilép a bejelentkezett fiókból, a bejelentkezetett fiók zsetonjainak száma mentődik.
+-   Lehetősége van játék közben használni a súgót, mely megjeleníti melyik lap, mennyi pontot ér.
+-   Két kártyás huszonegy (blackjack) esetén a feltett tét másfélszeresét (1,5x) nyeri a játékos.
