@@ -60,3 +60,8 @@ vagyoni és értéki háttere ahhoz, hogy egy élvezhető, szerencsén (vagy egy
 könnyen kezelhető alkalmi játékokkal játsszon, anélkül hogy ki kellene mozdulnia az illető komfortzónájából, 
 bár van rengeteg és még annál is több online felületen elérhető ”szerencsejáték”- okkal foglalkozó weboldal, 
 ezeknek a hátránya, hogy:
+
+-   Bonyolult regisztráció
+-   Személyazonosság kiadása
+-   Bankkártya használata
+
