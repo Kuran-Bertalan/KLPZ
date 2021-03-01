@@ -5,3 +5,5 @@ Mindannyiunk számára ismert szerencsejáték világát valósítottuk meg webe
 ## Jelenlegi helyzet
 
 Szeretnénk a felhasználók számára egy egyszerűen használható, könnyen hozzáférhető felületet biztosítani a szórakozásra. Akik regisztráltak az oldalra azok számára biztosított a hozzáférést a játékokhoz. Mindenki saját maga által egyénileg karakterből összeállított azonosítóval, és a saját maga által választott jelszó segítségével juthat be a rendszerbe. A szerencsejátékok színvonalát szeretnénk emelni és támogatni a XXI. század trendjeinek és technológiáinak segítségével.
+## Jelenlegi üzleti folyamatok
+A jelenleg érvényben lévő veszélyhelyzeti kormányzati intézkedések miatt a 18 évnél idősebb férfiak, nők nem léphetnek be az intézmény területére, így az általunk biztosított lehetőség lenne számukra a legkedvezőbb csatorna, amin keresztül szórakoztatás tudunk nyújtani a felhasználóink számára, úgy hogy még a saját komfortzónájukat se kelljen elhagyniuk.
