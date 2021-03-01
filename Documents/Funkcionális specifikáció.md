@@ -53,7 +53,7 @@ SQL adatbázist használtunk, ahol elmentjük a regisztrált adatokat és a zset
 HTML-ben írjuk meg az oldal leíró részét, és ezzel szabványosítjuk azt. 
 CSS-el adunk az oldalunknak külsőt, amivel igényesen, dizájnosan és modernek fog kinézni.
 
-## 5.Jelenlegi üzleti folyamatok modellje
+## 5. Jelenlegi üzleti folyamatok modellje
 A mai világban a legtöbb embernek nincs elegendő ideje, kockázatértékelése vagy pénzbeli, 
 vagyoni és értéki háttere ahhoz, hogy egy élvezhető, szerencsén (vagy egy kis/nagy tapasztalaton) alapuló, 
 könnyen kezelhető alkalmi játékokkal játsszon, anélkül hogy ki kellene mozdulnia az illető komfortzónájából, 
@@ -70,3 +70,12 @@ amely felkelti azon emberek érdeklődését akiket mindig érdekeltek
 a szerencsejátékok viszont nem szerettek volna rájuk költeni, vagy akármilyen más veszteséget elszenvedni. 
 Ezért mi egyszerű játékok megalkotására törekszünk, amelyek nem mellesleg ingyenesek, 
 élvezhetőek és még kifinomultak is, ezenfelül pedig a legkevesebb úgynevezett "bug"-al rendelkezők. 
+
+## 6. Igényelt üzleti folyamatok modellje
+Az oldalt azért hozzuk létre, hogy a (szerencsejátékot szerető) emberek a szabad időjükben tudjanak játszani költségvetés, 
+és személyi adatok kiadása nélkül. A projektünk egy adatbázissal lesz kapcsolatban, 
+mely lokális módon lesz majd elérhető, egy adott hálózaton keresztül. 
+A könnyű regisztrációs előnynek köszönhetően, percek alatt már a játékok felületén tudjuk kezelni az oldalt, 
+a zsetonok száma mentésre kerül, ez által nem kell minden alkalommal újból és újból az elejétől kezdeni a játékot, 
+ennek köszönhetően a felhasználók nagyobb kedvvel fogják alkalmazni a program adta lehetőségeket. 
+Az oldalon a megadott játékok mellett található lesz mindegyikhez egy-egy szabályzat és a felhasználók zsetonjainak számát összevető ranglista oldal is. 
