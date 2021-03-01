@@ -121,3 +121,20 @@ Fontosabb képernyők:
 ![](img/profile.png)
 - részlet a "Blackjack" játékből
 ![](img/game.png)
+
+## 9. Forgatókönyvek
+### Játékmenet forgatókönyve: Blackjack
+
+Szereplők: Webalkalmazás
+
+Bejelentkezve lehet játékot indítani. A játékos tétet választ, majd az osztó és a játékos is 2-2 lapot kap.
+
+A játékos 3 lépés közül választhat:
+
+-   **Hit**  (lapkérés): az osztó 1 új lapot ad a játékosnak. Ismételhető.
+-   **Stand**  (megállás): a játékos nem húz több lapot.
+-   **Double**  (tét emelés): a korábbi tétet megkétszerezi.
+
+Ha a játékos végzett, az osztó lapjait felfedve meghatározzuk a kör nyertesét. 
+Ha a játékos nyert, a tét értéke hozzáadódik zsetonjai számához, ellenkező esetben levonódik belőle. 
+Ha elfogytak a zsetonjai, a játék véget ér. A játékot az admin tudja újraandítani minden játékosnak.
