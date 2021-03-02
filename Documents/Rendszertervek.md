@@ -53,7 +53,10 @@ A feladat célja, hogy egy letisztult, könnyen kezelhető, igényes weblapot ny
 
 Feladatuk a háttérben működő programok megírása, randomizálás, JavaScript kód, adatbázis kezelése, az eredmény kiértékelés, és az értékek mentése.
 
-## 3.Követelmények
+## 3. Üzleti folyamatok modellje
+![](img/UML.png)
+
+## 4. Követelmények
 
 Funkcionális követelmények:
 - A regisztrált felhasználók tárolása
@@ -67,7 +70,7 @@ A rendszer fejlesztése HTML/CSS valamint JavaScript és php segítségével tö
 A weblap felépítése, valamint dizájnolása a HTML/CSS nyelv implementálásával valósítandó meg.
 A weboldal használatához egy egyszerű böngészőre van szükség.
 
-## 4. Funkcionális terv
+## 5. Funkcionális terv
 
 Rendszerszereplők:
 
@@ -102,7 +105,7 @@ Menü-hierarchiák:
 	- Kilépés
 	- Felhasználók megjelenítése(Admin)
 
-## 5. Fizikai környezet
+## 6. Fizikai környezet
 
 Az alkalmazás webes platformra készül.
 Van tűzfal a hálózaton és engedélyezi a 80-as (HTTP) és a 443-as (HTTPS) portokat.
@@ -115,7 +118,7 @@ Fejlesztői eszközök:
 	- HEROKUAPP / Felhő alapú adatbázis kezelő rendszer MySQL Workbench-el összecsatlakoztatva
     - git
 	
-## 6. Architekturális terv
+## 7. Architekturális terv
 
 ### Backend
 
@@ -132,14 +135,14 @@ A REST API-hoz a user belépését követően egyedi api-key segítségével
 lehet hozzáférni, ez biztosítja, hogy illetéktelen felhasználok ne
 módosíthassák az adatokat, és ne tudják felhasználni a rendszer adta lehetőségeket.
 
-## 7. Implementációs terv
+## 8. Implementációs terv
 
 A Webes felület főként HTML, CSS, PHP, és Javascript nyelven fog készülni.
 Ezeket a technológiákat amennyire csak lehet külön fájlokba írva készítjük el, és úgy fogjuk egymáshoz csatolni a jobb átláthatóság, és könnyebb bővítés érdekében. 
 Képes lesz felhasználni a Backend részen futó REST szolgáltatás metódusait, ezáltal tud felvinni és lekérdezni adatokat az
 adatbázisból.
 
-## 8. Tesztterv
+## 9. Tesztterv
 
 Az projekt alkalmazása elkészítése során szükség van a folyamatos tesztelésekre.\
 Tesztelni kell a gombok működését, valamint a pontszám változását, ha a játékos nyer, illetve veszít, és az új játék kezdésekor a meglévő pontszám megjelenítését\
@@ -159,12 +162,12 @@ A maradék backend kódokat is többszörösen kell tesztelni, hogy megfelelően
 	fejlesztők végzik.
 
 
-## 9. Telepítési terv
+## 10. Telepítési terv
 
 Az alkalmazás futtatásához egy általános felhasználású böngészőre van szükség.\
 Az alkalmazás eléréséhez regisztrációra van szükség, melybe később be kell jelentkezni, ez az adat tárolódik, a későbbi felhasználás esetére.
 
-## 10. Karbantartási terv
+## 11. Karbantartási terv
 
 Az alkalmazás bővítési lehetőségét fenntartjuk. A későbbiekben a játékon belüli "in-game"  vásárlás lehetőségét biztosítjuk, melyet az elért pontszámókból vonjuk le.\
 A későbbiekben további játék-lehetőségek opcióját fenntartjuk..
