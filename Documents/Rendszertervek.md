@@ -96,3 +96,20 @@ Fejlesztői eszközök:
     - WAMP / XAMPP server
 	- HEROKUAPP / Felhő alapú adatbázis kezelő rendszer
     - git
+	
+## 6. Architekturális terv
+
+### Backend
+
+A rendszerhez szükség van egy adatbázis szerverre,
+ebben az esetben MySQL-t használunk.
+A kliens oldali programokat egy PHP alapú REST API szolgálja ki,
+ez csatlakozik az adatbázis szerverhez.
+A kliensekkel JSON objebktumokkal kommunikál.
+
+### Web kliens
+
+A webalkalmazás JavaScript haszálatával készül el.
+A REST API-hoz a user belépését követően egyedi api-key segítségével
+lehet hozzáférni, ez biztosítja, hogy illetéktelen felhasználok ne
+módosíthassák az adatokat, és ne tudják felhasználni a rendszer adta lehetőségeket.
