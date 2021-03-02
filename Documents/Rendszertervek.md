@@ -82,9 +82,26 @@ Rendszerhasználati esetek és lefutásaik:
     - A játékban való részvétel
 	
 - Admin:
-    - Minden adathoz hozzáfér
-    - Felhasználok adatainak módosítása
+    - Beléphet bármilyen szereplőként teljes hozzáférése van a rendszerhez
+    - A felhasználói adatokat látják, változtathatják
+	- Felhasználó hozzáadására, törlésére van lehetőségük
+	- Felhasználói adatok módosítása
 	
+Menü-hierarchiák:
+
+- BEJELENTKEZÉS
+ 	- Bejelentkezés
+	- Regisztráció
+	- Help
+
+- MAIN MENU
+	- Játékszabályok 
+	- BlackJack(huszonegy) játék 
+	- Poker játék 
+	- Slot Machine(nyerőgép) játék
+	- Kilépés
+	- Felhasználók megjelenítése(Admin)
+
 ## 5. Fizikai környezet
 
 Az alkalmazás webes platformra készül.
