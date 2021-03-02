@@ -113,3 +113,11 @@ A webalkalmazás JavaScript haszálatával készül el.
 A REST API-hoz a user belépését követően egyedi api-key segítségével
 lehet hozzáférni, ez biztosítja, hogy illetéktelen felhasználok ne
 módosíthassák az adatokat, és ne tudják felhasználni a rendszer adta lehetőségeket.
+
+## 7. Tesztterv
+
+Az projekt alkalmazása elkészítése során szükség van a folyamatos tesztelésekre.\
+Tesztelni kell a gombok működését, valamint a pontszám változását, ha a játékos nyer, illetve veszít, és az új játék kezdésekor a meglévő pontszám megjelenítését\
+Tesztelni kell, hogy a dizájn megjelenik-e és/vagy úgy jelenik meg ahogy mi szerettük volna, és változtatás esetén megváltozik-e mindenhol ahol szerettük volna.\
+Azt is tesztelni kell, hogy az adatbázis megfelelően dolgozik azaz megfelelően tárolja el a dolgokat, és dolgozza fel a funkcióknak megfelelően.
+A maradék backend kódokat is többszörösen kell tesztelni, hogy megfelelően működnek-e, ezzel megelőzve a korai hibákat, és a későbbi hibákat is.
