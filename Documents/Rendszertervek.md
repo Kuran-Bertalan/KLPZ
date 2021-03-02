@@ -109,9 +109,10 @@ Van tűzfal a hálózaton és engedélyezi a 80-as (HTTP) és a 443-as (HTTPS) p
 Nincsenek megvásárolt komponenseink.
 Fejlesztői eszközök:
 
+	- Notepad ++
     - Visual Studio Code / Netbeans / IntelliJ WebStorm
     - WAMP / XAMPP server
-	- HEROKUAPP / Felhő alapú adatbázis kezelő rendszer
+	- HEROKUAPP / Felhő alapú adatbázis kezelő rendszer MySQL Workbench-el összecsatlakoztatva
     - git
 	
 ## 6. Architekturális terv
