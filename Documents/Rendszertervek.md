@@ -147,6 +147,18 @@ Tesztelni kell, hogy a dizájn megjelenik-e és/vagy úgy jelenik meg ahogy mi s
 Azt is tesztelni kell, hogy az adatbázis megfelelően dolgozik azaz megfelelően tárolja el a dolgokat, és dolgozza fel a funkcióknak megfelelően.
 A maradék backend kódokat is többszörösen kell tesztelni, hogy megfelelően működnek-e, ezzel megelőzve a korai hibákat, és a későbbi hibákat is.
 
+- Tesztelési eljárások:
+	- Unit teszt:
+	Ahol csak lehetséges, szükséges már a fejlesztési idő alatt is tesztelni, hogy a
+	metódusok megfelelően működnek-e.
+	Ezért a metódusok megfelelő működésének biztosítására mindegyikhez írni
+	kell Unit teszteket.
+	- Alfa teszt:
+	Meglévő funkcióknak a különböző
+	böngészőkkel való kompatibilitásának tesztelése. A tesztet a
+	fejlesztők végzik.
+
+
 ## 9. Telepítési terv
 
 Az alkalmazás futtatásához egy általános felhasználású böngészőre van szükség.\
