@@ -126,3 +126,8 @@ A maradék backend kódokat is többszörösen kell tesztelni, hogy megfelelően
 
 Az alkalmazás futtatásához egy általános felhasználású böngészőre van szükség.\
 Az alkalmazás eléréséhez regisztrációra van szükség, melybe később be kell jelentkezni, ez az adat tárolódik, a későbbi felhasználás esetére.
+
+## 9. Karbantartási terv
+
+Az alkalmazás bővítési lehetőségét fenntartjuk. A későbbiekben a játékon belüli "in-game"  vásárlás lehetőségét biztosítjuk, melyet az elért pontszámókból vonjuk le.\
+A későbbiekben további játék-lehetőségek opcióját fenntartjuk..
