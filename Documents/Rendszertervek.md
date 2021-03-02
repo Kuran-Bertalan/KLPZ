@@ -42,3 +42,27 @@ Projekt szerepkörök, felelősségek
 | Slot Machine(Nyerőgép)|Játék elkészítése|3|10|10|0|10|
 
 A projektet weblapra fejlesztjük front- és back -end segítségével. Az elkülönített feladatokon más-más emberek dolgoznak.
+
+### Frontend felelősök:
+
+Frontend fejlesztése HTML/CSS segítségével
+
+A feladat célja, hogy egy letisztult, könnyen kezelhető, igényes weblapot nyújtson a felhasználó számára.
+
+### Backend felelősök:
+
+Feladatuk a háttérben működő programok megírása, randomizálás, JavaScript kód, adatbázis kezelése, az eredmény kiértékelés, és az értékek mentése.
+
+## 3.Követelmények
+
+Funkcionális követelmények:
+- A regisztrált felhasználók tárolása
+    - A felhasználók csoportba szervezése
+    - Webes felületen gördülékeny működés
+- Nem funkcionális követelmények:
+    - Letisztult kinézet
+    - A programnak egyszerűnek kell lennie , ezért a teljesítménye sem lehet nagy
+
+A rendszer fejlesztése HTML/CSS valamint JavaScript és php segítségével történik.
+A weblap felépítése, valamint dizájnolása a HTML/CSS nyelv implementálásával valósítandó meg.
+A weboldal használatához egy egyszerű böngészőre van szükség.
