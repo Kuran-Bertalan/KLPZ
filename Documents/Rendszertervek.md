@@ -66,3 +66,21 @@ Funkcionális követelmények:
 A rendszer fejlesztése HTML/CSS valamint JavaScript és php segítségével történik.
 A weblap felépítése, valamint dizájnolása a HTML/CSS nyelv implementálásával valósítandó meg.
 A weboldal használatához egy egyszerű böngészőre van szükség.
+
+## 4. Funkcionális terv
+
+Rendszerszereplők:
+
+- Játékos
+- Admin
+
+Rendszerhasználati esetek és lefutásaik:
+
+- Játékos:
+    - Regisztráció az oldalra
+    - Saját adatainak módosítása
+    - A játékban való részvétel
+	
+- Admin:
+    - Minden adathoz hozzáfér
+    - Felhasználok adatainak módosítása
