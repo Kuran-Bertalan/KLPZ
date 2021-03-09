@@ -31,10 +31,10 @@ Projekt szerepkörök, felelősségek
 ##
 | Funkció / Story | Feladat / Task| Prioritás| Becslés | Aktuális becslés|Eltelt idő|Hátralévő idő|
 |---|---|---|---|---|---|---|
-| Követelmény specifikáció||0|7|7|0|6|
-| Funkcionális specifikáció||0|7|7|0|6|
-| Rendszerterv||0|7|7|0|6|
-| Adattárolás|Adatmodell megtervezése|0|4|4|0|4|
+| Követelmény specifikáció||0|7|7|6|0|
+| Funkcionális specifikáció||0|7|7|6|0|
+| Rendszerterv||0|7|7|6|0|
+| Adattárolás|Adatmodell megtervezése|0|4|4|1|3|
 | |Adatbázis megvalósítása a szerveren|1|3|3|0|3|
 | Login felület|Felület kinézete|1|4|4|0|4|
 | BlackJack|Játék elkészítése|3|10|10|0|10|
