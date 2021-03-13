@@ -81,3 +81,5 @@ Az Oldal támogatását az Üzemeltető végzi munkanapokon, 8:00 és 16:00 köz
 |Jogosultság|K10|Admin felület|1.0|
 |Jogosultság|K11|Moderátor felület|1.0|
 |Adatbázis|K12|Adatbázis rendszer|1.0|
+
+### Kifejtés 
