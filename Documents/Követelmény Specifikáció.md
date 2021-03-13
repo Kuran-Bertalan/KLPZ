@@ -65,3 +65,19 @@ Az Oldal használatához a felhasználói oldalon szükséges – fent meghatár
 Jelen Felhasználási Feltételekben nem szabályozott kérdésekben a hatályos jogszabályok – különösen, de nem kizárólagosan a Polgári Törvénykönyvről szóló 2013. évi V. törvény, az Európai Parlament és Tanács 2016. április 27-i (EU) 2016/679. Rendelete a természetes személyeknek a személyes adatok kezelése tekintetében történő védelméről és az ilyen adatok szabad áramlásáról, valamint a 95/46/EK irányelv hatályon kívül helyezéséről, az információs önrendelkezési jogról és az információ szabadságról szóló 2011. évi CXII. törvény, a szerzői jogról szóló 1999. évi LXXVI. törvény, valamint az elektronikus kereskedelmi szolgáltatások, valamint az információs társadalommal összefüggő szolgáltatások egyes kérdéseiről szóló 2001. évi CVIII. törvény – rendelkezései az irányadóak.
 ### Kapcsolat
 Az Oldal támogatását az Üzemeltető végzi munkanapokon, 8:00 és 16:00 között. Az Oldal működésével kapcsolatban a Felhasználó a [KLPZ@gmail.com](mailto:KLPZ@gmail.com) e-mail címre küldheti kérdéseit, amelyre az Üzemeltető a fenti időszakban válaszol. Forduljon hozzánk teljes bizalommal.
+## Követelménylista
+
+|   Modul   | ID |  Név   |  Verzió  |
+|-----------|----|--------|----------|
+|Jogosultság| K1 | Bejelentkezés|1.0|
+|Jogosultság|K2|Regisztráció|1.0|
+|Jogosultság|K3|Jogosultsági szintek|1.0|
+|Modifikáció|K4|Felhasználó módosítása|1.0|
+|Modifikáció|K5|Jelszó módosítása|1.0|
+|Modifikáció|K6|Elfelejtett felhasználónév/jelszó|1.0|
+|Statisztika|K7|Összes megtekintések|1.0|
+|Felület|K8|Profil|1.0|
+|Felület|K9|Témák, Bejegyzések, Hozzászólások|1.0|
+|Jogosultság|K10|Admin felület|1.0|
+|Jogosultság|K11|Moderátor felület|1.0|
+|Adatbázis|K12|Adatbázis rendszer|1.0|
