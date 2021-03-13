@@ -82,4 +82,29 @@ Az Oldal támogatását az Üzemeltető végzi munkanapokon, 8:00 és 16:00 köz
 |Jogosultság|K11|Moderátor felület|1.0|
 |Adatbázis|K12|Adatbázis rendszer|1.0|
 
-### Kifejtés 
+### Kifejtés
+#### ID
+- K1  A felhasználó a "Bejelentkezés" gombbal be tud jelentkezni a megadott felhasználónév és jelszó párossal. Ha bármelyik mező hiányzik, vagy hibásan van kitöltve, az aktuális mező fölött piros betűkkel tudatja velünk a rendszer.
+
+- K2  A "Regisztráció" gombra kattintva a felhasználó megadhatja az oldal használatához szükséges adatokat: "Felhasználó" mezőbe egy egyedi felhasználónevet; "e-mail" mezőbe a saját érvényes e-mail címét; "Jelszó" mezőbe egy egyedi kulcsszót, amit harmadik személynek semmiféleképpen nem adhatunk ki.
+Ha bármelyik mező hiányzik, vagy hibásan van kitöltve, az aktuális mező fölött piros betűkkel tudatja velünk a rendszer.
+
+- K3  Felhasználói-Rendszerhozzáférés, like-olhat, küldhet üzenetet, tölthet fel profilképet, bemutatkozó szöveget.
+
+- K4 A felhasználó módosítani tudja saját Felhasználónevét a saját profil beállításain belül. Ehhez szükséges a régi és az új felhasználó név megadása, az új megerősítése, valamint a felhasználó jelszavának megadása.
+
+- K5 A felhasználó módosítani tudja saját jelszavát a saját profil beállításain belül. Ehhez szükséges a régi és az új jelszavának megadása, valamint az új megerősítése.
+
+- K6 Ha a felhasználó elfelejtette a felhasználónevét vagy jelszavát, akkor ezzel az opcióval egy Adminhoz tud fordulni e-mail címen keresztül.
+
+- K7 Egy lista a bejegyzésekről, hozzászólásokról, illetve témákról, valamint ezekről különféle statisztikák. (megtekintés, legfelkapottabb, stb.)
+
+- K8 A felhasználónak lehetősége van a profilján található szövegek módosítására.
+
+- K9 Ez egy reszponzív felület, amin keresztül a felhasználók hozzáférhetnek a témákban lévő bejegyzésekhez, hozzászólhatnak, illetve új bejegyzéseket hozhatnak létre, feliratkozhatnak bejegyzésekre.
+
+- K10 Ez egy felület az admin fiókkal rendelkező felhasználók számára. Tartalmazza az egyes felhasználói csoportok jogainak szerkesztését, bejegyzések, hozzászólások moderátori jelzését, új szobák létrehozását.
+
+- K11 Ez egy felület a moderátor fiókkal rendelkező felhasználók számára. Tartalmazza az egyes felhasználói csoportok jogainak szerkesztését, bejegyzések, hozzászólások moderálási jogait, új szobák létrehozását.
+
+- K12 Adatbázis kapcsolat megtervezése és létrehozása.
