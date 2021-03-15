@@ -119,7 +119,7 @@ Fejlesztői eszközök:
     - git
 	
 ## 7. Absztrakt domain modell	
-![](img/AbstractDomain.png)
+![](img/absDomain.png)
 	
 | Megnevezés | Mezők | Leírás| Kapcsolat|
 |---|---|---|---|
