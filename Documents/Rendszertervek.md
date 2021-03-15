@@ -147,14 +147,17 @@ A REST API-hoz a user belépését követően egyedi api-key segítségével
 lehet hozzáférni, ez biztosítja, hogy illetéktelen felhasználok ne
 módosíthassák az adatokat, és ne tudják felhasználni a rendszer adta lehetőségeket.
 
-## 9. Implementációs terv
+## 9. Adatbázis terv
+![](img/Database.png)
+
+## 10. Implementációs terv
 
 A Webes felület főként HTML, CSS, PHP, és Javascript nyelven fog készülni.
 Ezeket a technológiákat amennyire csak lehet külön fájlokba írva készítjük el, és úgy fogjuk egymáshoz csatolni a jobb átláthatóság, és könnyebb bővítés érdekében. 
 Képes lesz felhasználni a Backend részen futó REST szolgáltatás metódusait, ezáltal tud felvinni és lekérdezni adatokat az
 adatbázisból.
 
-## 10. Tesztterv
+## 11. Tesztterv
 
 Az projekt alkalmazása elkészítése során szükség van a folyamatos tesztelésekre.\
 Tesztelni kell a gombok működését, valamint a pontszám változását, ha a játékos nyer, illetve veszít, és az új játék kezdésekor a meglévő pontszám megjelenítését\
@@ -174,12 +177,12 @@ A maradék backend kódokat is többszörösen kell tesztelni, hogy megfelelően
 	fejlesztők végzik.
 
 
-## 11. Telepítési terv
+## 12. Telepítési terv
 
 Az alkalmazás futtatásához egy általános felhasználású böngészőre van szükség.\
 Az alkalmazás eléréséhez regisztrációra van szükség, melybe később be kell jelentkezni, ez az adat tárolódik, a későbbi felhasználás esetére.
 
-## 12. Karbantartási terv
+## 13. Karbantartási terv
 
 Az alkalmazás bővítési lehetőségét fenntartjuk. A későbbiekben a játékon belüli "in-game"  vásárlás lehetőségét biztosítjuk, melyet az elért pontszámókból vonjuk le.\
 A későbbiekben további játék-lehetőségek opcióját fenntartjuk..
