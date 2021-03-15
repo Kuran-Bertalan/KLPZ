@@ -121,6 +121,15 @@ Fejlesztői eszközök:
 ## 7. Absztrakt domain modell	
 	![](img/AbstractDomain.png)
 	
+| Megnevezés | Mezők | Leírás| Kapcsolat|
+|---|---|---|---|
+| User|id, username, password, e-mail|Abstract user osztály|Gyermek osztályai: Admin, Player|
+| Admin|permission|Adminokat valósít meg|A User gyermekosztálya|
+| Edit|id, username, password, e-mail| Playereket módosít meg| Az Edit egy player-hez tartozik|
+| Add |gameId, bonus, reward|Játékot ad hozzá|Az "Add" egy játékhoz tartozik|
+| Play | gameId, userId|User használja a játékot| A "Play" egy játékhoz tartozik|
+
+	
 ## 8. Architekturális terv
 
 ### Backend
