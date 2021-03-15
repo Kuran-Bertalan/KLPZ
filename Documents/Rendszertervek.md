@@ -119,7 +119,7 @@ Fejlesztői eszközök:
     - git
 	
 ## 7. Absztrakt domain modell	
-	
+	![](img/AbstractDomain.png)
 	
 ## 8. Architekturális terv
 
