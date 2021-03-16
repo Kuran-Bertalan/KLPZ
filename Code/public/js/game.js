@@ -36,3 +36,34 @@ class Game {
         this.getStartingBalance();
         this.showMessage('Új játék indításához kattints az "Új kör" gombra.');
     }
+	window.onload = function () {
+    // display
+    let deckDisplay       = document.getElementById('deck');
+    let playerHandDisplay = document.getElementById('playerHand');
+    let dealerHandDisplay = document.getElementById('dealerHand');
+    let msgDisplay        = document.getElementById('message')
+    let moneyDisplay      = document.getElementById('money');
+
+    // gombok
+    let hitButton     = document.getElementById('hit');
+    let standButton   = document.getElementById('stand');
+    let newGameButton = document.getElementById('newGame');
+    //let menuButton    = document.getElementById('menubutton');
+
+    let betSelect     = document.getElementById('bet');
+
+    let game = new Game(
+        msgDisplay,
+        moneyDisplay,
+        deckDisplay,
+        playerHandDisplay,
+        dealerHandDisplay,
+        hitButton,
+        standButton,
+        newGameButton,
+        //menuButton,
+        betSelect
+    );
+    game.showMessage('Új játék indításához kattints az "Új kör" gombra.');
+    game.display();
+}
