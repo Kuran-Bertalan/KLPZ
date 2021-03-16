@@ -1,3 +1,14 @@
+
+const CARD_WIDTH = 100;
+
+class Card {
+    constructor(suit, value) {
+        this.suit     = suit;
+        this.value    = value;
+        this.revealed = false;
+    }
+}
+
 class Game {
     constructor(
         msgDisplay, moneyDisplay,
