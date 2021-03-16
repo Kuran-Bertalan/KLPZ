@@ -23,4 +23,16 @@ class Game {
         this.newGameButton     = newGameButton;
         //this.menuButton        = menuButton;
         this.betSelect         = betSelect;
+		
+		// eventek
+        this.hitButton.onclick     = (() => this.hit());
+        this.standButton.onclick   = (() => this.stand());
+        this.newGameButton.onclick = (() => this.newGame());
+        //this.menuButton.onclick    = (() => this.menu());
+
+        // display
+        this.deckDisplay.style.position = 'relative';
+
+        this.getStartingBalance();
+        this.showMessage('Új játék indításához kattints az "Új kör" gombra.');
     }
