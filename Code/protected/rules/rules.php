@@ -39,7 +39,7 @@
 			A blackjackben a tízesek, bubik, dámák, és királyok mindegyikének tízes az értéke. Az ászoknak két különböző értéke lehet, egy vagy tizenegy
 			(választhatsz, melyik). Például, ha egy ászt és egy négyest kombinálsz össze, a
 			kezed értéke öt vagy 15 lehet.
-			A blackjackben általában egy az egyhez (1:1) fizetnek a nyerő lapok. Amikor a kezed értéke megegyezik az osztóéval, azt „döntetlen”-nek hívják. Ha ez
+			A blackjackben általában egy az egyhez(1:1) fizetnek a nyerő lapok. Amikor a kezed értéke megegyezik az osztóéval, azt „döntetlen”-nek hívják. Ha ez
 			történik, visszakapod a tétedet, de további pénzre nem számíthatsz.
 		</p>
 	</center>
