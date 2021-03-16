@@ -47,7 +47,24 @@ class Deck {
         }
         return this.cards.pop();
     }
-
+    display(displayTag) {
+        displayTag.innerHTML = '';
+        for (let i = 0; i < this.cards.length; ++i) {
+            let el = document.createElement('img');
+            el.setAttribute('src', 'public/images/hátlap.png');
+            el.setAttribute('width', `${CARD_WIDTH}px`);
+            if (i == 0) {
+                el.style.position = 'relative';
+            }
+            else {
+                el.style.position = 'absolute';
+            }
+            el.style.top =  -i / 3;
+            el.style.left = -i / 3;
+            displayTag.appendChild(el);
+        }
+    }
+}
 class Game {
     constructor(
         msgDisplay, moneyDisplay,
