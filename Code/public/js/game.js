@@ -40,6 +40,13 @@ class Deck {
             this.cards[randomIndex] = temp;
         }
     }
+	drawOne() {
+        if (this.cards.length == 0) {
+            this.fillDeck();
+            this.shuffle();
+        }
+        return this.cards.pop();
+    }
 
 class Game {
     constructor(
