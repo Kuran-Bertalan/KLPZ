@@ -159,3 +159,25 @@ class Game {
     game.showMessage('Új játék indításához kattints az "Új kör" gombra.');
     game.display();
 }
+
+
+
+endGame(win, message) {
+        this.showMessage(message);
+        this.isRunning = false;
+        if (win) {
+            this.balance += parseInt(this.betSelect.value);
+			this.dealer.displayHand(this.dealerHandDisplay);
+        }
+        else {
+            this.balance -= parseInt(this.betSelect.value);
+			this.dealer.displayHand(this.dealerHandDisplay);
+        }
+        if (this.deck.length < 10) {
+            this.showMessage('Keverés...');
+            this.deck.fillDeck();
+        }
+        this.isBalanceSyncronized = false;
+        this.updateBalance();
+        this.display();
+    }
