@@ -65,6 +65,31 @@ class Deck {
         }
     }
 }
+
+    updateBalance() {
+        let _data = {
+            username: username,
+            password: password,
+            balance: this.balance
+        }
+
+        fetch('user/server.php', {
+            method: 'POST',
+            body: JSON.stringify(_data),
+            headers: {'Content-Type': 'application/json; charset=UTF-8'}
+        })
+        .then(response => response.json())
+        .then(json => {
+            if (json.status == 'ok') {
+                this.isBalanceSyncronized = true;
+            }
+            else {
+                console.log('REST API hiba');
+            }
+        })
+        .catch(err => console.log(err));
+    }
+}
 class Game {
     constructor(
         msgDisplay, moneyDisplay,
