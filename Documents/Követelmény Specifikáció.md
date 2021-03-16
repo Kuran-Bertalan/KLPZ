@@ -26,6 +26,8 @@ Profil --> A felhasználó itt testre szabhatja saját profilképét, készíthe
 Feliratkozás felület --> A felhasználót értesíti az oldal, ha a bejegyzésnél új hozzászólás történt, vagy szavaztak az általa készített szavazáson.
 
 Black Jack --> A Blackjack legfontosabb szabálya, hogy a játékmenet során a játékosnál lévő lapok összértéke több legyen az osztó lapjainak összértékénél, anélkül, hogy meghaladná a 21-et.
+
+Jussom --> A játékban lévő jelenlegi játékpénze a felhasználónak.
 ## Rendszerre vonatkozó törvények
 ### Általános Információk
 A Weboldalhoz való hozzáférést és annak használatát az alkalmazandó jogszabályok és jelen Felhasználási Feltételek és Adatkezelési tájékoztatók (a továbbiakban Felhasználási Feltételek) szabályozzák. Az alkalmazást használók (a továbbiakban: a Felhasználók) elfogadják a jelen felhasználási feltételeket. Amennyiben ezen Felhasználási Feltételeket és az Oldal Tájékoztatóját nem fogadják el, abban az esetben nem jogosultak az oldal használatára.
