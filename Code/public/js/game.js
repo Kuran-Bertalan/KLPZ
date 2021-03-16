@@ -160,7 +160,15 @@ class Game {
     game.display();
 }
 
-
+dealersTurn() {
+        if (!this.isRunning) {
+            return;
+        }
+        if (this.dealer.handValue() < 17) {
+            this.dealer.cards.push(this.deck.drawOne());
+        }
+    }
+	
 
 endGame(win, message) {
         this.showMessage(message);
