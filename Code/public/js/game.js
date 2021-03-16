@@ -12,4 +12,15 @@ class Game {
         this.deck.shuffle();
         this.isRunning = false;
         this.isBalanceSyncronized = true;
+		// HTML tagek
+        this.msgDisplay        = msgDisplay;
+        this.moneyDisplay      = moneyDisplay;
+        this.deckDisplay       = deckDisplay;
+        this.playerHandDisplay = playerHandDisplay;
+        this.dealerHandDisplay = dealerHandDisplay;
+        this.hitButton         = hitButton;
+        this.standButton       = standButton;
+        this.newGameButton     = newGameButton;
+        //this.menuButton        = menuButton;
+        this.betSelect         = betSelect;
     }
