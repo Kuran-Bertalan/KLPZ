@@ -160,7 +160,7 @@ class Game {
     game.display();
 }
 
-dealersTurn() {
+	dealersTurn() {
         if (!this.isRunning) {
             return;
         }
@@ -169,6 +169,40 @@ dealersTurn() {
         }
     }
 	
+	hit() {
+        if (!this.isRunning) {
+            return;
+        }
+        this.player.addCard(this.deck.drawOne());
+
+        let value = this.player.handValue();
+        if (value > 21) {
+            this.endGame(false, `Túllépted a 21-et! Vesztettél!<br/> Lapjaid értéke: ${value}`);
+        }
+
+        this.display();
+    }
+
+    stand() {
+        if (!this.isRunning) {
+            return;
+        }
+
+        this.dealersTurn();
+
+        let pValue = this.player.handValue();
+        let dValue = this.dealer.handValue();
+        if (dValue > 21) {
+            this.endGame(true, `Nyertél! Az osztó túllépte a 21-et!`);
+        }
+        else if (pValue > dValue) {
+            this.endGame(true, `Nyertél! Lapjaid értéke: ${pValue}.<br/> Az osztóé: ${dValue}`);
+        }
+        else {
+            this.endGame(false, `Vesztettél! Lapjaid értéke: ${pValue}.  Az osztóé: ${dValue}`);
+        }
+        this.display();
+    }
 
 endGame(win, message) {
         this.showMessage(message);
