@@ -27,7 +27,19 @@ class Deck {
             }
         }
     }
+ shuffle() {
+        let currentIndex = this.cards.length;
+        let temp, randomIndex;
 
+        while (currentIndex != 0) {
+            randomIndex = Math.floor(Math.random() * currentIndex);
+            currentIndex -= 1;
+
+            temp = this.cards[currentIndex];
+            this.cards[currentIndex] = this.cards[randomIndex];
+            this.cards[randomIndex] = temp;
+        }
+    }
 
 class Game {
     constructor(
