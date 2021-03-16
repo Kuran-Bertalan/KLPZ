@@ -203,8 +203,33 @@ class Game {
         }
         this.display();
     }
+	
+	menu() {
+        this.updateBalance();
+        window.location.replace('menu.php');
+    }
 
-endGame(win, message) {
+    getStartingBalance() {
+        let _data = {
+            username: username,
+            password: password
+        };
+
+        fetch('user/server.php', {
+            method: 'POST',
+            body: JSON.stringify(_data),
+            headers: {'Content-Type': 'application/json; charset=UTF-8'}
+        })
+        .then(response => response.json())
+        .then(json => {
+            this.balance = json.balance;
+            this.isBalanceSyncronized = true;
+            this.display();
+        })
+        .catch(err => console.log(err));
+    }
+
+	endGame(win, message) {
         this.showMessage(message);
         this.isRunning = false;
         if (win) {
