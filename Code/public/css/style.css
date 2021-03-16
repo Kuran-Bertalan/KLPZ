@@ -1,0 +1,90 @@
+.menu {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	width: 20%;
+	position: fixed;
+	height: 100%;
+	overflow: auto;
+}
+
+.contributors{
+  font-family: Bookman Old Style;
+  font-size: 20px;
+  text-align: center;
+}
+
+h1{
+  font-family: Bernard MT;
+  font-size: 50px;
+  text-align: center;
+  color: black;
+  text-shadow: 1px 1px 2px white, 0 0 25px white, 0 0 5px white;
+}
+
+body{
+	background: url(../images/background.jpg);
+	background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+
+.menubutton {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #DAA520;
+  border: none;
+  color: #000000;
+  text-align: center;
+  font-size: 15px;
+  padding: 8px;
+  width: 180px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 3px;
+}
+
+.menubutton span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.menubutton span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -25px;
+  transition: 0.5s;
+}
+
+.menubutton:hover span {
+  padding-right: 30px;
+}
+
+.menubutton:hover span:after {
+  opacity: 2;
+  right: 0;
+}
+
+.szoveg{
+	font-family: Cambria Math;
+	color: white;
+	font-size: 18px;
+	text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+.keszitok{
+	text-decoration: underline;
+	font-weight: bold;
+	color: red;
+	font-size: 25px;
+}
+
+p{
+	color: yellow;
+	text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
