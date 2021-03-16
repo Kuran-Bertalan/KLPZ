@@ -81,7 +81,7 @@ Az Oldal támogatását az Üzemeltető végzi munkanapokon, 8:00 és 16:00 köz
 |Modifikáció|K6|Elfelejtett felhasználónév/jelszó|1.0|
 |Statisztika|K7|Összes megtekintések|1.0|
 |Felület|K8|Profil|1.0|
-|Felület|K9|Témák, Bejegyzések, Hozzászólások|1.0|
+|Felület|K9|Hozzászólások|1.0|
 |Jogosultság|K10|Admin felület|1.0|
 |Jogosultság|K11|Moderátor felület|1.0|
 |Adatbázis|K12|Adatbázis rendszer|1.0|
@@ -105,10 +105,10 @@ Ha bármelyik mező hiányzik, vagy hibásan van kitöltve, az aktuális mező f
 
 - K8 A felhasználónak lehetősége van a profilján található szövegek módosítására.
 
-- K9 Ez egy reszponzív felület, amin keresztül a felhasználók hozzáférhetnek a témákban lévő bejegyzésekhez, hozzászólhatnak, illetve új bejegyzéseket hozhatnak létre, feliratkozhatnak bejegyzésekre.
+- K9 Ez egy reszponzív felület, amin keresztül a felhasználók hozzáférhetnek az oldalon lévő játékokhoz, hozzászólhatnak.
 
-- K10 Ez egy felület az admin fiókkal rendelkező felhasználók számára. Tartalmazza az egyes felhasználói csoportok jogainak szerkesztését, bejegyzések, hozzászólások moderátori jelzését, új szobák létrehozását.
+- K10 Ez egy felület az admin fiókkal rendelkező felhasználók számára. Tartalmazza az egyes felhasználói csoportok jogainak szerkesztését, hozzászólások moderátori jelzését, új szobák létrehozását.
 
-- K11 Ez egy felület a moderátor fiókkal rendelkező felhasználók számára. Tartalmazza az egyes felhasználói csoportok jogainak szerkesztését, bejegyzések, hozzászólások moderálási jogait, új szobák létrehozását.
+- K11 Ez egy felület a moderátor fiókkal rendelkező felhasználók számára. Tartalmazza az egyes felhasználói csoportok jogainak szerkesztését, hozzászólások moderálási jogait, új szobák létrehozását.
 
 - K12 Adatbázis kapcsolat megtervezése és létrehozása.
