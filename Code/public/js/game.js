@@ -1,4 +1,3 @@
-
 const CARD_WIDTH = 100;
 
 class Card {
@@ -27,7 +26,8 @@ class Deck {
             }
         }
     }
- shuffle() {
+
+    shuffle() {
         let currentIndex = this.cards.length;
         let temp, randomIndex;
 
@@ -40,13 +40,15 @@ class Deck {
             this.cards[randomIndex] = temp;
         }
     }
-	drawOne() {
+
+    drawOne() {
         if (this.cards.length == 0) {
             this.fillDeck();
             this.shuffle();
         }
         return this.cards.pop();
     }
+
     display(displayTag) {
         displayTag.innerHTML = '';
         for (let i = 0; i < this.cards.length; ++i) {
@@ -66,30 +68,70 @@ class Deck {
     }
 }
 
-    updateBalance() {
-        let _data = {
-            username: username,
-            password: password,
-            balance: this.balance
-        }
+class BlackJackPlayer {
+    constructor() {
+        this.cards = [];
+    }
 
-        fetch('user/server.php', {
-            method: 'POST',
-            body: JSON.stringify(_data),
-            headers: {'Content-Type': 'application/json; charset=UTF-8'}
-        })
-        .then(response => response.json())
-        .then(json => {
-            if (json.status == 'ok') {
-                this.isBalanceSyncronized = true;
+    addCard(card) {
+        this.cards.push(card);
+    }
+
+    discard() {
+        this.cards = [];
+    }
+
+    handValue() {
+        let total = 0;
+        for (let i = 0; i < this.cards.length; ++i) {
+            let value = this.cards[i].value;
+            if (value != 'A') {
+                total += isNaN(value) ? 10 : parseInt(value);
             }
             else {
-                console.log('REST API hiba');
+                total += (total + 11 <= 21) ? 11 : 1;
             }
-        })
-        .catch(err => console.log(err));
+        }
+        return total;
+    }
+
+    displayHand(displayTag) {
+        displayTag.innerHTML = '';
+        for (let i = 0; i < this.cards.length; ++i) {
+            let el = document.createElement('img');
+            let card = this.cards[i];
+            let fileName = `public/images/cards/${card.value}${card.suit[0]}.png`;
+
+            el.setAttribute('src', fileName);
+            el.setAttribute('width', `${CARD_WIDTH}px`);
+
+            displayTag.appendChild(el);
+        }
+    }
+
+    displayFirst(displayTag) {
+        displayTag.innerHTML = '';
+        if (this.cards.length > 0) {
+            let el = document.createElement('img');
+            let card = this.cards[0];
+            let fileName = `public/images/cards/${card.value}${card.suit[0]}.png`;
+            el.setAttribute('src', fileName);
+            el.setAttribute('width', `${CARD_WIDTH}px`);
+
+            displayTag.appendChild(el);
+
+            for (let i = 1; i < this.cards.length; ++i) {
+                let el = document.createElement('img');
+
+                el.setAttribute('src', 'public/images/hátlap.png');
+                el.setAttribute('width', `${CARD_WIDTH}px`);
+
+                displayTag.appendChild(el);
+            }
+        }
     }
 }
+
 class Game {
     constructor(
         msgDisplay, moneyDisplay,
@@ -104,7 +146,8 @@ class Game {
         this.deck.shuffle();
         this.isRunning = false;
         this.isBalanceSyncronized = true;
-		// HTML tagek
+
+        // HTML tagek
         this.msgDisplay        = msgDisplay;
         this.moneyDisplay      = moneyDisplay;
         this.deckDisplay       = deckDisplay;
@@ -115,8 +158,8 @@ class Game {
         this.newGameButton     = newGameButton;
         //this.menuButton        = menuButton;
         this.betSelect         = betSelect;
-		
-		// eventek
+
+        // eventek
         this.hitButton.onclick     = (() => this.hit());
         this.standButton.onclick   = (() => this.stand());
         this.newGameButton.onclick = (() => this.newGame());
@@ -128,39 +171,71 @@ class Game {
         this.getStartingBalance();
         this.showMessage('Új játék indításához kattints az "Új kör" gombra.');
     }
-	window.onload = function () {
-    // display
-    let deckDisplay       = document.getElementById('deck');
-    let playerHandDisplay = document.getElementById('playerHand');
-    let dealerHandDisplay = document.getElementById('dealerHand');
-    let msgDisplay        = document.getElementById('message')
-    let moneyDisplay      = document.getElementById('money');
 
-    // gombok
-    let hitButton     = document.getElementById('hit');
-    let standButton   = document.getElementById('stand');
-    let newGameButton = document.getElementById('newGame');
-    //let menuButton    = document.getElementById('menubutton');
+    showMessage(message) {
+        this.msgDisplay.innerHTML = message;
+    }
 
-    let betSelect     = document.getElementById('bet');
+    display() {
+        if (!this.isRunning) {
+            this.hitButton.disabled   = true;
+            this.standButton.disabled = true;
 
-    let game = new Game(
-        msgDisplay,
-        moneyDisplay,
-        deckDisplay,
-        playerHandDisplay,
-        dealerHandDisplay,
-        hitButton,
-        standButton,
-        newGameButton,
-        //menuButton,
-        betSelect
-    );
-    game.showMessage('Új játék indításához kattints az "Új kör" gombra.');
-    game.display();
-}
+            this.dealer.displayHand(this.dealerHandDisplay);
+        }
+        else {
+            this.showMessage(`Lapjaid értéke: ${this.player.handValue()}`);
+            this.hitButton.disabled   = false;
+            this.standButton.disabled = false;
 
-	dealersTurn() {
+            this.dealer.displayFirst(this.dealerHandDisplay);
+        }
+        this.moneyDisplay.innerHTML = `Zseton: $${this.balance}`;
+        this.deck.display(this.deckDisplay);
+        this.player.displayHand(this.playerHandDisplay);
+    }
+
+    newGame() {
+        this.isRunning = true;
+        this.player.discard();
+        this.dealer.discard();
+
+        this.player.cards.push(this.deck.drawOne());
+        this.dealer.cards.push(this.deck.drawOne());
+        this.player.cards.push(this.deck.drawOne());
+        this.dealer.cards.push(this.deck.drawOne());
+
+        if (this.player.handValue() == 21) {
+            this.endGame(true, 'BLACKJACK!');
+        }
+        else if (this.dealer.handValue() == 21) {
+            this.endGame(false, 'Vesztettél! Az osztónak blackjackje van!');
+        }
+
+        this.display();
+    }
+
+    endGame(win, message) {
+        this.showMessage(message);
+        this.isRunning = false;
+        if (win) {
+            this.balance += parseInt(this.betSelect.value);
+			this.dealer.displayHand(this.dealerHandDisplay);
+        }
+        else {
+            this.balance -= parseInt(this.betSelect.value);
+			this.dealer.displayHand(this.dealerHandDisplay);
+        }
+        if (this.deck.length < 10) {
+            this.showMessage('Keverés...');
+            this.deck.fillDeck();
+        }
+        this.isBalanceSyncronized = false;
+        this.updateBalance();
+        this.display();
+    }
+
+    dealersTurn() {
         if (!this.isRunning) {
             return;
         }
@@ -168,8 +243,8 @@ class Game {
             this.dealer.cards.push(this.deck.drawOne());
         }
     }
-	
-	hit() {
+
+    hit() {
         if (!this.isRunning) {
             return;
         }
@@ -203,8 +278,8 @@ class Game {
         }
         this.display();
     }
-	
-	menu() {
+
+    menu() {
         this.updateBalance();
         window.location.replace('menu.php');
     }
@@ -229,22 +304,59 @@ class Game {
         .catch(err => console.log(err));
     }
 
-	endGame(win, message) {
-        this.showMessage(message);
-        this.isRunning = false;
-        if (win) {
-            this.balance += parseInt(this.betSelect.value);
-			this.dealer.displayHand(this.dealerHandDisplay);
+    updateBalance() {
+        let _data = {
+            username: username,
+            password: password,
+            balance: this.balance
         }
-        else {
-            this.balance -= parseInt(this.betSelect.value);
-			this.dealer.displayHand(this.dealerHandDisplay);
-        }
-        if (this.deck.length < 10) {
-            this.showMessage('Keverés...');
-            this.deck.fillDeck();
-        }
-        this.isBalanceSyncronized = false;
-        this.updateBalance();
-        this.display();
+
+        fetch('user/server.php', {
+            method: 'POST',
+            body: JSON.stringify(_data),
+            headers: {'Content-Type': 'application/json; charset=UTF-8'}
+        })
+        .then(response => response.json())
+        .then(json => {
+            if (json.status == 'ok') {
+                this.isBalanceSyncronized = true;
+            }
+            else {
+                console.log('REST API hiba');
+            }
+        })
+        .catch(err => console.log(err));
     }
+}
+
+window.onload = function () {
+    // display
+    let deckDisplay       = document.getElementById('deck');
+    let playerHandDisplay = document.getElementById('playerHand');
+    let dealerHandDisplay = document.getElementById('dealerHand');
+    let msgDisplay        = document.getElementById('message')
+    let moneyDisplay      = document.getElementById('money');
+
+    // gombok
+    let hitButton     = document.getElementById('hit');
+    let standButton   = document.getElementById('stand');
+    let newGameButton = document.getElementById('newGame');
+    //let menuButton    = document.getElementById('menubutton');
+
+    let betSelect     = document.getElementById('bet');
+
+    let game = new Game(
+        msgDisplay,
+        moneyDisplay,
+        deckDisplay,
+        playerHandDisplay,
+        dealerHandDisplay,
+        hitButton,
+        standButton,
+        newGameButton,
+        //menuButton,
+        betSelect
+    );
+    game.showMessage('Új játék indításához kattints az "Új kör" gombra.');
+    game.display();
+}
