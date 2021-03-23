@@ -8,8 +8,8 @@ define('USER_MANAGER', PROTECTED_DIR.'userManager.php');
 
 define('DB_TYPE', 'mysql');
 define('DB_HOST', 'remotemysql.com');
-define('DB_NAME', 'Rqslwkmmuk');
-define('DB_USER', 'Rqslwkmmuk');
+define('DB_NAME', 'Rqs1wkmmuk');
+define('DB_USER', 'Rqs1wkmmuk');
 define('DB_PASS', 'cm5DxwXn8B');
 define('DB_CHARSET', 'utf8');
 ?>
