@@ -2,7 +2,7 @@
 	<h1>Page access is forbidden!</h1>
 <?php else : ?>
 	<?php 
-	$query = "SELECT username, email, permission FROM users";
+	$query = "SELECT username, email, permission FROM user";
 	require_once DATABASE_CONTROLLER;
 	$users = getList($query);
 	?>
