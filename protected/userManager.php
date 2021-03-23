@@ -23,6 +23,7 @@ function UserLogin($email, $password) {
 		$_SESSION['uname'] = $record['username'];
 		$_SESSION['email'] = $record['email'];
 		$_SESSION['balance'] = $record['balance'];
+		
 		header('Location: index.php');
 	}
 	return false;
@@ -39,7 +40,11 @@ function UserRegister($email, $password, $uname) {
 		$params = [
 			':username' => $uname,
 			':email' => $email,
-			':password' => sha1($password)
+			':password' => sha1($password),
+			':balance' => $balance,
+			':bonuscode' => $bonuscode,
+			'permission' => $permission,
+			'validated' => $validated
 		];
 
 		if(executeDML($query, $params)) 
