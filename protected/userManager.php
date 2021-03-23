@@ -32,7 +32,7 @@ function UserLogin($email, $password) {
 	return false;
 }
 
-function UserRegister($email, $password, $uname) {
+function UserRegister($email, $password, $uname, $balance, $bonuscode, $permission, $validated) {
 	$query = "SELECT id FROM user email = :email";
 	$params = [ ':email' => $email ];
 
