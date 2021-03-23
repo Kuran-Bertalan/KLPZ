@@ -23,6 +23,9 @@ function UserLogin($email, $password) {
 		$_SESSION['uname'] = $record['username'];
 		$_SESSION['email'] = $record['email'];
 		$_SESSION['balance'] = $record['balance'];
+		$_SESSION['bonuscode'] = $record['bonuscode'];
+		$_SESSION['permission'] = $record['permission'];
+		$_SESSION['validated'] = $record['validated'];
 		
 		header('Location: index.php');
 	}
@@ -36,15 +39,15 @@ function UserRegister($email, $password, $uname) {
 	require_once DATABASE_CONTROLLER;
 	$record = getRecord($query, $params);
 	if(empty($record)) {
-		$query = "INSERT INTO user (username, email, password) VALUES (:username, :email, :password)";
+		$query = "INSERT INTO user (username, email, password) VALUES (:username, :email, :password, :balance, :bonuscode, :permission, :validated)";
 		$params = [
 			':username' => $uname,
 			':email' => $email,
 			':password' => sha1($password),
 			':balance' => $balance,
 			':bonuscode' => $bonuscode,
-			'permission' => $permission,
-			'validated' => $validated
+			':permission' => $permission,
+			':validated' => $validated
 		];
 
 		if(executeDML($query, $params)) 
