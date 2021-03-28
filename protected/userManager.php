@@ -10,7 +10,7 @@ function UserLogout() {
 }
 
 function UserLogin($email, $password) {
-	$query = "SELECT id, username, email, balance, bonuscode, permission, validated FROM user WHERE email = :email AND password = :password";
+	$query = "SELECT id, username, email, balance, bonuscode, permission, validated FROM users WHERE email = :email AND password = :password";
 	$params = [
 		':email' => $email,
 		':password' => sha1($password)
@@ -33,13 +33,13 @@ function UserLogin($email, $password) {
 }
 
 function UserRegister($email, $password, $uname) {
-	$query = "SELECT id FROM user email = :email";
+	$query = "SELECT id FROM users email = :email";
 	$params = [ ':email' => $email ];
 
 	require_once DATABASE_CONTROLLER;
 	$record = getRecord($query, $params);
 	if(empty($record)) {
-		$query = "INSERT INTO user (username, email, password) VALUES (:username, :email, :password)";
+		$query = "INSERT INTO users (username, email, password) VALUES (:username, :email, :password)";
 		$params = [
 			':username' => $uname,
 			':email' => $email,
