@@ -10,7 +10,7 @@ function UserLogout() {
 }
 
 function UserLogin($email, $password) {
-	$query = "SELECT id, username, email, balance FROM users WHERE email = :email AND password = :password";
+	$query = "SELECT id, username, email, balance, bonuscode, permission, validated FROM users WHERE email = :email AND password = :password";
 	$params = [
 		':email' => $email,
 		':password' => sha1($password)
@@ -23,6 +23,10 @@ function UserLogin($email, $password) {
 		$_SESSION['uname'] = $record['username'];
 		$_SESSION['email'] = $record['email'];
 		$_SESSION['balance'] = $record['balance'];
+		$_SESSION['bonuscode'] = $record['bonuscode'];
+		$_SESSION['permission'] = $record['permission'];
+		$_SESSION['validated'] = $record['validated'];
+		
 		header('Location: index.php');
 	}
 	return false;

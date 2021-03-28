@@ -12,7 +12,7 @@
 	<?php if(isset($_SESSION['permission']) && $_SESSION['permission'] >= 1) : ?>
 		<span> &nbsp; || &nbsp; </span>
 		<a href="index.php?P=users">User list</a>
-		<a href="index.php?P=rules"> SZABÁLYOK</a>
+		<a href="index.php?P=rules">Szabályok</a>
 		<span> &nbsp; | &nbsp; </span>
 		<span> &nbsp; || &nbsp; </span>
 	<?php else : ?>
