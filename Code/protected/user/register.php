@@ -41,18 +41,18 @@ if($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['register'])) {
 <div class="register-page">
   <div class="form">
     <form class="login-form" method="post">
-	  <label for="registerUserName">Username</label>
+	  <label for="registerUserName">Felhasználónév</label>
       <input type="text" class="form-control" id="registerUserName" name="username" value="<?=isset($postData) ? $postData['uname'] : "";?>">
       <label for="registerEmail">Email</label>
 	  <input type="email" class="form-control" id="registerEmail" name="email" value="<?=isset($postData) ? $postData['email'] : "";?>">
-      <label for="registerEmail1">Confirm Email</label>
+      <label for="registerEmail1">Email megerősités</label>
 	  <input type="email" class="form-control" id="registerEmail1" name="email1" value="<?=isset($postData) ? $postData['email1'] : "";?>">
-	  <label for="registerPassword">Password</label>
+	  <label for="registerPassword">Jelszó</label>
 	  <input type="password" class="form-control" id="registerPassword" name="password" value="">
-	  <label for="registerPassword1">Confirm Password</label>
+	  <label for="registerPassword1">Jelszó megerősités</label>
 	  <input type="password" class="form-control" id="registerPassword1" name="password1" value="">
-      <button type="submit" class="btn btn-primary" name="register">Register</button>
-      <p class="message">Already registered? <a href="index.php?P=login">Sign In</a></p>
+      <button type="submit" class="btn btn-primary" name="register">Regisztráció</button>
+      <p class="message">Már regisztráltál? <a href="index.php?P=login">Bejelentkezés</a></p>
     </form>
   </div>
 </div>
