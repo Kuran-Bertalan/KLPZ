@@ -32,12 +32,12 @@ if($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['login'])) {
   <div class="login-page">
     <div class="form">
     <form class="login-form" method="post">
-      <label for="loginEmail">Email address</label>
+      <label for="loginEmail">Email cím</label>
       <input type="email" class="form-control" id="loginEmail" aria-describedby="emailHelp" name="email" value="<?= isset($postData) ? $postData['email'] : '';?>">
-	  <label for="loginPassword">Password</label>
+	  <label for="loginPassword">Jelszó</label>
       <input type="password" class="form-control" id="loginPassword" name="password" value="">
       <button type="submit" class="btn btn-primary" name="login">Login</button>
-      <p class="message">Not registered? <a href="index.php?P=register">Create an account</a></p>
+      <p class="message">Nincs regisztrálva? <a href="index.php?P=register">Fiók létrehozása</a></p>
     </form>
   </div>
 </div>
