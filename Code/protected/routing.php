@@ -7,7 +7,7 @@ switch ($_GET['P']) {
 	
 	case 'test': require_once PROTECTED_DIR.'normal/permission_test.php'; break;
 
-	case 'game': require_once PROTECTED_DIR.'game/game.php'; break;
+	case 'blackJackGame': require_once PROTECTED_DIR.'game/blackJackGame.php'; break;
 	
 	case 'login': !IsUserLoggedIn() ? require_once PROTECTED_DIR.'user/login.php' : header('Location: index.php'); break;
 
@@ -17,7 +17,7 @@ switch ($_GET['P']) {
 
 	case 'users': IsUserLoggedIn() ? require_once PROTECTED_DIR.'user/user_list.php' : header('Location: index.php'); break;
 	
-	case 'rules': IsUserLoggedIn() ? require_once PROTECTED_DIR.'user/user_list.php' : header('Location: index.php'); break;
+	case 'blackJackRules':  require_once PROTECTED_DIR.'rules/blackJackRules.php'; break;
 
 	default: require_once PROTECTED_DIR.'normal/404.php'; break;
 }

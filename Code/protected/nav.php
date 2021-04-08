@@ -1,25 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset ="UTF-8"/>
+	<title>Blackjack</title>
+	<link rel="stylesheet" type="text/css" href="<?php echo PUBLIC_DIR.'css/style.css'; ?>">
+</head>
 <hr>
 
-<a href="index.php">Home</a>
+<button class="menubutton" onclick="window.location.href='index.php';"><span>Főoldal</span></button>
+<button class="menubutton" onclick="window.location.href='index.php?P=blackJackRules';"><span>Szabályok</span></button>
 <?php if(!IsUserLoggedIn()) : ?>
-	<span> &nbsp; | &nbsp; </span>
-	<a href="index.php?P=login">Login</a>
-	<span> &nbsp; | &nbsp; </span>
-	<a href="index.php?P=register">Register</a>
+	<button class="menubutton" onclick="window.location.href='index.php?P=login';"><span>Bejelentkezés</span></button>
+	<button class="menubutton" onclick="window.location.href='index.php?P=register';"><span>Regisztráció</span></button>
 <?php else : ?>
-	<span> &nbsp; | &nbsp; </span>
-	<a href="index.php?P=game">Game</a>
+	<button class="menubutton" onclick="window.location.href='index.php?P=blackJackGame';"><span>BlackJack</span></button>
+	<button class="menubutton" onclick="window.location.href='index.php?P=slotMachineGame';"><span>Nyerőgép</span></button>
+	<button class="menubutton" onclick="window.location.href='index.php?P=pokerGame';"><span>Poker</span></button>
 	<?php if(isset($_SESSION['permission']) && $_SESSION['permission'] >= 1) : ?>
 		<span> &nbsp; || &nbsp; </span>
-		<a href="index.php?P=users">User list</a>
-		<a href="index.php?P=rules">Szabályok</a>
-		<span> &nbsp; | &nbsp; </span>
-		<span> &nbsp; || &nbsp; </span>
-	<?php else : ?>
+		<a href="index.php?P=users">User list</a>		
 		<span> &nbsp; | &nbsp; </span>
 	<?php endif; ?>
 
-	<a href="index.php?P=logout">Logout</a>
+	<button class="menubutton" onclick="window.location.href='index.php?P=logout';"><span>Kilépés</span></button>
 <?php endif; ?>
 
 <hr>
+</html>
