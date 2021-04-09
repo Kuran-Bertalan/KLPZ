@@ -8,12 +8,6 @@
 	overflow: auto;
 }
 
-.contributors{
-  font-family: Bookman Old Style;
-  font-size: 20px;
-  text-align: center;
-}
-
 h1{
   font-family: Bernard MT;
   font-size: 50px;
@@ -75,12 +69,5 @@ body{
 	color: white;
 	font-size: 18px;
 	text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
-}
-
-.keszitok{
-	text-decoration: underline;
-	font-weight: bold;
-	color: red;
-	font-size: 25px;
 }
 

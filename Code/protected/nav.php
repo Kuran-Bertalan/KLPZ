@@ -24,6 +24,7 @@
 
 	<button class="menubutton" onclick="window.location.href='index.php?P=logout';"><span>Kilépés</span></button>
 <?php endif; ?>
+<button class="menubutton" onclick="window.location.href='index.php?P=impressum';"><span>Impresszum</span></button>
 
 <hr>
 </html>

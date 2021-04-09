@@ -19,6 +19,8 @@ switch ($_GET['P']) {
 	
 	case 'blackJackRules':  require_once PROTECTED_DIR.'rules/blackJackRules.php'; break;
 
+	case 'impressum':  require_once PROTECTED_DIR.'normal/impressum.php'; break;
+
 	default: require_once PROTECTED_DIR.'normal/404.php'; break;
 }
 
