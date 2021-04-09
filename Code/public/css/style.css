@@ -95,3 +95,21 @@ body{
   color: darkblue;
   text-shadow: 1px 1px 2px gray, 0 0 25px black, 0 0 5px grey;
 }
+
+.fooldalszoveg{
+  font-family:fantasy ;
+  font-size: 20px;
+  text-align: center;
+  color: blue;
+  text-shadow: 1px 1px 2px gray, 0 0 25px black, 0 0 5px grey;
+}
+
+.elerhetoseg{
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
+  font-size: 30px;
+  text-align: center;
+  color: whitesmoke;
+  border-style: solid;
+  border-color: white;
+  text-shadow: 1px 1px 2px black, 0 0 25px black, 0 0 5px black;
+}

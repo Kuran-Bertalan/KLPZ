@@ -23,5 +23,6 @@
 			<p> Vajda Krisztián </p>
 		</ul>
 	</div>
+	<p class="elerhetoseg">Elérhetőség: KLPZ@protonmail.com</p>
 </body>
 </html>
