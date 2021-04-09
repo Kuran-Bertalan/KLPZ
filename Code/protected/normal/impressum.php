@@ -17,7 +17,7 @@
 			<p> Zsadányi Rózsa </p>
 		</ul>
 		<ul>
-			<p class="keszitok"> Supervisors: </p>
+			<p class="keszitok"> Seniorok: </p>
 			<p> Balogh Dániel </p>
 			<p> Soós Gergő </p>
 			<p> Vajda Krisztián </p>
