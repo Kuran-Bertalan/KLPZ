@@ -7,7 +7,7 @@
 </head>
 <hr>
 
-<button class="menubutton" onclick="window.location.href='index.php';"><span>Főoldal</span></button>
+<button class="menubutton" onclick="window.location.href='index.php?P=home';"><span>Főoldal</span></button>
 <button class="menubutton" onclick="window.location.href='index.php?P=blackJackRules';"><span>Szabályok</span></button>
 <?php if(!IsUserLoggedIn()) : ?>
 	<button class="menubutton" onclick="window.location.href='index.php?P=login';"><span>Bejelentkezés</span></button>
