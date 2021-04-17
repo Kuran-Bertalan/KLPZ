@@ -7,7 +7,7 @@
 	<link rel="stylesheet" type="text/css" href="<?php echo PUBLIC_DIR.'css/style.css'; ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <body>
-	<h2>Impresszum</h2>
+	<h2><span>&#160;</span><span>&#160;</span>Impresszum</h2>
 <div class ="contributors">
 		<ul>
 			<p class="keszitok"> Készítették: </p>
