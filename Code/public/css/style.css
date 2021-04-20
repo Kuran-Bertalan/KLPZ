@@ -21,7 +21,7 @@ h2{
   font-size: 50px;
   font-weight: bold;
   text-align: center;
-  color: crimson;
+  color: #ffc107;
   text-shadow: 1px 1px 2px black, 0 0 25px navajowhite, 0 0 5px black;
 }
 
@@ -100,7 +100,7 @@ body{
   font-family:fantasy ;
   font-size: 20px;
   text-align: center;
-  color: blue;
+  color: #212529;
   text-shadow: 1px 1px 2px gray, 0 0 25px black, 0 0 5px grey;
 }
 
