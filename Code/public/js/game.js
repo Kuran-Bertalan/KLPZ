@@ -196,6 +196,10 @@ class Game {
     }
 
     newGame() {
+		if(this.betSelect.value > this.balance){
+			this.showMessage('Nincs ennyi zsetonod!');
+			return null;
+		}
         this.isRunning = true;
         this.player.discard();
         this.dealer.discard();
