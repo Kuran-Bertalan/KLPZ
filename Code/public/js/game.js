@@ -180,6 +180,7 @@ class Game {
         if (!this.isRunning) {
             this.hitButton.disabled   = true;
             this.standButton.disabled = true;
+			
 
             this.dealer.displayHand(this.dealerHandDisplay);
         }
@@ -187,7 +188,8 @@ class Game {
             this.showMessage(`Lapjaid értéke: ${this.player.handValue()}`);
             this.hitButton.disabled   = false;
             this.standButton.disabled = false;
-
+			this.newGameButton.disabled = true;
+			
             this.dealer.displayFirst(this.dealerHandDisplay);
         }
         this.moneyDisplay.innerHTML = `Zseton: $${this.balance}`;
@@ -221,6 +223,7 @@ class Game {
 
     endGame(win, message) {
         this.showMessage(message);
+		this.newGameButton.disabled = false;
         this.isRunning = false;
         if (win) {
             this.balance += parseInt(this.betSelect.value);
@@ -237,6 +240,7 @@ class Game {
         this.isBalanceSyncronized = false;
         this.updateBalance();
         this.display();
+		
     }
 
     dealersTurn() {
