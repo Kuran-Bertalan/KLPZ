@@ -288,3 +288,122 @@
 			}, options.speed + options.pause)
 			return this;
 		}, 
+		makeAbsolute: function() {
+			return this.each(function() {
+				var el = $(this);
+				var pos = el.position();
+				el.css({position: "absolute", marginLeft: 0, marginTop: 0, top: pos.top, left: pos.left })
+					.remove()
+					.appendTo("body");
+			});
+
+		},
+		spSet: function(prop_name, prop_value) {
+			var el_id = $(this).attr('id');
+			$._spritely.instances[el_id][prop_name] = prop_value;
+			return this;
+		},
+		spGet: function(prop_name, prop_value) {
+			var el_id = $(this).attr('id');
+			return $._spritely.instances[el_id][prop_name];
+		},
+		spStop: function(bool) {
+			$(this).each(function() {
+				var el_id = $(this).attr('id');
+				$._spritely.instances[el_id]['_last_fps'] = $(this).spGet('fps');
+				$._spritely.instances[el_id]['_stopped'] = true;
+				$._spritely.instances[el_id]['_stopped_f1'] = bool;
+				if ($._spritely.instances[el_id]['type'] == 'sprite') {
+					$(this).spSet('fps', 0);
+				}
+				if (bool) {
+					var bp_top = $._spritely.getBgY($(this));
+					$(this).css('background-position', '0 ' + bp_top);
+				}
+			});
+			return this;
+		},
+		spStart: function() {
+			$(this).each(function() {
+				var el_id = $(this).attr('id');
+				var fps = $._spritely.instances[el_id]['_last_fps'] || 12;
+				$._spritely.instances[el_id]['_stopped'] = false;
+				if ($._spritely.instances[el_id]['type'] == 'sprite') {
+					$(this).spSet('fps', fps);
+				}
+			});
+			return this;
+		},
+		spToggle: function() {
+			var el_id = $(this).attr('id');
+			var stopped = $._spritely.instances[el_id]['_stopped'] || false;
+			var stopped_f1 = $._spritely.instances[el_id]['_stopped_f1'] || false;
+			if (stopped) {
+				$(this).spStart();
+			} else {
+				$(this).spStop(stopped_f1);
+			}
+			return this;
+		},
+		fps: function(fps) {
+			$(this).each(function() {
+				$(this).spSet('fps', fps);
+			});
+			return this;
+		},
+		spSpeed: function(speed) {
+			$(this).each(function() {
+				$(this).spSet('speed', speed);
+			});
+			return this;
+		},
+		spRelSpeed: function(speed) {
+			$(this).each(function() {
+				var rel_depth = $(this).spGet('depth') / 100;
+				$(this).spSet('speed', speed * rel_depth);
+			});
+			return this;
+		},
+		spChangeDir: function(dir) {
+			$(this).each(function() {
+				$(this).spSet('dir', dir);
+			});
+			return this;
+		},
+		spState: function(n) {
+			$(this).each(function() {
+				var yPos = ((n - 1) * $(this).height()) + 'px';
+				var xPos = $._spritely.getBgX($(this));
+				var bp = xPos + ' -' + yPos;
+				$(this).css('background-position', bp);
+			});
+			return this;
+		},
+		lockTo: function(el, options) {
+			$(this).each(function() {
+				var el_id = $(this).attr('id');
+				$._spritely.instances[el_id]['locked_el'] = $(this);
+				$._spritely.instances[el_id]['lock_to'] = $(el);
+				$._spritely.instances[el_id]['lock_to_options'] = options;
+				window.setInterval(function() {
+					if ($._spritely.instances[el_id]['lock_to']) {
+						var locked_el = $._spritely.instances[el_id]['locked_el'];
+						var locked_to_el = $._spritely.instances[el_id]['lock_to'];
+						var locked_to_options = $._spritely.instances[el_id]['lock_to_options'];
+						var locked_to_el_w = locked_to_options.bg_img_width;
+						var locked_to_el_h = locked_to_el.height();
+						var locked_to_el_y = $._spritely.getBgY(locked_to_el);
+						var locked_to_el_x = $._spritely.getBgX(locked_to_el);
+						var el_l = (parseInt(locked_to_el_x) + parseInt(locked_to_options['left']));
+						var el_t = (parseInt(locked_to_el_y) + parseInt(locked_to_options['top']));
+						el_l = $._spritely.get_rel_pos(el_l, locked_to_el_w);
+						$(locked_el).css({
+							'top': el_t + 'px',
+							'left': el_l + 'px'
+						});
+					}
+				}, options.interval || 20);
+			});
+			return this;
+		}
+	})
