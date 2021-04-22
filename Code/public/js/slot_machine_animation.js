@@ -215,3 +215,76 @@
 			}
 			return this;
 		},
+		isDraggable: function(options) {
+			if ((!$(this).draggable)) {
+				return this;
+			}
+			var options = $.extend({
+				type: 'isDraggable',
+				start: null,
+				stop: null,
+				drag: null
+			}, options || {});
+			var el_id = $(this).attr('id');
+			$._spritely.instances[el_id].isDraggableOptions = options;
+			$(this).draggable({
+				start: function() {
+					var el_id = $(this).attr('id');
+					$._spritely.instances[el_id].stop_random = true;
+					$(this).stop(true);
+					if ($._spritely.instances[el_id].isDraggableOptions.start) {
+						$._spritely.instances[el_id].isDraggableOptions.start(this);
+					}
+				},
+				drag: options.drag,
+				stop: function() {
+					var el_id = $(this).attr('id');
+					$._spritely.instances[el_id].stop_random = false;
+					if ($._spritely.instances[el_id].isDraggableOptions.stop) {
+						$._spritely.instances[el_id].isDraggableOptions.stop(this);
+					}
+				}
+			});
+			return this;
+		},
+		active: function() {
+			$._spritely.activeSprite = this;
+			return this;
+		},
+		activeOnClick: function() {
+			var el = $(this);
+			if (window.Touch) { 
+				el[0].ontouchstart = function(e) {
+					$._spritely.activeSprite = el;
+				};
+			} else {
+				el.click(function(e) {
+					$._spritely.activeSprite = el;
+				});
+			}
+			return this;
+		},
+		spRandom: function(options) {
+			var options = $.extend({
+				top: 50,
+				left: 50,
+				right: 290,
+				bottom: 320,
+				speed: 4000,
+				pause: 0
+			}, options || {});
+			var el_id = $(this).attr('id');
+			if (!$._spritely.instances[el_id].stop_random) {
+				var r = $._spritely.randomIntBetween;
+				var t = r(options.top, options.bottom);
+				var l = r(options.left, options.right);
+				$('#' + el_id).animate({
+					top: t + 'px',
+					left: l + 'px'
+				}, options.speed)
+			}
+			window.setTimeout(function() {
+				$('#' + el_id).spRandom(options);
+			}, options.speed + options.pause)
+			return this;
+		}, 
