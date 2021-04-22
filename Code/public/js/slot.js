@@ -76,3 +76,81 @@ $(document).ready(function() {
             }
         }, 100);
     };
+    
+    /**
+    * @method finalPos
+    * Finds the final position of the slot
+    */
+     Slot.prototype.finalPos = function() {
+        var el = this.el,
+            el_id,
+            pos,
+            posMin = 2000000000,
+            best,
+            bgPos,
+            i,
+            j,
+            k;
+
+        el_id = $(el).attr('id');
+        //pos = $(el).css('background-position'); //for some unknown reason, this does not work in IE
+        pos = document.getElementById(el_id).style.backgroundPosition;
+        pos = pos.split(' ')[1];
+        pos = parseInt(pos, 10);
+
+        for(i = 0; i < posArr.length; i++) {
+            for(j = 0;;j++) {
+                k = posArr[i] + (imgHeight * j);
+                if(k > pos) {
+                    if((k - pos) < posMin) {
+                        posMin = k - pos;
+                        best = k;
+                        this.pos = posArr[i]; //update the final position of the slot
+                    }
+                    break;
+                }
+            }
+        }
+
+        best += imgHeight + 4;
+        bgPos = "0 " + best + "px";
+        $(el).animate({
+            backgroundPosition:"(" + bgPos + ")"
+        }, {
+            duration: 200,
+            complete: function() {
+                completed ++;
+            }
+        });
+    };
+    
+    /**
+    * @method reset
+    *Újraindítás
+    */
+    Slot.prototype.reset = function() {
+        var el_id = $(this.el).attr('id');
+        $._spritely.instances[el_id].t = 0;
+        $(this.el).css('background-position', '0px 4px');
+        this.speed = 0;
+        completed = 0;
+        $('#result').html('');
+    };
+
+    function enableControl() {
+        $('#control').attr("disabled", false);
+    }
+
+    function disableControl() {
+        $('#control').attr("disabled", true);
+    }
+
+    function printResult() {
+        var res;
+        if(win[a.pos] === win[b.pos] && win[a.pos] === win[c.pos]) {
+            res = "You Win!";
+        } else {
+            res = "You Lose";
+        }
+        $('#result').html(res);
+    }
