@@ -407,3 +407,6 @@
 			return this;
 		}
 	})
+	try {
+		document.execCommand("BackgroundImageCache", false, true);
+	  } catch(err) {} 
