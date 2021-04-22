@@ -154,3 +154,48 @@ $(document).ready(function() {
         }
         $('#result').html(res);
     }
+    
+   var a = new Slot('#slot1', 30, 1),
+   b = new Slot('#slot2', 45, 2),
+   c = new Slot('#slot3', 70, 3);
+
+
+$('#control').click(function() {
+   var x;
+   if(this.innerHTML == "Start") {
+       a.start();
+       b.start();
+       c.start();
+       this.innerHTML = "Stop";
+       
+       disableControl(); 
+    
+       x = window.setInterval(function() {
+           if(a.speed >= a.maxSpeed && b.speed >= b.maxSpeed && c.speed >= c.maxSpeed) {
+               enableControl();
+               window.clearInterval(x);
+           }
+       }, 100);
+   } else if(this.innerHTML == "Stop") {
+       a.stop();
+       b.stop();
+       c.stop();
+       this.innerHTML = "Reset";
+
+       disableControl();
+       
+       x = window.setInterval(function() {
+           if(a.speed === 0 && b.speed === 0 && c.speed === 0 && completed === 3) {
+               enableControl();
+               window.clearInterval(x);
+               printResult();
+           }
+       }, 100);
+   } else { //reset
+       a.reset();
+       b.reset();
+       c.reset();
+       this.innerHTML = "Start";
+   }
+});
+});
