@@ -32,7 +32,9 @@ body{
     background-size: cover;
 }
 
-
+.name{
+	text-align: right;
+}
 .menubutton {
   display: inline-block;
   border-radius: 4px;
