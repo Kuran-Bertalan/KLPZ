@@ -9,6 +9,8 @@ switch ($_GET['P']) {
 
 	case 'blackJackGame': require_once PROTECTED_DIR.'game/blackJackGame.php'; break;
 	
+	case 'slotMachineGame': require_once PROTECTED_DIR.'game/slotMachineGame.php'; break;
+	
 	case 'login': !IsUserLoggedIn() ? require_once PROTECTED_DIR.'user/login.php' : header('Location: index.php'); break;
 
 	case 'register': !IsUserLoggedIn() ? require_once PROTECTED_DIR.'user/register.php' : header('Location: index.php'); break;

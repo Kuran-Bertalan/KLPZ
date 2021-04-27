@@ -1,5 +1,5 @@
 (function($) {
-	if(!document.defaultView || !document.defaultView.getComputedStyle){ // IE6-IE8
+	if(!document.defaultView || !document.defaultView.getComputedStyle){ 
 		var oldCurCSS = $.curCSS;
 		$.curCSS = function(elem, name, force){
 			if(name === 'background-position'){
@@ -51,7 +51,6 @@
 			fx.unit = [end[1],end[3]];
 			fx.bgPosReady = true;
 		}
-		//return;
 		var nowPosX = [];
 		nowPosX[0] = ((fx.end[0] - fx.start[0]) * fx.pos) + fx.start[0] + fx.unit[0];
 		nowPosX[1] = ((fx.end[1] - fx.start[1]) * fx.pos) + fx.start[1] + fx.unit[1];           

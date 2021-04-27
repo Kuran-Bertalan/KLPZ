@@ -93,7 +93,6 @@ $(document).ready(function() {
             k;
 
         el_id = $(el).attr('id');
-        //pos = $(el).css('background-position'); //for some unknown reason, this does not work in IE
         pos = document.getElementById(el_id).style.backgroundPosition;
         pos = pos.split(' ')[1];
         pos = parseInt(pos, 10);
