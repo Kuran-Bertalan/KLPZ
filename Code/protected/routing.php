@@ -13,6 +13,8 @@ switch ($_GET['P']) {
 
 	case 'register': !IsUserLoggedIn() ? require_once PROTECTED_DIR.'user/register.php' : header('Location: index.php'); break;
 
+	case 'profile': require_once PROTECTED_DIR.'user/profile.php'; break;
+
 	case 'logout': IsUserLoggedIn() ? UserLogout() : header('Location: index.php'); break;
 
 	case 'users': IsUserLoggedIn() ? require_once PROTECTED_DIR.'user/user_list.php' : header('Location: index.php'); break;
@@ -20,6 +22,8 @@ switch ($_GET['P']) {
 	case 'blackJackRules':  require_once PROTECTED_DIR.'rules/blackJackRules.php'; break;
 
 	case 'impressum':  require_once PROTECTED_DIR.'normal/impressum.php'; break;
+	
+
 
 	default: require_once PROTECTED_DIR.'normal/404.php'; break;
 }

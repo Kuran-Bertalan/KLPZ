@@ -298,7 +298,7 @@ class Game {
             password: password
         };
 
-        fetch('user/server.php', {
+        fetch('game/blackJackGame.php', {
             method: 'POST',
             body: JSON.stringify(_data),
             headers: {'Content-Type': 'application/json; charset=UTF-8'}
@@ -319,7 +319,7 @@ class Game {
             balance: this.balance
         }
 
-        fetch('user/server.php', {
+        fetch('game/blackJackGame.php', {
             method: 'POST',
             body: JSON.stringify(_data),
             headers: {'Content-Type': 'application/json; charset=UTF-8'}

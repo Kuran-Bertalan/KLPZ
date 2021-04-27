@@ -52,4 +52,11 @@ function UserRegister($email, $password, $uname) {
 	return false;
 }
 
+function GetBalanceById($id) {
+	$query = "SELECT balance FROM users WHERE id = :id";
+	$params = [':id' => $id];
+	require_once DATABASE_CONTROLLER;
+	return getField($query, $params);
+}
+
 ?>
