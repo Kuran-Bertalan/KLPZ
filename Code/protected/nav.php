@@ -10,14 +10,27 @@
 <hr>
 
 <button class="menubutton" onclick="window.location.href='index.php?P=home';"><span>Főoldal</span></button>
+<button class="menubutton" onclick="window.location.href='index.php?P=impressum';"><span>Impresszum</span></button>
+<div class="dropdown">
+	  <span><button class="dropbtn">Szabályok</button><span>
+	  <div class="dropdown-content">
+	  <a href="index.php?P=blackJackRules">BlackJack</a>
+	  <a href="#">Poker</a>
+	  <a href="#">SlotMachin</a>
+	  </div>
+	</div>
 <?php if(!IsUserLoggedIn()) : ?>
 	<button class="menubutton" onclick="window.location.href='index.php?P=login';"><span>Bejelentkezés</span></button>
 	<button class="menubutton" onclick="window.location.href='index.php?P=register';"><span>Regisztráció</span></button>
 <?php else : ?>
-	<button class="menubutton" onclick="window.location.href='index.php?P=blackJackGame';"><span>BlackJack</span></button>
-	<button class="menubutton" onclick="window.location.href='index.php?P=slotMachineGame';"><span>Nyerőgép</span></button>
-	<button class="menubutton" onclick="window.location.href='index.php?P=pokerGame';"><span>Poker</span></button>
-	<button class="menubutton" onclick="window.location.href='index.php?P=logout';"><span>Kijelentkezés</span></button>
+<div class="dropdown">
+	  <span><button class="dropbtn">Játékok</button><span>
+	  <div class="dropdown-content">
+	  <a href="index.php?P=blackJackGame">BlackJack</a>
+	  <a href="index.php?P=pokerGame">Poker</a>
+	  <a href="index.php?P=slotMachineGame">SlotMachin</a>
+	  </div>
+	</div>
 	<form class="name">
 	<a href="index.php?P=profile"><img class="User" src="public/images/user.png" ></a>
 	<strong><?php echo "Üdvözöljük " . $_SESSION['uname']; ?></strong>
@@ -28,15 +41,7 @@
 		<span> &nbsp; | &nbsp; </span>
 	
 	<?php endif; ?>
-	<button class="menubutton" onclick="window.location.href='index.php?P=impressum';"><span>Impresszum</span></button>
-	<div class="dropdown">
-	  <span><button class="dropbtn">Szabályok</button><span>
-	  <div class="dropdown-content">
-	  <a href="index.php?P=blackJackRules">BlackJack</a>
-	  <a href="#">Poker</a>
-	  <a href="#">SlotMachin</a>
-	  </div>
-	</div>
+	<button class="menubutton" onclick="window.location.href='index.php?P=logout';"><span>Kilépés</span></button>
 <?php endif; ?>
 
 <hr>
