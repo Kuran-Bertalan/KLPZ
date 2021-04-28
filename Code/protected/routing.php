@@ -15,7 +15,7 @@ switch ($_GET['P']) {
 
 	case 'register': !IsUserLoggedIn() ? require_once PROTECTED_DIR.'user/register.php' : header('Location: index.php'); break;
 
-	case 'profile': require_once PROTECTED_DIR.'user/profile.php'; break;
+	case 'profile': !IsUserLoggedIn() ? require_once PROTECTED_DIR.'user/register.php' : header('Location: index.php'); break;
 
 	case 'logout': IsUserLoggedIn() ? UserLogout() : header('Location: index.php'); break;
 
