@@ -15,13 +15,15 @@ switch ($_GET['P']) {
 
 	case 'register': !IsUserLoggedIn() ? require_once PROTECTED_DIR.'user/register.php' : header('Location: index.php'); break;
 
-	case 'profile': !IsUserLoggedIn() ? require_once PROTECTED_DIR.'user/register.php' : header('Location: index.php'); break;
+	case 'profile': IsUserLoggedIn() ? require_once PROTECTED_DIR.'user/profile.php' : header('Location: index.php'); break;
 
 	case 'logout': IsUserLoggedIn() ? UserLogout() : header('Location: index.php'); break;
 
 	case 'users': IsUserLoggedIn() ? require_once PROTECTED_DIR.'user/user_list.php' : header('Location: index.php'); break;
 	
 	case 'blackJackRules':  require_once PROTECTED_DIR.'rules/blackJackRules.php'; break;
+	
+	case 'pokerRules':  require_once PROTECTED_DIR.'rules/pokerRules.php'; break;
 
 	case 'impressum':  require_once PROTECTED_DIR.'normal/impressum.php'; break;
 	

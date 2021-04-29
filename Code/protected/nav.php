@@ -15,7 +15,7 @@
 	  <span><button class="dropbtn">Szabályok</button><span>
 	  <div class="dropdown-content">
 	  <a href="index.php?P=blackJackRules">BlackJack</a>
-	  <a href="#">Poker</a>
+	  <a href="index.php?P=pokerRules">Poker</a>
 	  <a href="#">SlotMachin</a>
 	  </div>
 	</div>
@@ -28,11 +28,11 @@
 	  <div class="dropdown-content">
 	  <a href="index.php?P=blackJackGame">BlackJack</a>
 	  <a href="index.php?P=pokerGame">Poker</a>
-	  <a href="index.php?P=slotMachineGame">SlotMachin</a>
+	  <a href="index.php?P=slotMachineGame">SlotMachine</a>
 	  </div>
 	</div>
 	<form class="name">
-	<a href="index.php?P=profile"><img class="User" src="public/images/user.png" ></a>
+	<img class="User" onclick="window.location.href='index.php?P=profile';" src="public/images/user.png" >
 	<strong><?php echo "Üdvözöljük " . $_SESSION['uname']; ?></strong>
 	</form>
 	<?php if(isset($_SESSION['permission']) && $_SESSION['permission'] >= 1) : ?>
