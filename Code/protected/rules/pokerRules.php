@@ -86,11 +86,11 @@
 		<p class="szoveg">
 		Az első licitkört balra lévő első játékos kezdi meg, és három licitet tehet:
 		<br>
-		-Tartás (Call) tartja a tétet
+		- Tartás (Call) tartja a tétet
 		<br>
-		-Emelés (Raise) emeli a tétet, a limitszabályok szerint
+		- Emelés (Raise) emeli a tétet, a limitszabályok szerint
 		<br>
-		-Eldobás (Fold) eldobja a lapjait, színükkel lefelé, így kiesik a játékból
+		- Eldobás (Fold) eldobja a lapjait, színükkel lefelé, így kiesik a játékból
 		<br>
 		A licitkör bal irányba halad, és a játékosok licitálhatnak.
 		Ha csak tartották a tétet, akkor:
@@ -101,6 +101,13 @@
 		<br>
 		Ha egy játékos emeli a tétet, akkor megkezdődik a licitálás.
 		A licitkör végén az osztó összeszedi a téteket és a „Pot”-ba, a kasszába teszi.
+		</p>
+		
+		<h4> Flop (második licitkör) </h4>
+		<p class="szoveg">
+		Az osztó a pakli tetejéről levesz egy „Égető” lapot színnel lefelé fordítva, és a bedobott lapok, „Égetők” közé teszi (a csalások elkerülése végett).
+		Ezután az osztó kiosztja a három lapból álló közös lapokat, a „Flop”-ot, amelyeket színnel fölfelé helyez el az asztal közepén és így minden játékos látja.
+		Ezt követően a játék során megkezdődik a második licitkör.
 		</p>
 	</center>
 </body>
