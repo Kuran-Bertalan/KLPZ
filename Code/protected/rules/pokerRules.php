@@ -109,6 +109,29 @@
 		Ezután az osztó kiosztja a három lapból álló közös lapokat, a „Flop”-ot, amelyeket színnel fölfelé helyez el az asztal közepén és így minden játékos látja.
 		Ezt követően a játék során megkezdődik a második licitkör.
 		</p>
+		
+		<h4> Licitkör </h4>
+		<p class="szoveg">
+		A Pre-Flop licitkörtől eltérően, a flop utáni összes licitkört mindig az osztógombtól balra lévő első aktív játékos kezdheti,
+		és három licitet tehet:
+		<br>
+		- Passzolás (Check): passzol, nem hív tétet és nem dobja el a lapjait
+		<br>
+		- Nyitás (Bet): beteszi a nyitó tétet, a limitszabályok szerint
+		<br>
+		- Eldobás (Fold): eldobja a lapjait, színükkel lefelé, így kiesik a játékból
+		<br>
+		Ha egy játékos beteszi a nyitó tétet, a tőle balra lévő első aktív játékos három licitet tehet:
+		<br>
+		- Tartás (Call): tartja a tétet
+		<br>
+		- Emelés (Raise): emeli a tétet, a limitszabályok szerint
+		<br>
+		- Eldobás (Fold): eldobja a lapjait, színükkel lefelé, így kiesik a játékból
+		Ha egy játékos emeli a tétet, akkor megkezdődik a licitálás.
+		<br>
+		Egy licitkör végén az osztó összeszedi a téteket és a Potba teszi.
+		</p>
 	</center>
 </body>
 </html>
