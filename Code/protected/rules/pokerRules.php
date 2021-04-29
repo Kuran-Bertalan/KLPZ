@@ -14,6 +14,7 @@
 		Magyarországon 2000 előtt az ötlapos cserepókert játszották és csak a közelmúlt pókerláza hozta be a Texas Hold'em, Omaha, Kínai és más néven játszott változatok divatát.
 		Ezek részletes szabályait megtalálhatjuk a nagy számban működő póker weblapokon,magyar nyelvű póker könyvekben és folyóiratokban.
 		</p>
+		
 		<h4> Lapokról </h4>
 		<p class="szoveg">
 		Kártya: 52 lapos, francia, dzsókerek nélkül.
@@ -32,8 +33,9 @@
 		Minden szín egyenlő értékűnek számít a pókerkezek értékelésénél.
 		A 13 lap értékének sorrendje: A (ász), 2, 3, 4, 5, 6, 7, 8, 9, 10, J (bubi), Q (dáma), K (király)
 		Az ász nem csak az egyes számot jelöli, hanem a király után egy ász lap, vagyis a legmagasabb lapnak minősül.
+		</p>
 		
-		</p></p><h4> A játék célja: </h4>
+		<h4> A játék célja: </h4>
 		<p class="szoveg">
 		Minél magasabb rangú lapkombinációk gyűjtése a kézben,illetve a licitálás során az ellenfelek elrettentése.
 		Megnyeri a partit az a személy, aki a licitálás befejezése után az aktív játékosok közül a legértékesebb kombinációt mutatja be.
@@ -57,6 +59,27 @@
 		Póker: négy azonos rangú kártya és egy semleges lap. - Pókerek összehasonlításánál a magasabb rangú kártyák birtokosa nyer.
 		<br>
 		Sor-flös vagy színsor: rangban egymást követő, azonos színű lapok. - Két színsor közül erősebb a magas rangú lapokat bemutató kombináció.
+		</p>
+		
+		<h4> A játék menete </h4>
+		<p class="szoveg">
+		Az osztó egyesével ad kettő-kettő kártyát minden résztvevőnek jobbra vagy balra haladva.
+		Az osztást követően a játékosok felmérik esélyeiket és az alábbi lehetőségek közül választhatnak:
+		<br>
+		- 1, 2 vagy 3 lap cseréje
+		<br>
+		- 1 lap kérése nyitottan az asztalra
+		<br>
+		- 5 lap cseréje
+		<br>
+		fenti lehetőségek kihasználása nélkül a kártyák eldobása.
+		A játékos csendes szemlélője lehet a további eseményeknek.
+		<br>
+		<br>
+		A játékosok leteszik cserére szánt lapjaikat és csak ezt követpen kapnak kártyákat az osztótól.
+		A lerakott lapokat a továbbiakban nem lehet megnézni.
+		A lapcsere befejezése után a játékosok bemutatják lapjaikat és a leírtak szerinti legmagasabb rangú kombinációt bemutató személy nyeri meg a partit.
+		A licitálásnak számtalan változata van. Fontos körülmény, hogy a póker szabályainak részleteiről a játék megkezdése előtt a résztvevőknek meg kell állapodniuk!
 		</p>
 	</center>
 </body>
