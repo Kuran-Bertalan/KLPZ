@@ -13,8 +13,8 @@
 		A játékleírások - elsősorban angol nyelven - több tucatnyi pókerváltozatot említenek.
 		Magyarországon 2000 előtt az ötlapos cserepókert játszották és csak a közelmúlt pókerláza hozta be a Texas Hold'em, Omaha, Kínai és más néven játszott változatok divatát.
 		Ezek részletes szabályait megtalálhatjuk a nagy számban működő póker weblapokon,magyar nyelvű póker könyvekben és folyóiratokban.
-			
-		</p><h4> Lapokról </h4>
+		</p>
+		<h4> Lapokról </h4>
 		<p class="szoveg">
 		Kártya: 52 lapos, francia, dzsókerek nélkül.
 		<br>
@@ -38,6 +38,25 @@
 		Minél magasabb rangú lapkombinációk gyűjtése a kézben,illetve a licitálás során az ellenfelek elrettentése.
 		Megnyeri a partit az a személy, aki a licitálás befejezése után az aktív játékosok közül a legértékesebb kombinációt mutatja be.
 		Lapjainak bemutatása nélkül nyerhet az a játékos, aki ellenfél nélkül, egyedül marad a licitálásban.
+		</p>
+		
+		<h4> A lapkombinációk: </h4>
+		<p class="szoveg">
+		Pár: két azonos rangú lap + három semleges kártya. Két pár közül a magasabb rangú lapokból álló nyer.
+		<br>
+		Két pár: 2 + 2 azonos rangú és egy semleges lap. Két pár + 2 pár összehasonlításnál az a játékos nyer, akinek a legmagasabb rangú pár van a kezében. Ezek azonosságánál a második párok rangja dönt.
+		<br>
+		Drill: három azonos rangú és két semleges lap. - Drillek összehasonlításánál a magasabb rangú lapok birtokosa nyer.
+		<br>
+		Sor: rangban egymást követő, különböző színű lapok. - Két sor összehasonlításánál nyer a magasabb rangú kártyákat bemutató játékos.
+		<br>
+		Flös vagy szín: azonos színű lapok, rangjuk semleges. - Két flös összehasonlításnál az a játékos nyer, akinek kombinációja a legmagasabb rangú kártyát tartalmazza.
+		<br>
+		Full: drill és pár, azaz három azonos rangú és két azonos rangú kártya. - A fullok összehasonlításánál a drillek döntenek, akinek magsabb rangú lapokat tartalmaznak, megnyeri a játékot.
+		<br>
+		Póker: négy azonos rangú kártya és egy semleges lap. - Pókerek összehasonlításánál a magasabb rangú kártyák birtokosa nyer.
+		<br>
+		Sor-flös vagy színsor: rangban egymást követő, azonos színű lapok. - Két színsor közül erősebb a magas rangú lapokat bemutató kombináció.
 		</p>
 	</center>
 </body>
