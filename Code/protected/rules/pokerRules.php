@@ -181,6 +181,23 @@
 		<br>
 		Ha egy játékos bejelenti az All-int és azt egy vagy több játékos tartja, és ha további emelés a leosztásban már nem lehetséges, akkor az aktív játékosok a saját lapjaikat színükkel felfelé fordítják.
 		</p>
+		
+		<h4> Osztó </h4>
+		<p class="szoveg">
+		Az osztó kezeli a kártyákat, megkeveri és kiosztja azokat, és a szabályok szerint felügyeli és vezényli a játékot.
+		Egy pókerasztalnál mindig van egy osztó (Dealer) pozíció, ahol egy játékvezető az osztó, aki nem vesz részt a játékban.
+		Az osztógomb (Dealer Button) jelzi a „játékos osztó”-t, aki az osztó lenne a játékban.
+		Ha nincs játékvezető, akkor a játékosok is oszthatnak, ebben az esetben is jelzi az osztógomb a játékos osztót, aki az osztó lesz és részt vesz a játékban.
+		A legelső játék előtt a játékvezető kisorsolja a játékos osztót úgy, hogy minden játékosnak oszt egy lapot színnel felfelé,
+		és akinek a legnagyobb értékű (a legmagasabb értékű az ász) lapja van, az a játékos lesz a játékos osztó, egyenlő értékű lap esetén a színsorrend dönt.
+		Ha nincs játékvezető, a játékosok bármilyen más módon is eldönthetik a játékos osztót; ezt a pozíciót mindig meg kell állapítani, mert fontos szerepe van a játékban.
+		<br>
+		<br>
+		Az osztó megkeveri a paklit, és ha játékos osztó, akkor felajánlja a tőle jobbra lévő játékosnak a pakli elemelését.
+		A lapok kiosztása előtt a kisvak beteszi a kisvak-tétet, a nagyvak pedig a nagyvak-tétet.
+		Az osztó az első lapot a kisvaknak, majd továbbhaladva bal irányba minden játékosnak két körben, körönként egy-egy zárt lapot oszt ki.
+		Ezután kezdődik a Pre-Flop (az első licitkör), amely eltér a játékban lévő többi licitkörtől.
+		</p>
 	</center>
 </body>
 </html>
