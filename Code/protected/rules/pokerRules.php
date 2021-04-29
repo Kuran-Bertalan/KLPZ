@@ -137,6 +137,13 @@
 		<p class="szoveg">
 		Az osztó leoszt egy égető lapot az égetők közé és egy „Turn” kártyát a közös lapok közé. Így már négy közös lapot látnak a játékosok. Ezt követően a harmadik licitkör kezdődik.
 		</p>
+		
+		<h4> River (negyedik licitkör) </h4>
+		<p class="szoveg">
+		Az osztó az égetők közé leoszt még egy lapot, és leosztja a közös lapok közé az utolsó, ötödik, úgynevezett „River” kártyát.
+		Most már mindenkinek hét lapja van és ezek közül ötöt kell felhasználni ahhoz, hogy kialakítson egy pókerkezet, ami valószínűleg erősebb, mint a többi játékosé.
+		Ekkor az utolsó, negyedik licitkör kezdődik, és mikor befejeződött, az osztó megkéri az aktív játékosokat, hogy fedjék fel a lapjaikat.
+		</p>
 	</center>
 </body>
 </html>
