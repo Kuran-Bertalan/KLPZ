@@ -160,6 +160,27 @@
 		<br>
 		A következő osztás előtt az osztógombot mindig eggyel balra kell tenni, így minden játékban más a játékos osztó, és mások adják a vakokat is.
 		</p>
+		
+		<h4> All-in és a potok </h4>
+		<p class="szoveg">
+		A licitálás során előfordulhat, hogy valakinek kevesebb a zsetonja, és ezért nem tudja tartani a teljes tétet, vagy emelést;
+		ekkor all-int jelent be. Ha kettőnél több aktív játékos maradt, akkor a saját lapjaikat nem fordítják színükkel felfelé, és a potot több részre osztják:
+		<br>
+		- Main pot: ide kerül a tétek azon része, amit minden játékos tudott tartani
+		<br>
+		- Side pot: ide kerül a tétek azon része, amit nem minden játékos tudott tartani
+		<br>
+		A kevés zsetonértékű játékos a további emelésekben már nem vehet részt, minden további zseton a side potba kerül.
+		A végén minden potot külön-külön lehet megnyerni, és csak azoknak a játékosoknak a lapjai számítanak, akik az adott potba zsetont tettek.
+		<br>
+		<br>
+		Példa:
+		<br>
+		Van három játékos és 10 zseton a hívás, de az egyiknek már csak 6 zsetonja van.
+		Ilyenkor a main potba 18 (3×6) kerül, míg a side potba 8 (2×4). A side pot a két játékos között fog eldőlni, míg a main potra mind a hárman pályázhatnak.
+		<br>
+		Ha egy játékos bejelenti az All-int és azt egy vagy több játékos tartja, és ha további emelés a leosztásban már nem lehetséges, akkor az aktív játékosok a saját lapjaikat színükkel felfelé fordítják.
+		</p>
 	</center>
 </body>
 </html>
