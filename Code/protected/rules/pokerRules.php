@@ -132,6 +132,11 @@
 		<br>
 		Egy licitkör végén az osztó összeszedi a téteket és a Potba teszi.
 		</p>
+		
+		<h4> Turn (harmadik licitkör) </h4>
+		<p class="szoveg">
+		Az osztó leoszt egy égető lapot az égetők közé és egy „Turn” kártyát a közös lapok közé. Így már négy közös lapot látnak a játékosok. Ezt követően a harmadik licitkör kezdődik.
+		</p>
 	</center>
 </body>
 </html>
