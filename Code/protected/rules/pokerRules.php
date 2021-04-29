@@ -81,6 +81,27 @@
 		A lapcsere befejezése után a játékosok bemutatják lapjaikat és a leírtak szerinti legmagasabb rangú kombinációt bemutató személy nyeri meg a partit.
 		A licitálásnak számtalan változata van. Fontos körülmény, hogy a póker szabályainak részleteiről a játék megkezdése előtt a résztvevőknek meg kell állapodniuk!
 		</p>
+		
+		<h4> Pre-Flop (első licitkör) </h4>
+		<p class="szoveg">
+		Az első licitkört balra lévő első játékos kezdi meg, és három licitet tehet:
+		<br>
+		-Tartás (Call) tartja a tétet
+		<br>
+		-Emelés (Raise) emeli a tétet, a limitszabályok szerint
+		<br>
+		-Eldobás (Fold) eldobja a lapjait, színükkel lefelé, így kiesik a játékból
+		<br>
+		A licitkör bal irányba halad, és a játékosok licitálhatnak.
+		Ha csak tartották a tétet, akkor:
+		<br>
+		- a minimum téttel meg kell emelnie a saját tétjét, vagy el kell dobnia a lapjait.
+		<br>
+		- a nagyvak tartja, így nem tesz be újabb tétet, vagy emeli a tétet, vagy eldobja a lapjait.
+		<br>
+		Ha egy játékos emeli a tétet, akkor megkezdődik a licitálás.
+		A licitkör végén az osztó összeszedi a téteket és a „Pot”-ba, a kasszába teszi.
+		</p>
 	</center>
 </body>
 </html>
