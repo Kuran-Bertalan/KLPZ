@@ -144,6 +144,22 @@
 		Most már mindenkinek hét lapja van és ezek közül ötöt kell felhasználni ahhoz, hogy kialakítson egy pókerkezet, ami valószínűleg erősebb, mint a többi játékosé.
 		Ekkor az utolsó, negyedik licitkör kezdődik, és mikor befejeződött, az osztó megkéri az aktív játékosokat, hogy fedjék fel a lapjaikat.
 		</p>
+		
+		<h4> Showdown (mutatás) </h4>
+		<p class="szoveg">
+		Amennyiben az utolsó licitkör befejezése után egynél több játékos marad játékban, úgy az utolsó emelő mutatja meg elsőnek a lapjait.
+		Ha az utolsó körben senki sem licitált, úgy az osztógombtól balra lévő első aktív játékos mutatja meg elsőnek a lapjait.
+		Akinek a bemutatott pókerkéznél rosszabb pókerkeze van, az nem köteles bemutatni (Muck).
+		A potot a legerősebb pókerkezet birtokló játékos nyeri el.
+		<br>
+		Abban az esetben, ha kettő vagy több játékos egyforma pókerkezet mutat fel, akkor a pot egyenlő arányban szétosztásra kerül.
+		Ha a pot értéke egyenlő arányban nem osztható el, akkor az osztógombtól balra lévő első aktív játékost illeti meg a többlet.
+		A játékosoknak mindig be kell mondaniuk és mutatniuk az általuk elért legerősebb pókerkezet, ellenkező esetben semmilyen követelésre nem tarthatnak igényt a közös potot illetően.
+		<br>
+		Ha a licitálások során bármikor előfordul, hogy egy tétet vagy emelést senki sem tart, akkor az utoljára emelő játékos automatikusan nyer, függetlenül attól, hogy milyen lapjai vannak, és nem köteles a saját lapjait megmutatni.
+		<br>
+		A következő osztás előtt az osztógombot mindig eggyel balra kell tenni, így minden játékban más a játékos osztó, és mások adják a vakokat is.
+		</p>
 	</center>
 </body>
 </html>
