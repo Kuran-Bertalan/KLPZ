@@ -198,6 +198,21 @@
 		Az osztó az első lapot a kisvaknak, majd továbbhaladva bal irányba minden játékosnak két körben, körönként egy-egy zárt lapot oszt ki.
 		Ezután kezdődik a Pre-Flop (az első licitkör), amely eltér a játékban lévő többi licitkörtől.
 		</p>
+		
+		<h4> Licitálás </h4>
+		<p class="szoveg">
+		Manapság a pókerben zsetonokat, „Chip”-eket használnak a licitáláshoz, ami a készpénzt helyettesíti a játék során.
+		A licitkörben a licitálás mindig bal irányba halad, és minden „aktív játékos” (aki még nem dobta el a lapjait) licitál,
+		és addig folytatódik, amíg az aktív játékosok az emelt tétet tovább már nem emelik, csak tartják, vagy a lapjaikat eldobják.
+		A licitálások, az emelések száma a limitszabályoknak megfelelően történhetnek.
+		A licitálás első része a lapok kiosztása után történik. Az osztótól elsőként lapot kapó játékos nyilatkozik.
+		Megállapodás vagy tetszés szerinti összeggel nyithat. Csak az a játékos maradhat versenyben, aki a hívott összeget megadja.
+		Mindenkinek joga van a hívás megadása (tartása) mellett emelni a tétet. Ez lehet a hívott összeg, vagy annak többszöröse.
+		A licitálásból bármelyik pillanatban ki lehet szállni, de ekkor elvész az alapdíj és a játékos által addig befizetett minden tét.
+		A licitálás második része a lapcsere után következik. Annak folyamata megegyezik az előbb leírtakkal.
+		A licitálás befejeztével a még aktív játékosok bemutatják kombinációikat és a legrangosabb tulajdonosa viheti el a kasszában összegyűlt téteket.
+		Korábban elnyeri a kasszát az a játékos, aki ellenfeleit elijesztve egyedül marad a licitálásban.
+		</p>
 	</center>
 </body>
 </html>
