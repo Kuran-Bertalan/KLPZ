@@ -213,6 +213,13 @@
 		A licitálás befejeztével a még aktív játékosok bemutatják kombinációikat és a legrangosabb tulajdonosa viheti el a kasszában összegyűlt téteket.
 		Korábban elnyeri a kasszát az a játékos, aki ellenfeleit elijesztve egyedül marad a licitálásban.
 		</p>
+		
+		<h4> Blöff </h4>
+		<p class="szoveg">
+		A póker fontos eleme az ún. "blöffölés".
+		<br>
+		Ennek célja, hogy a gyenge lappal rendelkező játékos a licitálásban merészségével eldobassa az ellenfelek kártyáit.
+		</p>
 	</center>
 </body>
 </html>
