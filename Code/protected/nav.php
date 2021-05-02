@@ -16,7 +16,7 @@
 	  <div class="dropdown-content">
 	  <a href="index.php?P=blackJackRules">BlackJack</a>
 	  <a href="index.php?P=pokerRules">Poker</a>
-	  <a href="#">SlotMachin</a>
+	  <a href="index.php?P=slotMachineRules">Slot-Machine</a>
 	  </div>
 	</div>
 <?php if(!IsUserLoggedIn()) : ?>

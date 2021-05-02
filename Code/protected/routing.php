@@ -25,6 +25,8 @@ switch ($_GET['P']) {
 	
 	case 'pokerRules':  require_once PROTECTED_DIR.'rules/pokerRules.php'; break;
 
+	case 'slotMachineRules':  require_once PROTECTED_DIR.'rules/slotMachineRules.php'; break;
+
 	case 'impressum':  require_once PROTECTED_DIR.'normal/impressum.php'; break;
 	
 
