@@ -14,5 +14,10 @@
         A gépet egy 5 centessel lehetett üzemeltetni, és mivel ez egy elhanyogolható összeg így a szegényebb rétegnek is 
         megvolt a saját szerencsepróbája.
 		</p>
+        <h4> A mechanizmus </h4>
+        <p class="szoveg">
+        A Slot-Machine-nek azaz a Nyerőgépnek a legfőbb mechanizmusa a szerencse, 
+        a gépek eltérhetnek 3 szimbólumos és 5 szimbólumos között, a mi oldalunkon egy 3 szimbólumos gép található.
+        </p>
 </body>
 </html>
