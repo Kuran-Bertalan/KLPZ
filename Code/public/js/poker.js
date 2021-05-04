@@ -231,3 +231,18 @@ function displayResults(int){
         "Gépnek van: "+ computersBest.toString();
     document.getElementById("player-money").innerHTML= "$"+playerMoney;
 }
+
+function bet(int){
+    if(playerMoney<=0){
+        alert('100$ hozzáadva');
+        playerMoney = 100;
+        document.getElementById("player-money").innerHTML = "$" + playerMoney;
+        return;
+    }
+    my_bet = int === -1 ? playerMoney :int;
+    show_cards(sharedCards,deck);
+    show_cards(computersCards,computer_hand);
+    document.getElementById("pregame-controls").style.display='flex';
+    document.getElementById("in-game-controls").style.display='none';
+    displayResults(my_bet);
+}
