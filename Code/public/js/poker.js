@@ -75,3 +75,16 @@ function Hand(fiveCards){
     });
     this_hand.sort()
 };
+
+
+// Kéz rendezés
+Hand.prototype.sort = function(){
+    this.cardValueCount.sort(function(a,b){
+        if(a[1] < b[1]){return 1}
+        else if(a[1] > b[1]){ return -1; }
+        else if(a[0] > b[0]){ return -1; }
+        else if(a[0] < b[0]){ return 1; }
+        else{ return 0; }
+    })
+
+};
