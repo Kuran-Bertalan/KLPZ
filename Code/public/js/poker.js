@@ -34,3 +34,14 @@ function k_combinations(set, k) {
     }
     return combs;
 }
+
+// Kártya
+function Card(int){
+    var values = ['2','3','4','5','6','7','8','9','10','J','Q','K','A'];
+
+    var suits = ['&clubs;', '&diams;','&hearts;','&spades;'];
+
+    this.suit = Math.floor(int/13);
+    this.value = Math.floor(int%13);
+    this.string = values[this.value]+ ""+ suits[this.suit]+' '
+}
