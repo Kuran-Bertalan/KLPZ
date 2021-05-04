@@ -7,7 +7,7 @@
 </head>
 <body>
 	<center style="height:100%">
-		<h1>‎‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎‏‏‎ ‎Blackjack</h1>
+		<h1>‎‎‏‏‎‎‏‏‎‎‎‏‎Blackjack</h1>
 		<h3 id="message"></h3>
 		<h4 id="money"></h4>
 		<table style="width:50%">

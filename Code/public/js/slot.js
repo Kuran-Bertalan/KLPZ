@@ -147,9 +147,9 @@ $(document).ready(function() {
     function printResult() {
         var res;
         if(win[a.pos] === win[b.pos] && win[a.pos] === win[c.pos]) {
-            res = "You Win!";
+            res = "BIG LOOT Nyertél 5000 zsetont";
         } else {
-            res = "You Lose";
+            res = "Vesztettél";
         }
         $('#result').html(res);
     }
@@ -161,11 +161,11 @@ $(document).ready(function() {
 
 $('#control').click(function() {
    var x;
-   if(this.innerHTML == "Start") {
+   if(this.innerHTML == "Kezdés") {
        a.start();
        b.start();
        c.start();
-       this.innerHTML = "Stop";
+       this.innerHTML = "Leállítás";
        
        disableControl(); 
     
@@ -175,11 +175,11 @@ $('#control').click(function() {
                window.clearInterval(x);
            }
        }, 100);
-   } else if(this.innerHTML == "Stop") {
+   } else if(this.innerHTML == "Leállítás") {
        a.stop();
        b.stop();
        c.stop();
-       this.innerHTML = "Reset";
+       this.innerHTML = "Újraindítás";
 
        disableControl();
        
@@ -194,7 +194,7 @@ $('#control').click(function() {
        a.reset();
        b.reset();
        c.reset();
-       this.innerHTML = "Start";
+       this.innerHTML = "Kezdés";
    }
 });
 });

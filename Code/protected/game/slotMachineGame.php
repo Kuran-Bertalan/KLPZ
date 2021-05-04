@@ -3,7 +3,8 @@
 <head>
 	<meta charset ="UTF-8"/>
 	<title>SlotMachine</title>
-	<style>
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet">
+<style>
 body {
 	font-family:verdana,arial;
 	padding:20px;
@@ -29,14 +30,6 @@ body {
 .motion {
 	background:url("public/images/reel_blur.png") repeat-y;
 }
-button {
-	display:block;
-	width:138px;
-	height:33px;
-	margin:20px 60px;
-	font-size:16px;
-	cursor:pointer;
-}
 #result {
 	margin:20px 0;
 	font-size:18px;
@@ -55,6 +48,31 @@ button {
 }
 .clear {
 	clear:both;
+}
+.slotbutton {
+  top: 0;
+  left: 0;
+  transition: all .15s linear 0s;
+  position: relative;
+  display: inline-block;
+  padding: 15px 25px;
+  background-color: #FFE800;
+  
+  text-transform: uppercase;
+  color: #404040;
+  font-family: arial;
+  letter-spacing: 1px;
+  
+  box-shadow: -6px 6px 0 #404040;
+  text-decoration: none;
+}
+
+.slotbutton:hover {background-color: #fa853c}
+
+.slotbutton:active {
+  background-color: #fa853c;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
 }
 </style>
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
@@ -75,7 +93,11 @@ button {
 			<div class="clear"></div>
 		</div>
 		<div id="result"></div>
-		<div><button id="control" name="control">Pörgesd</button></div>
+	<div class="bd">
+		<h1></h1>
+		<h1></h1>
+		<div><button id="control" class="slotbutton">Pörgesd</button></div>
+	</div>
 	</div>
 </div>
 </body>

@@ -9,7 +9,7 @@
 <body>
     <h2>Üdvözlünk az oldalon!</h2>
 	    <div class="fooldalszoveg">
-	    Jelentkezz be és már játszhatsz is, ha még nincs fiókod, akkor pedig regisztrálj, hogy részt vegyél a 4 különféle szerencsejátékban.
+	    Jelentkezz be és már játszhatsz is, ha még nincs fiókod, akkor pedig regisztrálj, hogy részt vegyél a 3 különféle szerencsejátékban.
         <br>
         Ha nem lennél tisztában a szabályokkal nyugodtan böngészd át a "Szabályok" aloldalt, minden játékról találsz információt.
         <br>
