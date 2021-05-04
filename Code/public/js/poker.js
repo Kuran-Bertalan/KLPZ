@@ -172,3 +172,15 @@ function createHands(){
     computersBest = computerHands.sort(sort_poker_hands)[0];
 
 }
+
+function show_cards(hand_el, hand){
+    for (i = 0 ; i < hand.length; i++) {
+        if(hand[i]==null){
+            hand_el[i].innerHTML = '';
+        }
+        else {
+            var current_card = new Card(hand[i]);
+            hand_el[i].innerHTML = current_card.string;
+        }
+    }
+}
