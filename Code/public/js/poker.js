@@ -88,3 +88,9 @@ Hand.prototype.sort = function(){
     })
 
 };
+
+// Rank ellenőrzés
+
+Hand.prototype.rank = function(){
+    return this.uniqValues == 5 ? this.checkSrtFls.call(this) : this.checkPairs.call(this)
+};
