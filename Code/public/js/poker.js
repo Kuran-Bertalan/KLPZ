@@ -114,3 +114,7 @@ Hand.prototype.checkPairs = function() {
     //two of a kind
     else {return 2}
 };
+
+Hand.prototype.checkStraight = function(){
+    return this.cardValueCount[0][0] - this.cardValueCount[4][0] === 4;
+};
