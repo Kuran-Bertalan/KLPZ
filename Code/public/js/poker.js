@@ -212,3 +212,11 @@ function deal() {
     document.getElementById("player-hand").innerHTML="";
     document.getElementById("computer-hand").innerHTML="";
 }
+
+// Nyert fél kiirása
+function winningMessage(int){
+    winner = sort_poker_hands(playerBest,computersBest);
+    if (winner === -1) {playerMoney+=int; return "Te nyertél!";}
+    else if(winner === 1) {playerMoney-=int; return"Gép nyert!"}
+    else{ return "Döntetlen"; }
+}
