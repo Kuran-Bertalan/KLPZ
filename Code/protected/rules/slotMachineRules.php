@@ -18,6 +18,12 @@
         <p class="szoveg">
         A Slot-Machine-nek azaz a Nyerőgépnek a legfőbb mechanizmusa a szerencse, 
         a gépek eltérhetnek 3 szimbólumos és 5 szimbólumos között, a mi oldalunkon egy 3 szimbólumos gép található.
+        Élőben egy kart szükséges meghúzni, hogy a kijelző (régebben forgó mechanikus "orsók"-on) megpörögjön 
+        és egy pár másodperces pörgés után megálljon és kimutassa a nyertes három (vagy akár kettő) szimbólumot vagy szerencsétlenebb esetben a különféle szimbólumokat.
+        <br>
+        Az oldalunkon, mivel, hogy egy virtuális Slot-Machine-t készítettünk így picit változtattunk ezen a megszokott ábrázolásan.
+        Itt egy gombot kell megnyomni, hogy "meghúzzuk" a kart és pörögjen a kijelzőn lévő 3 ikon, ahhoz, hogy megállítsuk még egyszer megkell nyomni ugyanazt a gombot, ennek hatására pici késleltetéssel de meg áll a gép.
+        Ekkor megkapjuk a 3 szimbólumot ami ha elég szerencsések vagyunk ugyanazokat fogja ábrázolni.
         </p>
 </body>
 </html>
