@@ -128,3 +128,4 @@ Hand.prototype.toString= function(){
     var cards = this.fiveCards.map(function(card){ h =new Card(card); return " "+ h.string;});
     return strings[this.rank_int];
 };
+
