@@ -94,3 +94,11 @@ Hand.prototype.sort = function(){
 Hand.prototype.rank = function(){
     return this.uniqValues == 5 ? this.checkSrtFls.call(this) : this.checkPairs.call(this)
 };
+
+Hand.prototype.checkSrtFls = function(){
+    var isStraight = (this.checkStraight.call(this));
+    if(this.isFlush && isStraight){ return 9 }
+    else if(this.isFlush){ return 6 }
+    else if(isStraight){ return 5 }
+    else{return 1}
+};
