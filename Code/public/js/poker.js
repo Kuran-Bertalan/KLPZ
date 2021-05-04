@@ -118,3 +118,13 @@ Hand.prototype.checkPairs = function() {
 Hand.prototype.checkStraight = function(){
     return this.cardValueCount[0][0] - this.cardValueCount[4][0] === 4;
 };
+
+// HTML-be átirás
+Hand.prototype.toString= function(){
+
+    var strings = ['nil','Magas Lap','Egy Pár',"Két Pár",
+        "Drill", "Sor", "Flös","Full House", "Póker",
+        "Színsor" ];
+    var cards = this.fiveCards.map(function(card){ h =new Card(card); return " "+ h.string;});
+    return strings[this.rank_int];
+};
