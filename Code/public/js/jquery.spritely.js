@@ -19,7 +19,7 @@
 							total += w;
 						}
 					}
-					
+
 					if (options.rewind == true) {
 						if ($._spritely.instances[el_id]['current_frame'] <= 0) {
 							$._spritely.instances[el_id]['current_frame'] = frames.length - 1;
@@ -37,9 +37,9 @@
 					var yPos = $._spritely.getBgY(el);
 					el.css('background-position', frames[$._spritely.instances[el_id]['current_frame']] + 'px ' + yPos);
 					if (options.bounce && options.bounce[0] > 0 && options.bounce[1] > 0) {
-						var ud = options.bounce[0];
-						var lr = options.bounce[1];
-						var ms = options.bounce[2];
+						var ud = options.bounce[0]; // up-down
+						var lr = options.bounce[1]; // left-right
+						var ms = options.bounce[2]; // milliseconds
 						el
 							.animate({top: '+=' + ud + 'px', left: '-=' + lr + 'px'}, ms)
 							.animate({top: '-=' + ud + 'px', left: '+=' + lr + 'px'}, ms);
@@ -74,7 +74,8 @@
 						$._spritely.instances[el_id]['l'] = ($._spritely.instances[el_id]['l'] + (options.speed || 1)) || 0;
                                                 $._spritely.instances[el_id]['t'] = $._spritely.getBgY(el).replace('px', '');
 					}
-					var bg_left = $._spritely.instances[el_id]['l'].toString();
+
+                                        var bg_left = $._spritely.instances[el_id]['l'].toString();
                                         if (bg_left.indexOf('%') == -1) {
                                             bg_left += 'px ';
                                         } else { bg_left += ' '; }
@@ -158,12 +159,12 @@
 			} else {
 				$._spritely.animate(options);
 			}
-			return this;
+			return this; 
 		},
 		sprite: function(options) {
 			var options = $.extend({
 				type: 'sprite',
-				bounce: [0, 0, 1000]
+				bounce: [0, 0, 1000] 
 			}, options || {});
 			return $(this).spritely(options);
 		},
@@ -172,7 +173,7 @@
 				type: 'pan',
 				dir: 'left',
 				continuous: true,
-				speed: 1 
+				speed: 1 // 1 pixel per frame
 			}, options || {});
 			return $(this).spritely(options);
 		},
@@ -180,7 +181,7 @@
 			var options = $.extend({
 				el_to_move: null,
 				type: 'moveToTap',
-				ms: 1000,
+				ms: 1000, // milliseconds
 				do_once: true
 			}, options || {});
 			if (options.el_to_move) {
@@ -287,7 +288,7 @@
 				$('#' + el_id).spRandom(options);
 			}, options.speed + options.pause)
 			return this;
-		}, 
+		},
 		makeAbsolute: function() {
 			return this.each(function() {
 				var el = $(this);
@@ -371,7 +372,7 @@
 			return this;
 		},
 		spState: function(n) {
-			$(this).each(function() {
+			$(this).each(function() {				
 				var yPos = ((n - 1) * $(this).height()) + 'px';
 				var xPos = $._spritely.getBgX($(this));
 				var bp = xPos + ' -' + yPos;
@@ -407,6 +408,8 @@
 			return this;
 		}
 	})
-	try {
-		document.execCommand("BackgroundImageCache", false, true);
-	  } catch(err) {} 
+})(jQuery);
+
+try {
+  document.execCommand("BackgroundImageCache", false, true);
+} catch(err) {} 
