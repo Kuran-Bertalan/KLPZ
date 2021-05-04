@@ -231,7 +231,7 @@ function displayResults(int){
         "Gépnek van: "+ computersBest.toString();
     document.getElementById("player-money").innerHTML= "$"+playerMoney;
 }
-
+// Tét rakás
 function bet(int){
     if(playerMoney<=0){
         alert('100$ hozzáadva');
@@ -245,4 +245,14 @@ function bet(int){
     document.getElementById("pregame-controls").style.display='flex';
     document.getElementById("in-game-controls").style.display='none';
     displayResults(my_bet);
+}
+// Egyenleg újratöltést
+
+function refill(){
+    if(playerMoney > 0){
+        alert("Még van pénzed")
+    }else {
+        playerMoney = 100;
+        document.getElementById("player-money").innerHTML = "$" + playerMoney;
+    }
 }
