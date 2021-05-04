@@ -149,3 +149,9 @@ function print_hand(deck,name){
     var str1 = deck.map(function(card){ var h = new Card(card); return h.string;});
     return str +str1;
 }
+
+// deck változó
+var deck = [] , i, player_hand, computer_hand,
+    allPlayerHands, allComputerHands, playersHands,
+    computerHands, playerBest, computersBest, winner,
+    player_full_hand,computer_full_hand, playerMoney;
