@@ -1,0 +1,215 @@
+
+.poker-game-container * {
+  color: yellow;
+  box-sizing: border-box; }
+
+.poker-game-container {
+  max-width: 500px;
+  max-height: 400px;
+  height: 100vh;
+  width: 100vw;
+  margin: auto; }
+  .poker-game-container .poker-header {
+    background: transparent;
+    font-size: 30px;}
+
+.table {
+  padding-top: 10px;
+  margin: auto;
+  background: transparent;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-content: space-around; }
+  .table .table-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center; }
+  .table .player, .table .computer {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around; }
+    .table .player .player-info, .table .player .computer-info, .table .computer .player-info, .table .computer .computer-info {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between; }
+    .table .player .player-hand, .table .player .computer-hand, .table .computer .player-hand, .table .computer .computer-hand {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around; }
+      .table .player .player-hand .card, .table .player .computer-hand .card, .table .computer .player-hand .card, .table .computer .computer-hand .card {
+        margin-right: 10px; }
+    .table .player .message, .table .computer .message {
+      width: 40%;
+      min-height: 80%;
+      display: flex;
+      flex-direction: column; }
+  .table .controls {
+    padding-top: 10px;
+    background: transparent; }
+    .table .controls button {
+      padding: 8px;
+      margin-right: 5px;
+      font-size: 12px;
+      background: transparent;
+      border-radius: 50px; }
+      .table .controls button:hover {
+        background: yellow;
+        color: #3CB043; }
+
+.player-info, .computer-info {
+  flex-direction: column; }
+  .player-info .img, .computer-info .img {
+    width: 70px;
+    height: 70px;
+    background: grey; }
+  .player-info .name, .computer-info .name {
+    font-size: 12px;
+    display: flex;
+    justify-content: center; }
+  .player-info .money, .computer-info .money {
+    font-size: 11px;
+    display: flex;
+    justify-content: center;
+    color: white; }
+
+.card {
+  border-radius: 5px;
+  font-size: 35px;
+  width: 70px;
+  height: 100px;
+  background: green;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+#in-game-controls {
+  display: none; }
+
+.img_player {
+  background: yellow;
+  width: 70px;
+  height: 70px; }
+  
+.img-users {
+  width: 70px;
+  height: 70px;
+}
+
+.name .money {
+  display: flex;
+  justify-content: center;
+  color: white; }
+
+.box {
+  margin-right: 5px;
+  background: #333;
+  border: 5px solid palegreen;
+  border-radius: 5px; }
+
+.container {
+  display: block;
+  margin: auto;
+  height: 100vh;
+  width: 100vh; }
+  @media only screen and (max-width: 40em) {
+    .container {
+      height: 100vw;
+      width: 100vw; } }
+
+.body * {
+  box-sizing: border-box; }
+
+.board {
+  max-width: 700px;
+  height: 70%;
+  width: 70%;
+  display: block;
+  margin: auto;
+  background: white; }
+ 
+
+.grid-container {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  height: 100%;
+  border: 1px solid; }
+
+.row {
+  display: flex;
+  flex: 1;
+  flex-direction: row; }
+
+.column {
+  display: flex;
+  flex: 1;
+  flex-direction: column; }
+
+.s-box {
+  border: 1px solid #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 5vmin;
+  font-weight: 600; }
+
+.inner-grid {
+  border: 1px solid #333; }
+
+#grid-3, #grid-5 {
+  background: #777; }
+
+#grid-1, #grid-7 {
+  background: #999; }
+
+.hover:hover {
+  background: yellow; }
+
+.numbers, .controls {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-self: center; }
+
+.numbers {
+  height: 20%; }
+
+.controls {
+  height: 10%; }
+
+.number {
+  display: flex;
+  flex-direction: row;
+  box-sizing: border-box;
+  height: 50%;
+  width: 20%;
+  background: #336CD5;
+  border: 2px solid palegreen;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  font-size: 5vmin; }
+  .number:hover {
+    background: #656CD5; }
+
+.container1 {
+  border: 1px solid yellow;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+  width: 100vh; }
+
+.active-numbers {
+  background: palegreen; }
+
+.duplicate-numbers {
+  background: plum; }
+
