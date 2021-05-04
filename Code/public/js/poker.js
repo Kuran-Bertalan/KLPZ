@@ -184,3 +184,10 @@ function show_cards(hand_el, hand){
         }
     }
 }
+
+var allCards = document.getElementsByClassName('card');
+show_cards(allCards, [null,null,null,null,null,null,null,null,null]);
+
+var sharedCards = document.getElementsByClassName("shared-card");
+var playersCards = document.getElementsByClassName("player-card");
+var computersCards = document.getElementsByClassName("computer-card");
