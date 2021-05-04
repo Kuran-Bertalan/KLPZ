@@ -129,3 +129,23 @@ Hand.prototype.toString= function(){
     return strings[this.rank_int];
 };
 
+
+function sort_poker_hands(hand1,hand2){
+    if(hand1.rank_int < hand2.rank_int){return 1}
+    else if(hand1.rank_int > hand2.rank_int){ return -1; }
+    else{
+        for(var i = 0; i < hand1.cardValueCount.length; i++){
+            if(hand1.cardValueCount[i][0] < hand2.cardValueCount[i][0]){return 1}
+            else if(hand1.cardValueCount[i][0] > hand2.cardValueCount[i][0]){return -1}
+        }
+        return 0;
+    }
+}
+
+// Játék rész
+
+function print_hand(deck,name){
+    var str= name + ": ";
+    var str1 = deck.map(function(card){ var h = new Card(card); return h.string;});
+    return str +str1;
+}
