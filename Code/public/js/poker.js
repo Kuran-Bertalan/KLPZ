@@ -191,3 +191,24 @@ show_cards(allCards, [null,null,null,null,null,null,null,null,null]);
 var sharedCards = document.getElementsByClassName("shared-card");
 var playersCards = document.getElementsByClassName("player-card");
 var computersCards = document.getElementsByClassName("computer-card");
+
+// Játék inditása
+function deal() {
+    deck =[];
+    while (deck.length <= 8) {
+        var randomNum = Math.floor((Math.random() * 52) );
+        if (deck.indexOf(randomNum) == -1){
+            deck.push(randomNum)
+        }
+    }
+    createHands();
+    show_cards(sharedCards, [null,null,null,null,null]);
+    show_cards(playersCards, player_hand);
+    show_cards(computersCards,[null,null]);
+    document.getElementById("pregame-controls").style.display='none';
+    document.getElementById("in-game-controls").style.display='flex';
+
+    document.getElementById("player-message").innerHTML='Tegyél tétet';
+    document.getElementById("player-hand").innerHTML="";
+    document.getElementById("computer-hand").innerHTML="";
+}
