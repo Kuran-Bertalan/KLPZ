@@ -58,3 +58,20 @@ function Hand(fiveCards){
     this.uniqValues = this.cardValueCount.length;
     this.rank_int = this.rank()
 }
+
+// Kártya hozzá adás a kézhez
+
+    this_hand = this;
+    this.cardValueCount.push([cards.pop(),1]);
+    cards.forEach(function(card){
+        var found =false;
+        for (var i in this_hand['cardValueCount']){
+            if(this_hand['cardValueCount'][i][0] == card){
+                this_hand['cardValueCount'][i][1] +=1;
+                found = true;
+                break;}
+        }
+        if ( !found ){ this_hand['cardValueCount'].push([card,1]); }
+    });
+    this_hand.sort()
+};
