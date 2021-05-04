@@ -220,3 +220,14 @@ function winningMessage(int){
     else if(winner === 1) {playerMoney-=int; return"Gép nyert!"}
     else{ return "Döntetlen"; }
 }
+
+// Kezek kiiratása
+
+function displayResults(int){
+    document.getElementById("player-message").innerHTML= winningMessage(int);
+    document.getElementById("player-hand").innerHTML=
+        "Neked van: "+ playerBest.toString();
+    document.getElementById("computer-hand").innerHTML=
+        "Gépnek van: "+ computersBest.toString();
+    document.getElementById("player-money").innerHTML= "$"+playerMoney;
+}
