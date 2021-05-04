@@ -1,3 +1,7 @@
+///////////////////////////////////////////////
+//////////////    Helpers  //////////////////////
+//////////////////////////////////////////////
+
 Array.prototype.allValuesSame = function() {
 
     for(var i = 1; i < this.length; i++)
@@ -24,6 +28,7 @@ function k_combinations(set, k) {
         }
         return combs;
     }
+    // Assert {1 < k < set.length}
     combs = [];
     for (i = 0; i < set.length - k + 1; i++) {
         head = set.slice(i, i+1);
@@ -35,7 +40,10 @@ function k_combinations(set, k) {
     return combs;
 }
 
-// Kártya
+///////////////////////////////////////////////
+//////////////    Card  //////////////////////
+//////////////////////////////////////////////
+
 function Card(int){
     var values = ['2','3','4','5','6','7','8','9','10','J','Q','K','A'];
 
@@ -46,7 +54,9 @@ function Card(int){
     this.string = values[this.value]+ ""+ suits[this.suit]+' '
 }
 
-// Kéz
+///////////////////////////////////////////////
+//////////////POKER HAND//////////////////////
+//////////////////////////////////////////////
 
 function Hand(fiveCards){
     this.fiveCards = fiveCards;
@@ -59,8 +69,8 @@ function Hand(fiveCards){
     this.rank_int = this.rank()
 }
 
-// Kártya hozzá adás a kézhez
-
+Hand.prototype.addCards = function(cards){
+    // push first card
     this_hand = this;
     this.cardValueCount.push([cards.pop(),1]);
     cards.forEach(function(card){
@@ -70,14 +80,12 @@ function Hand(fiveCards){
                 this_hand['cardValueCount'][i][1] +=1;
                 found = true;
                 break;}
-        }
+        }//end for in loop
         if ( !found ){ this_hand['cardValueCount'].push([card,1]); }
-    });
+    });//end for each loop
     this_hand.sort()
 };
 
-
-// Kéz rendezés
 Hand.prototype.sort = function(){
     this.cardValueCount.sort(function(a,b){
         if(a[1] < b[1]){return 1}
@@ -88,8 +96,6 @@ Hand.prototype.sort = function(){
     })
 
 };
-
-// Rank ellenőrzés
 
 Hand.prototype.rank = function(){
     return this.uniqValues == 5 ? this.checkSrtFls.call(this) : this.checkPairs.call(this)
@@ -103,8 +109,6 @@ Hand.prototype.checkSrtFls = function(){
     else{return 1}
 };
 
-// Pár ellenőrzés
-
 Hand.prototype.checkPairs = function() {
     pair_count = this.cardValueCount[0][1];
     //four of kind or full house
@@ -116,10 +120,10 @@ Hand.prototype.checkPairs = function() {
 };
 
 Hand.prototype.checkStraight = function(){
+    // console.log(this.cardValueCount[0][0]-this.cardValueCount[4][0])
     return this.cardValueCount[0][0] - this.cardValueCount[4][0] === 4;
 };
 
-// HTML-be átirás
 Hand.prototype.toString= function(){
 
     var strings = ['nil','Magas Lap','Egy Pár',"Két Pár",
@@ -129,10 +133,10 @@ Hand.prototype.toString= function(){
     return strings[this.rank_int];
 };
 
-
 function sort_poker_hands(hand1,hand2){
     if(hand1.rank_int < hand2.rank_int){return 1}
     else if(hand1.rank_int > hand2.rank_int){ return -1; }
+    //tie-breaker
     else{
         for(var i = 0; i < hand1.cardValueCount.length; i++){
             if(hand1.cardValueCount[i][0] < hand2.cardValueCount[i][0]){return 1}
@@ -140,25 +144,29 @@ function sort_poker_hands(hand1,hand2){
         }
         return 0;
     }
+
+
 }
 
-// Játék rész
-
+///////////////////////////////////////////////
+//////////////    Game    ////////////////////
+//////////////////////////////////////////////
 function print_hand(deck,name){
     var str= name + ": ";
     var str1 = deck.map(function(card){ var h = new Card(card); return h.string;});
     return str +str1;
 }
 
-// deck változó
+//create deck arr [0..9] inclusive
+//just need nine cards for two players
 var deck = [] , i, player_hand, computer_hand,
     allPlayerHands, allComputerHands, playersHands,
     computerHands, playerBest, computersBest, winner,
     player_full_hand,computer_full_hand, playerMoney;
-	
-playerMoney =100;
 
+playerMoney =100;
 function createHands(){
+    //get and create all hand combination
     player_hand = [deck.pop(),deck.pop()];
     computer_hand = [deck.pop(),deck.pop()];
     player_full_hand = player_hand.concat(deck);
@@ -166,6 +174,7 @@ function createHands(){
     allPlayerHands = k_combinations(player_full_hand,5);
     allComputerHands = k_combinations(computer_full_hand ,5);
 
+    //get best hands from each player
     playersHands = allPlayerHands.map(function(hand){ return new Hand(hand)});
     computerHands = allComputerHands.map(function(hand){ return new Hand(hand)});
     playerBest = playersHands.sort(sort_poker_hands)[0];
@@ -176,14 +185,19 @@ function createHands(){
 function show_cards(hand_el, hand){
     for (i = 0 ; i < hand.length; i++) {
         if(hand[i]==null){
-            hand_el[i].innerHTML = '';
+            hand_el[i].innerHTML = '-';
         }
         else {
+            //var card_el = hand_el[i];
             var current_card = new Card(hand[i]);
             hand_el[i].innerHTML = current_card.string;
+            //card_el = hand_el[i];
+            //card_el.innerHTML = current_card.string;
         }
+
     }
 }
+
 
 var allCards = document.getElementsByClassName('card');
 show_cards(allCards, [null,null,null,null,null,null,null,null,null]);
@@ -192,16 +206,19 @@ var sharedCards = document.getElementsByClassName("shared-card");
 var playersCards = document.getElementsByClassName("player-card");
 var computersCards = document.getElementsByClassName("computer-card");
 
-// Játék inditása
+
 function deal() {
     deck =[];
     while (deck.length <= 8) {
         var randomNum = Math.floor((Math.random() * 52) );
+        //if not in deck
         if (deck.indexOf(randomNum) == -1){
             deck.push(randomNum)
         }
     }
     createHands();
+    //player_hand = [deck.pop(),deck.pop()];
+    //computer_hand = [deck.pop(),deck.pop()];
     show_cards(sharedCards, [null,null,null,null,null]);
     show_cards(playersCards, player_hand);
     show_cards(computersCards,[null,null]);
@@ -213,16 +230,12 @@ function deal() {
     document.getElementById("computer-hand").innerHTML="";
 }
 
-// Nyert fél kiirása
 function winningMessage(int){
     winner = sort_poker_hands(playerBest,computersBest);
     if (winner === -1) {playerMoney+=int; return "Te nyertél!";}
     else if(winner === 1) {playerMoney-=int; return"Gép nyert!"}
     else{ return "Döntetlen"; }
 }
-
-// Kezek kiiratása
-
 function displayResults(int){
     document.getElementById("player-message").innerHTML= winningMessage(int);
     document.getElementById("player-hand").innerHTML=
@@ -231,7 +244,7 @@ function displayResults(int){
         "Gépnek van: "+ computersBest.toString();
     document.getElementById("player-money").innerHTML= "$"+playerMoney;
 }
-// Tét rakás
+
 function bet(int){
     if(playerMoney<=0){
         alert('100$ hozzáadva');
@@ -246,8 +259,11 @@ function bet(int){
     document.getElementById("in-game-controls").style.display='none';
     displayResults(my_bet);
 }
-// Egyenleg újratöltést
-
+function showDealer(int){
+    playerMoney -= int;
+    document.getElementById("player-money").innerHTML= "$"+playerMoney;
+    show_cards(computersCards,computer_hand);
+}
 function refill(){
     if(playerMoney > 0){
         alert("Még van pénzed")
