@@ -102,3 +102,15 @@ Hand.prototype.checkSrtFls = function(){
     else if(isStraight){ return 5 }
     else{return 1}
 };
+
+// Pár ellenőrzés
+
+Hand.prototype.checkPairs = function() {
+    pair_count = this.cardValueCount[0][1];
+    //four of kind or full house
+    if(this.uniqValues === 2){ return pair_count == 4 ? 8 : 7}
+    //three of kind and two pair
+    else if(this.uniqValues === 3){ return pair_count == 3 ? 4 : 3}
+    //two of a kind
+    else {return 2}
+};
