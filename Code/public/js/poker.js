@@ -45,3 +45,16 @@ function Card(int){
     this.value = Math.floor(int%13);
     this.string = values[this.value]+ ""+ suits[this.suit]+' '
 }
+
+// Kéz
+
+function Hand(fiveCards){
+    this.fiveCards = fiveCards;
+    var values = fiveCards.map(function(card){return card % 13}) ;
+    var suits = fiveCards.map(function(card){return Math.floor(card/13)}) ;
+    this.isFlush = suits.allValuesSame();
+    this.cardValueCount = [];
+    this.addCards(values);
+    this.uniqValues = this.cardValueCount.length;
+    this.rank_int = this.rank()
+}
