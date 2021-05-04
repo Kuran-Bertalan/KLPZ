@@ -155,3 +155,20 @@ var deck = [] , i, player_hand, computer_hand,
     allPlayerHands, allComputerHands, playersHands,
     computerHands, playerBest, computersBest, winner,
     player_full_hand,computer_full_hand, playerMoney;
+	
+playerMoney =100;
+
+function createHands(){
+    player_hand = [deck.pop(),deck.pop()];
+    computer_hand = [deck.pop(),deck.pop()];
+    player_full_hand = player_hand.concat(deck);
+    computer_full_hand = computer_hand.concat(deck);
+    allPlayerHands = k_combinations(player_full_hand,5);
+    allComputerHands = k_combinations(computer_full_hand ,5);
+
+    playersHands = allPlayerHands.map(function(hand){ return new Hand(hand)});
+    computerHands = allComputerHands.map(function(hand){ return new Hand(hand)});
+    playerBest = playersHands.sort(sort_poker_hands)[0];
+    computersBest = computerHands.sort(sort_poker_hands)[0];
+
+}
