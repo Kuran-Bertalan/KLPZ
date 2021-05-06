@@ -25,5 +25,21 @@
         Itt egy gombot kell megnyomni, hogy "meghúzzuk" a kart és pörögjen a kijelzőn lévő 3 ikon, ahhoz, hogy megállítsuk még egyszer megkell nyomni ugyanazt a gombot, ennek hatására pici késleltetéssel de meg áll a gép.
         Ekkor megkapjuk a 3 szimbólumot ami ha elég szerencsések vagyunk ugyanazokat fogja ábrázolni.
         </p>
+        <h4> A játékunk menete </h4>
+        <p class="szoveg">
+        Amint a felhasználó az oldalra érkezik egy egyértelmű és letisztult kezelőfelület fog látni:
+        <br>
+        • A "PÖRGESD" gombbal "éleszük" fel a gépünket, ezzel érzékeli, hogy egy játékos szeretné kipróbálni a szerencséjét rajta.
+        <br>
+        • Ekkor a gomb felirata megváltozik "KEZDÉS"-re, ha ezt megnyomja a felhasználó a gép már el is kezd pörögni.
+        <br>
+        • Ekkor a gomb felirata megváltozik "KEZDÉS"-re, ha ezt megnyomja a felhasználó a gép már el is kezd pörögni.
+        <br>
+        • Amint a nyerőgépünk elkezd pörögni a gomb felirata átvált "LEÁLLÍTÁS"-ra, amit egy pár másodperc elteltével meg is nyomhatunk, 
+        ha megnyomjuk szépen lassan leáll a gép és kimutatja a nyerő szimbólumokat.
+        <br>
+        • Ha a szerencse nekünk kedvezett megjelenik a "Nyertél" felirat, máskülönben a "Vesztettél". A gomb felirata átvált "ÚJRAINDÍTÁSRA", ezt megnyomva a játékos újra kezdheti a szórakozást.
+        </p>
+
 </body>
 </html>
