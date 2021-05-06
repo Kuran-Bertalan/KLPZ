@@ -13,10 +13,10 @@
 		<table style="width:50%">
 			<tr>
 				<td style="width:50%" id="deck">Pakli helye</td>
-				<td style="width:50%" id="dealerHand">Osztó lapjai helye</td>
+				<td style="width:50%" id="dealerHand">Osztó lapjainak a helye</td>
 			</tr>
 			<tr>
-				<td style="width:50%" id="playerHand">Felhúzott lapok helye</td>
+				<td style="width:50%" id="playerHand">Felhúzott lapjaink helye</td>
 				<td style="width:50%">
 					<button id="hit" name="hit">Lapot</button>
 					<button id="stand" name="stand">Megállás</button>

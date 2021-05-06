@@ -28,7 +28,7 @@
 	  <div class="dropdown-content">
 	  <a href="index.php?P=blackJackGame">BlackJack</a>
 	  <a href="index.php?P=pokerGame">Poker</a>
-	  <a href="index.php?P=slotMachineGame">SlotMachine</a>
+	  <a href="index.php?P=slotMachineGame">Slot-Machine</a>
 	  </div>
 	</div>
 	<form class="name">
