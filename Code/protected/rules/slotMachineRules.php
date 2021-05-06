@@ -40,6 +40,12 @@
         <br>
         • Ha a szerencse nekünk kedvezett megjelenik a "Nyertél" felirat, máskülönben a "Vesztettél". A gomb felirata átvált "ÚJRAINDÍTÁSRA", ezt megnyomva a játékos újra kezdheti a szórakozást.
         </p>
-
+        <h4> Nyeremény, tétek </h4>
+        <p class="szoveg">
+        A játékunkon természetesen lehet nyerni is bizonyos összegeket. A felhasználó elég bátor feltehet bármennyi zsetont tétnek, 
+        és kipróbálhatja a szerencséjét komolyabban is.
+        A "Tét" mellett lévő kockába beírhatja azt az összeget amit óhajt felrakni. Ha ez kész már csak a szerencsére kell bízni a többit.
+        Ha a játékos netán nyer, a gép a feltett összeg duplájával jutalmazza a szerencsés felhasználót.
+        </p>
 </body>
 </html>
