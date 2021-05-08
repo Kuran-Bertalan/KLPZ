@@ -1,5 +1,3 @@
-
-
 <?php 
 require_once USER_MANAGER;
   if($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['newpassword'])) {
@@ -16,44 +14,83 @@ require_once USER_MANAGER;
         echo "A jelszó nem tartalmazhat szóközt!";
       } else if ($postDatapw['newpassword'] != $postDatapw['newpassword1']) {
         echo "A jelszavak nem egyeznek!";       
-      }else {
-        if(!changePassword($postDatapw['id'], $postDatapw['newpassword'])) {
-          echo "Hiba a jelszó módosításnál!";
-        }
+      }else if(!changePassword($postDatapw['id'], $postDatapw['newpassword'])) {
+        echo "Hiba a jelszó módosításnál!";
       }
+	  else{echo 'Sikeres jelszóváltoztatás!';}
     }
-	
-
 	$postData['password'] = $postData['password1'] = "";
 ?>
 
-<div class="changepw">
-  <form method="POST" class="changepwform">
-    <input type="password" name="newpassword" placeholder="Adja meg az új jelszavát" id="newpassword"><i id="npw" class="fa fa-eye" aria-hidden="true""></i>
-    <input type="password" name="newpassword1" placeholder="Erősítse meg a jelszavát" id="newpassword1"><i id="npw2" class="fa fa-eye" aria-hidden="true""></i>
-    <input type="submit" name="npwsubmit" value="Jelszó módosítás">
-  </form>
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Kaszinó - Profil <?=$_SESSION['uname']; ?></title>
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<!-- Saját CSS -->
+	<link rel="stylesheet" type="text/css" href="<?php echo PUBLIC_DIR.'css/profile.css'; ?>">
+</head>
+<body>
+<div class="page-content page-container" id="page-content">
+    <div class="padding">
+        <div class="row container d-flex justify-content-center">
+            <div class="col-xl-6 col-md-12">
+                <div class="card user-card-full">
+                    <div class="row m-l-0 m-r-0">
+                        <div class="col-sm-4 bg-c-lite-green user-profile">
+                            <div class="card-block text-center text-white">
+                                <div class="m-b-25"> <img src="public/images/user.png" class="img-radius" alt="User-Profile-Image"> </div>
+                                <h6 class="f-w-600"><?=$_SESSION['uname']; ?></h6>
+                                <p><?=$_SESSION['permission'] == 1 ? 'Admin' : ($_SESSION['permission'] == 2 ? 'Bónusz Felhasználó' : 'Felhasználó'); ?></p> <i class=" mdi mdi-square-edit-outline feather icon-edit m-t-10 f-16"></i>
+                            </div>
+                        </div>
+                        <div class="col-sm-8">
+                            <div class="card-block">
+                                <h6 class="m-b-20 p-b-5 b-b-default f-w-600">Információk</h6>
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <p class="m-b-10 f-w-600">Email</p>
+                                        <h6 class="text-muted f-w-400"><?=$_SESSION['email']; ?></h6>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <p class="m-b-10 f-w-600">Egyenleg</p>
+                                        <h6 class="text-muted f-w-400"><?=$_SESSION['balance']; ?></h6>
+                                    </div>
+                                </div>
+                                <h6 class="m-b-20 m-t-40 p-b-5 b-b-default f-w-600">Játékra vonatkozó</h6>
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <p class="m-b-10 f-w-600">Engedélyzett felhasználó</p>
+                                        <h6 class="text-muted f-w-400"><?=$_SESSION['validated'] == 1 ? 'Igen' : ($_SESSION['validated'] == 2 ? 'Feldolgozás alatt' : 'Nem'); ?></h6>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <p class="m-b-10 f-w-600">Bónusz kód</p>
+                                        <h6 class="text-muted f-w-400"><?=$_SESSION['bonuscode'] > 0 ? 'Használt' : 'Nem használt'; ?></h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+			<div class="changepw">
+			  <form method="POST" class="changepwform">
+				<input type="password" name="newpassword" placeholder="Adja meg az új jelszavát" id="newpassword"><i id="npw" class="fa fa-eye" aria-hidden="true"></i>
+				<input type="password" name="newpassword1" placeholder="Erősítse meg a jelszavát" id="newpassword1"><i id="npw2" class="fa fa-eye" aria-hidden="true"></i>
+				<input type="submit" name="npwsubmit" value="Jelszó módosítás">
+			  </form>
+			</div>
+        </div>
+    </div>
 </div>
 
-<div>
-  <table>
-    <tr>
-      <td>Felhasználónév: </td>
-      <td><?=$_SESSION['uname']; ?></td>
-    </tr>
-    <tr>
-      <td>Email: </td>
-      <td><?=$_SESSION['email']; ?></td>
-    </tr>
-    <tr>
-      <td>Jogosultság: </td>
-      <td><?=$_SESSION['permission'] == 3 ? 'Admin' : ($_SESSION['permission'] == 2 ? 'Prémium felhasználó' : 'Felhasználó'); ?></td>
-    </tr>
-    <?php if($_SESSION['permission'] < 3) : ?>
-      <tr>
-        <td>Egyenleg: </td>
-        <td><?=$_SESSION['balance'] ?></td>
-      </tr>
-    <?php endif; ?>
-  </table>
-</div>
+</body>
+</html>
+
+
+
+
+
