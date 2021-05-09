@@ -1,14 +1,14 @@
 <?php 
-function AddCard($userid, $number, $expdate, $securitycode, $cardname) {
+function AddCard($userid, $cardnumber, $expdate, $securitycode, $cardname) {
     $query = "SELECT id FROM creditcards WHERE number = :number";
-    $params = [':number' => $number];
+    $params = [':number' => $cardnumber];
     require_once DATABASE_CONTROLLER;
     $record = getRecord($query, $params);
     if(empty($record)) {
         $query = "INSERT INTO creditcards (userid, number, expdate, securitycode, cardname) VALUES (:userid, :number, :expdate, :securitycode, :cardname)";
         $params = [ 
                 ':userid' => $userid,
-                ':number' => $number,
+                ':number' => $cardnumber,
                 ':expdate' => $expdate,
                 ':securitycode' => $securitycode,
                 ':cardname' => $cardname
