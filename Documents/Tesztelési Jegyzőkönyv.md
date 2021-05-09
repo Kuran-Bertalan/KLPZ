@@ -196,6 +196,21 @@ A tesztkoordinátor juttatja el a projektmenedzsernek a tesztelési jelentést.
 |  Szervezeti egység/ beosztás: | Adatbázis fejlesztő  |
 |  Dátum: |  2021.05.07 18:10  |
 
+### 5.3 Tesztelési jegyzőkönyv - 3. Profil szerkesztés funkció
+
+|   |   |
+|---|---|
+| A teszt-eset leírás és célja:  |  A felhasználó tudja módositani az adatait  |
+| A tesztelt folyamat/funkció leírása:  |  A felhasználó tudja módositani az adatait  |
+| A tesztelés előfeltételei:  |  A programnak rendelkeznie kell minimum egy dummy adatbázissal  |
+| A tesztelés dátuma és időpontja:  |  2021.05.06. 10:31 |
+| A tesztadatok típusa:  | szöveg |
+| A tesztet végző személy(ek):  | Zsadányi Rózsa  |
+| A tesztelt rendszer beállításai:  | A program specifikációjában szereplő alap beállítások  |
+| A teszt-eset elvárt eredménye:  |  A specifikációban taglalt viselkedés |
+| A tesztelés eredménye:  | **Megfelelt/élesíthető**  |
+| Megjegyzések:  | -  |
+
 ## #1: GUI teszt:
 ## #2:Adatbázis teszt:
 ## #3:Adatbázis Connection teszt:
