@@ -265,4 +265,28 @@ A tesztkoordinátor juttatja el a projektmenedzsernek a tesztelési jelentést.
 |  Szervezeti egység/ beosztás: | Vezető adatbázis fejlesztő  |
 |  Dátum: |  2021.05.09 16:30  |
 
+### 5.6 Tesztelési jegyzőkönyv - 6. PHP oldalak kapcsolata, szerkesztése
+
+|   |   |
+|---|---|
+| A teszt-eset leírás és célja:  |  A fejlesztő képes legyen a PHP oldalakkal kommunikálni, illetve azokat kezelni.  |
+| A tesztelt folyamat/funkció leírása:  |  Adott PHP fájlokat átírva is, tudják a fejlesztők, hogy hol, milyen problémát oldottak meg |
+| A tesztelés előfeltételei:  |  WAMP/XAMPP szerver elérése.  |
+| A tesztelés dátuma és időpontja:  |  2021.05.09. 16:40 |
+| A tesztadatok típusa:  | PHP szerveroldali script nyelv |
+| A tesztet végző személy(ek):  | Pusztai Dominik Tamás  |
+| A tesztelt rendszer beállításai:  | A program specifikációjában szereplő alap beállítások  |
+| A teszt-eset elvárt eredménye:  |  A specifikációban taglalt viselkedés |
+| A tesztelés eredménye:  | **Megfelelt/élesíthető**  |
+| Megjegyzések:  | -  |
+
+**Tesztelést elvégezte**
+
+|   |   |
+|---|---|
+|  Név: |  Pusztai Dominik Tamás |
+|  Szervezeti egység/ beosztás: | Adatbázis fejlesztő, Tester  |
+|  Dátum: |  2021.05.09 16:40  |
+
+
 ## #1: GUI teszt:
