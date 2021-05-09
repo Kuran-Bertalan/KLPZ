@@ -1,21 +1,21 @@
 <?php 
-function AddCard($userid, $name, $number, $expdate, $securitycode) {
+function AddCard($userid, $number, $expdate, $securitycode, $cardname) {
     $query = "SELECT id FROM creditcards WHERE number = :number";
     $params = [':number' => $number];
     require_once DATABASE_CONTROLLER;
     $record = getRecord($query, $params);
     if(empty($record)) {
-        $query = "INSERT INTO creditcards (userid, name, cardnumber, expdate, securitycode) VALUES (:userid, :cardname, :number, :expdate, :securitycode)";
+        $query = "INSERT INTO creditcards (userid, number, expdate, securitycode, cardname) VALUES (:userid, :number, :expdate, :securitycode, :cardname)";
         $params = [ 
                 ':userid' => $userid,
-                ':cardname' => $name,
                 ':number' => $number,
                 ':expdate' => $expdate,
-                ':securitycode' => $securitycode
+                ':securitycode' => $securitycode,
+                ':cardname' => $cardname
                 ];
         if(executeDML($query, $params))
         {
-            header('Location: index.php?P=profile.php');
+            header('Location: index.php?P=profile');
         }
     } 
     return false;
@@ -27,4 +27,15 @@ function CheckCard($id){
 		require_once DATABASE_CONTROLLER;
 	$record = getRecord($query, $params);
 	return !empty($record);
+}
+
+function DeleteCard($id){
+	$query = "DELETE FROM creditcards WHERE id = :id";
+	$params = [ ':id' => $id ];
+	require_once DATABASE_CONTROLLER;
+    if(executeDML($query, $params))
+		{
+			header('Location: index.php?P=profile');
+		}
+	return false;
 }

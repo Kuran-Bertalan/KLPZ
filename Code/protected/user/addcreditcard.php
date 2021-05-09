@@ -2,10 +2,10 @@
 	require_once USER_MANAGER;
 		if($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['submitCard'])) {
 			$postData = [
-				'cardname' => $_POST['cardname'],
 				'number' => $_POST['number'],
 				'expdate' => $_POST['expdate'],
 				'securitycode' => $_POST['securitycode'],
+				'cardname' => $_POST['cardname']
 			];
 			if(empty($postData['cardname']) || empty($postData['number']) || empty($postData['expdate']) || empty($postData['securitycode'])) {
 				echo "Hiányzó adat(ok)!";
@@ -27,9 +27,9 @@
 				echo "A biztonsági kód csak három karakter lehet!";
 			} else if(!is_numeric(($postData['securitycode']))) {
 				echo "A biztonsági kód csak szám lehet!";
-			} else {
+			} else{
 				require_once CARD_MANAGER;
-				if(!AddCard($_SESSION['uid'], $postData['cardname'], $postData['number'], $postData['expdate'], $postData['securitycode'])) {
+				if(!AddCard($_SESSION['uid'], $postData['number'], $postData['expdate'], $postData['securitycode'], $postData['cardname'])) {
 					echo "A bankkártya hozzáadása nem sikerült!";
 				}
 			}
@@ -45,10 +45,10 @@
 <body>
 	<form method="POST">
 		<div class="addcard">
-			<input type="text" name="cardname" placeholder="Név" value="<?=isset($postData) ? $postData['cardname'] : "";?>">
 			<input type="text" name="number" placeholder="Kártyaszám" maxlength="16" value="<?=isset($postData) ? $postData['number'] : "";?>">
 			<input type="text" name="expdate" placeholder="Lejárati év" maxlength="4" value="<?=isset($postData) ? $postData['expdate'] : "";?>">
 			<input type="text" name="securitycode" placeholder="Biztonsági kód" maxlength="3" value="<?=isset($postData) ? $postData['securitycode'] : "";?>">
+			<input type="text" name="cardname" placeholder="Név" value="<?=isset($postData) ? $postData['cardname'] : "";?>">
 			<button type="submit" name="submitCard">Kártya hozzáadása</button>
 		</div>
 	</form>
