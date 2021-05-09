@@ -219,6 +219,29 @@ A tesztkoordinátor juttatja el a projektmenedzsernek a tesztelési jelentést.
 |  Szervezeti egység/ beosztás: | Adatbázis fejlesztő  |
 |  Dátum: |  2021.05.06 11:58  |
 
+### 5.4 Tesztelési jegyzőkönyv - 4. CSS stíluslapok szerkesztése
+
+|   |   |
+|---|---|
+| A teszt-eset leírás és célja:  |  A fejlesztő képes legyen megváltoztatni az oldal kinézeteit  |
+| A tesztelt folyamat/funkció leírása:  |  A fejlesztő egyértelműen tudja módosítani a css stílusállományokat, hogy a kollégák is értsék. |
+| A tesztelés előfeltételei:  |  A PHP oldalakhoz hozzá kell kötni legalább egy css fájlt.  |
+| A tesztelés dátuma és időpontja:  |  2021.05.09. 16:20 |
+| A tesztadatok típusa:  | Lépcsőzetes stíluslap-dokumentum |
+| A tesztet végző személy(ek):  | Lehóczky Csaba  |
+| A tesztelt rendszer beállításai:  | A program specifikációjában szereplő alap beállítások  |
+| A teszt-eset elvárt eredménye:  |  A specifikációban taglalt viselkedés |
+| A tesztelés eredménye:  | **Megfelelt/élesíthető**  |
+| Megjegyzések:  | -  |
+
+**Tesztelést elvégezte**
+
+|   |   |
+|---|---|
+|  Név: |  Lehóczky Csaba |
+|  Szervezeti egység/ beosztás: | Vezető adatbázis fejlesztő  |
+|  Dátum: |  2021.05.09 16:20  |
+
 ## #1: GUI teszt:
 ## #2:Adatbázis teszt:
 ## #3:Adatbázis Connection teszt:
