@@ -26,9 +26,7 @@ class Deck {
   constructor() {
     this.cards = [];
     this.fillDeck();
-    this.test = this.cards[0];
-    this.shuffle();
-    this.test1 = this.cards[0];
+    this.drawOne();
   }
 
   fillDeck() {
@@ -52,6 +50,14 @@ class Deck {
       this.cards[currentIndex] = this.cards[randomIndex];
       this.cards[randomIndex] = temp;
     }
+  }
+
+  drawOne() {
+    if (this.cards.length == 0) {
+      this.fillDeck();
+      this.shuffle();
+    }
+    return this.cards.pop();
   }
 }
 module.exports = new Deck();

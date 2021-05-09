@@ -1,5 +1,5 @@
 const shuffle = require("./shuffle-deck");
 
-test("Shuffle deck test", () => {
-  expect(shuffle).not.toBe(0);
+test("Deck fill test", () => {
+  expect(shuffle.test).not.toBe(shuffle.test1);
 });

@@ -22,14 +22,20 @@ Card.VALUES = [
   "Q",
   "K",
 ];
+class Deck {
+  constructor() {
+    this.cards = [];
+    this.fillDeck();
+  }
 
-function fillDeck() {
-  cards = [];
-  for (let i = 0; i < Card.SUITS.length; i++) {
-    for (let j = 0; j < Card.VALUES.length; j++) {
-      let card = new Card(Card.SUITS[i], Card.VALUES[j]);
-      cards.push(card);
+  fillDeck() {
+    this.cards = [];
+    for (let i = 0; i < Card.SUITS.length; i++) {
+      for (let j = 0; j < Card.VALUES.length; j++) {
+        let card = new Card(Card.SUITS[i], Card.VALUES[j]);
+        this.cards.push(card);
+      }
     }
   }
 }
-module.exports = fillDeck;
+module.exports = new Deck();
