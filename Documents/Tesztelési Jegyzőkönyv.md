@@ -125,6 +125,8 @@ A tesztkoordinátor juttatja el a projektmenedzsernek a tesztelési jelentést.
 |  Szervezeti egység/ beosztás: |   |
 |  Dátum: |   |
 
+
+
 ### 6.2 Tesztelési jelentés - 2. Példa
 |   |   |
 |---|---|
@@ -150,6 +152,20 @@ A tesztkoordinátor juttatja el a projektmenedzsernek a tesztelési jelentést.
 |  Név: |   |
 |  Szervezeti egység/ beosztás: |  |
 |  Dátum: |    |
+
+## 5. Tesztjegyzőkönyv
+
+|   |   |
+|---|---|
+| A teszt-eset leírás és célja:  | A bejelentkezés menüpont tesztelése |
+| A tesztelt folyamat/funkció leírása:  |  A felület viselkedése hibás felhasználónév / jelszó helyes megadása esetén, megfelelő adatok esetén, illetve többszöri hibás bevitelekor, továbbá új felhasználói fiók regisztrálása esetén sikeres-e.  |
+| A tesztelés előfeltételei:  |  A programnak rendelkeznie kell minimum egy dummy adatbázissal |
+| A tesztelés dátuma és időpontja:  |  2021.05.09 11:03 |
+| A tesztet végző személy(ek):  | Zsadányi Rózsa  |
+| A tesztelt rendszer beállításai:  | A program specifikációjában szereplő alap beálítások  |
+| A teszt-eset elvárt eredménye:  |  A specifikációban taglalt viselkedés |
+| A tesztelés eredménye:  | **Megfelelt/élesíthető**  |
+| Megjegyzések:  | -  |
 
 ## #1: GUI teszt:
 ## #2:Adatbázis teszt:
