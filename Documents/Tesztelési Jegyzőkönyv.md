@@ -167,6 +167,14 @@ A tesztkoordinátor juttatja el a projektmenedzsernek a tesztelési jelentést.
 | A tesztelés eredménye:  | **Megfelelt/élesíthető**  |
 | Megjegyzések:  | -  |
 
+**Tesztelést elvégezte**
+
+|   |   |
+|---|---|
+|  Név: |  Zsadányi Rózsa |
+|  Szervezeti egység/ beosztás: | Adatbázis fejlesztő  |
+|  Dátum: |  2021.05.09 13:10  |
+
 ## #1: GUI teszt:
 ## #2:Adatbázis teszt:
 ## #3:Adatbázis Connection teszt:
