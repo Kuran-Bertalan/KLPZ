@@ -26,6 +26,9 @@ class Deck {
   constructor() {
     this.cards = [];
     this.fillDeck();
+    this.test = this.cards[0];
+    this.shuffle();
+    this.test1 = this.cards[0];
   }
 
   fillDeck() {
@@ -35,6 +38,19 @@ class Deck {
         let card = new Card(Card.SUITS[i], Card.VALUES[j]);
         this.cards.push(card);
       }
+    }
+  }
+
+  shuffle() {
+    let currentIndex = this.cards.length;
+    let temp, randomIndex;
+    while (currentIndex != 0) {
+      randomIndex = Math.floor(Math.random() * currentIndex);
+      currentIndex -= 1;
+
+      temp = this.cards[currentIndex];
+      this.cards[currentIndex] = this.cards[randomIndex];
+      this.cards[randomIndex] = temp;
     }
   }
 }

@@ -26,6 +26,7 @@ class Deck {
   constructor() {
     this.cards = [];
     this.fillDeck();
+    this.drawOne();
   }
 
   fillDeck() {
@@ -36,6 +37,27 @@ class Deck {
         this.cards.push(card);
       }
     }
+  }
+
+  shuffle() {
+    let currentIndex = this.cards.length;
+    let temp, randomIndex;
+    while (currentIndex != 0) {
+      randomIndex = Math.floor(Math.random() * currentIndex);
+      currentIndex -= 1;
+
+      temp = this.cards[currentIndex];
+      this.cards[currentIndex] = this.cards[randomIndex];
+      this.cards[randomIndex] = temp;
+    }
+  }
+
+  drawOne() {
+    if (this.cards.length == 0) {
+      this.fillDeck();
+      this.shuffle();
+    }
+    return this.cards.pop();
   }
 }
 module.exports = new Deck();
