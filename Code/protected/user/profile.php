@@ -72,7 +72,11 @@ require_once USER_MANAGER;
                                     </div>
                                     <div class="col-sm-6">
                                         <p class="m-b-10 f-w-600">Bankkártya</p>
-                                        <h6 class="text-muted f-w-400"><?=$_SESSION['creditcard'] == 1 ? 'Használt' : 'Nem használt'; ?></h6>
+                                        <h6 class="text-muted f-w-400"><?=$_SESSION['creditcard'] == 1 ? 'Használt' :'Nem használt'; ?></h6>
+                                        <?php 
+                                        if($_SESSION['creditcard']==0):?>
+                                            <a href="index.php?P=creditcard">Bankkártya hozzáadása</button>
+                                            <?php endif; ?>
                                     </div>
                                 </div>
                             </div>
