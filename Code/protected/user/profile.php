@@ -70,6 +70,10 @@ require_once USER_MANAGER;
                                         <p class="m-b-10 f-w-600">Bónusz kód</p>
                                         <h6 class="text-muted f-w-400"><?=$_SESSION['bonuscode'] > 0 ? 'Használt' : 'Nem használt'; ?></h6>
                                     </div>
+                                    <div class="col-sm-6">
+                                        <p class="m-b-10 f-w-600">Bankkártya</p>
+                                        <h6 class="text-muted f-w-400"><?=$_SESSION['creditcard'] == 1 ? 'Használt' : 'Nem használt'; ?></h6>
+                                    </div>
                                 </div>
                             </div>
                         </div>
