@@ -154,7 +154,7 @@ A tesztkoordinátor juttatja el a projektmenedzsernek a tesztelési jelentést.
 |  Dátum: |    |
 
 ## 5. Tesztjegyzőkönyv
-
+### 5.1 Tesztelési jegyzőkönyv - 1. Bejelentkezés, regisztráció funkcó tesztelése
 |   |   |
 |---|---|
 | A teszt-eset leírás és célja:  | A bejelentkezés menüpont tesztelése |
@@ -174,6 +174,20 @@ A tesztkoordinátor juttatja el a projektmenedzsernek a tesztelési jelentést.
 |  Név: |  Zsadányi Rózsa |
 |  Szervezeti egység/ beosztás: | Adatbázis fejlesztő  |
 |  Dátum: |  2021.05.09 13:10  |
+
+### 5.2 Tesztelési jegyzőkönyv - 2. Bejelentkezés, jelszóhasználat tesztelése
+
+|   |   |
+|---|---|
+| A teszt-eset leírás és célja:  | A bejelentkezési jelszóhasználat tesztelése |
+| A tesztelt folyamat/funkció leírása:  |  A felület viselkedése jelszó hibás karakterhosszúsága / jelszó helyes megadása esetén, megfelelő karaketerek esetén,  illetve megfelelő betüméretek esetén sikeres-e.  |
+| A tesztelés előfeltételei:  |  A programnak rendelkeznie kell minimum egy dummy adatbázissal |
+| A tesztelés dátuma és időpontja:  |  2021.05.07 15:00 |
+| A tesztet végző személy(ek):  | Zsadányi Rózsa  |
+| A tesztelt rendszer beállításai:  | A program specifikációjában szereplő alap beálítások  |
+| A teszt-eset elvárt eredménye:  |  A specifikációban taglalt viselkedés |
+| A tesztelés eredménye:  | **Hibás**  |
+| Megjegyzések:  | A felhasználói jelszónál a számokat nem fogadta el, annak hiányát pótoltuk, kijavítottuk. |
 
 ## #1: GUI teszt:
 ## #2:Adatbázis teszt:
