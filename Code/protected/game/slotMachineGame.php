@@ -97,6 +97,9 @@ body {
 		<h1></h1>
 		<h1></h1>
 		<div><button id="control" class="slotbutton">Pörgesd</button></div>
+		<br>
+		<label for="bet">Tét:</label>
+		<input id="bet" name="bet" type="number" value="10">
 	</div>
 	</div>
 </div>

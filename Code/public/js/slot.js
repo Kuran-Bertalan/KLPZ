@@ -147,7 +147,7 @@ $(document).ready(function() {
     function printResult() {
         var res;
         if(win[a.pos] === win[b.pos] && win[a.pos] === win[c.pos]) {
-            res = "BIG LOOT Nyertél 5000 zsetont";
+            res = "BIG LOOT Nyertél!!!";
         } else {
             res = "Vesztettél";
         }
