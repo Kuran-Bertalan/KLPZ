@@ -125,6 +125,8 @@ A tesztkoordinátor juttatja el a projektmenedzsernek a tesztelési jelentést.
 |  Szervezeti egység/ beosztás: |   |
 |  Dátum: |   |
 
+
+
 ### 6.2 Tesztelési jelentés - 2. Példa
 |   |   |
 |---|---|
@@ -150,6 +152,72 @@ A tesztkoordinátor juttatja el a projektmenedzsernek a tesztelési jelentést.
 |  Név: |   |
 |  Szervezeti egység/ beosztás: |  |
 |  Dátum: |    |
+
+## 5. Tesztjegyzőkönyv
+### 5.1 Tesztelési jegyzőkönyv - 1. Bejelentkezés, regisztráció funkcó tesztelése
+|   |   |
+|---|---|
+| A teszt-eset leírás és célja:  | A bejelentkezés menüpont tesztelése |
+| A tesztelt folyamat/funkció leírása:  |  A felület viselkedése hibás felhasználónév / jelszó helyes megadása esetén, megfelelő adatok esetén, illetve többszöri hibás bevitelekor, továbbá új felhasználói fiók regisztrálása esetén sikeres-e.  |
+| A tesztelés előfeltételei:  |  A programnak rendelkeznie kell minimum egy dummy adatbázissal |
+| A tesztelés dátuma és időpontja:  |  2021.05.09 11:03 |
+| A tesztet végző személy(ek):  | Zsadányi Rózsa  |
+| A tesztelt rendszer beállításai:  | A program specifikációjában szereplő alap beálítások  |
+| A teszt-eset elvárt eredménye:  |  A specifikációban taglalt viselkedés |
+| A tesztelés eredménye:  | **Megfelelt/élesíthető**  |
+| Megjegyzések:  | -  |
+
+**Tesztelést elvégezte**
+
+|   |   |
+|---|---|
+|  Név: |  Zsadányi Rózsa |
+|  Szervezeti egység/ beosztás: | Adatbázis fejlesztő  |
+|  Dátum: |  2021.05.09 13:10  |
+
+### 5.2 Tesztelési jegyzőkönyv - 2. Bejelentkezés, jelszóhasználat tesztelése
+
+|   |   |
+|---|---|
+| A teszt-eset leírás és célja:  | A bejelentkezési jelszóhasználat tesztelése |
+| A tesztelt folyamat/funkció leírása:  |  A felület viselkedése jelszó hibás karakterhosszúsága / jelszó helyes megadása esetén, megfelelő karaketerek esetén,  illetve megfelelő betüméretek esetén sikeres-e.  |
+| A tesztelés előfeltételei:  |  A programnak rendelkeznie kell minimum egy dummy adatbázissal |
+| A tesztelés dátuma és időpontja:  |  2021.05.07 15:00 |
+| A tesztet végző személy(ek):  | Zsadányi Rózsa  |
+| A tesztelt rendszer beállításai:  | A program specifikációjában szereplő alap beálítások  |
+| A teszt-eset elvárt eredménye:  |  A specifikációban taglalt viselkedés |
+| A tesztelés eredménye:  | **Hibás**  |
+| Megjegyzések:  | A felhasználói jelszónál a számokat nem fogadta el, annak hiányát pótoltuk, kijavítottuk. |
+
+**Tesztelést elvégezte**
+|   |   |
+|---|---|
+|  Név: |  Zsadányi Rózsa |
+|  Szervezeti egység/ beosztás: | Adatbázis fejlesztő  |
+|  Dátum: |  2021.05.07 18:10  |
+
+### 5.3 Tesztelési jegyzőkönyv - 3. Profil szerkesztés funkció
+
+|   |   |
+|---|---|
+| A teszt-eset leírás és célja:  |  A felhasználó tudja módositani az adatait  |
+| A tesztelt folyamat/funkció leírása:  |  A felhasználó tudja módositani az adatait  |
+| A tesztelés előfeltételei:  |  A programnak rendelkeznie kell minimum egy dummy adatbázissal  |
+| A tesztelés dátuma és időpontja:  |  2021.05.06. 10:31 |
+| A tesztadatok típusa:  | szöveg |
+| A tesztet végző személy(ek):  | Zsadányi Rózsa  |
+| A tesztelt rendszer beállításai:  | A program specifikációjában szereplő alap beállítások  |
+| A teszt-eset elvárt eredménye:  |  A specifikációban taglalt viselkedés |
+| A tesztelés eredménye:  | **Megfelelt/élesíthető**  |
+| Megjegyzések:  | -  |
+
+**Tesztelést elvégezte**
+
+|   |   |
+|---|---|
+|  Név: |  Zsadányi Rózsa |
+|  Szervezeti egység/ beosztás: | Adatbázis fejlesztő  |
+|  Dátum: |  2021.05.06 11:58  |
 
 ## #1: GUI teszt:
 ## #2:Adatbázis teszt:
