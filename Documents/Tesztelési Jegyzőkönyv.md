@@ -288,5 +288,25 @@ A tesztkoordinátor juttatja el a projektmenedzsernek a tesztelési jelentést.
 |  Szervezeti egység/ beosztás: | Adatbázis fejlesztő, Tester  |
 |  Dátum: |  2021.05.09 16:40  |
 
+### 5.7 Tesztelési jegyzőkönyv - 7. Tétek jóváírásának kapcsolata az adatbázissal
+
+|   |   |
+|---|---|
+| A teszt-eset leírás és célja:  | A tétek jóváírásának, nyerés esetén. |
+| A tesztelt folyamat/funkció leírása:  |  Nyerés esetén, bekövetkezett kredit pontok hozzáadása az adatbázisban, hogy az így elmentett adatokat lehessen a továbbiakban felhasználni.  |
+| A tesztelés előfeltételei:  |  A programnak rendelkeznie kell minimum egy dummy adatbázissal |
+| A tesztelés dátuma és időpontja:  |  2021.05.09 16:50 |
+| A tesztet végző személy(ek):  | Pusztai Dominik Tamás  |
+| A tesztelt rendszer beállításai:  | A program specifikációjában szereplő alap beálítások  |
+| A teszt-eset elvárt eredménye:  |  A specifikációban taglalt viselkedés |
+| A tesztelés eredménye:  | **Hibás**  |
+| Megjegyzések:  | Javításra szorul. |
+
+**Tesztelést elvégezte**
+|   |   |
+|---|---|
+|  Név: |  Pusztai Dominik Tamás |
+|  Szervezeti egység/ beosztás: | Adatbázis fejlesztő, Tester  |
+|  Dátum: |  2021.05.09 16:50  |
 
 ## #1: GUI teszt:
