@@ -127,7 +127,7 @@ A tesztkoordinátor juttatja el a projektmenedzsernek a tesztelési jelentést.
 
 
 
-### 6.2 Tesztelési jelentés - 2. Példa
+### 5.2 Tesztelési jelentés - 2. Példa
 |   |   |
 |---|---|
 | A hivatkozott tesztjegyzőkönyvek rövid leírása és eredménye:  | |
@@ -145,7 +145,7 @@ A tesztkoordinátor juttatja el a projektmenedzsernek a tesztelési jelentést.
 |  Szervezeti egység/ beosztás: |  |
 |  Dátum: |   |
 
-### 7 Jóváhagyások
+### 5.3 Jóváhagyások
 
 |   |   |
 |---|---|
@@ -242,6 +242,27 @@ A tesztkoordinátor juttatja el a projektmenedzsernek a tesztelési jelentést.
 |  Szervezeti egység/ beosztás: | Vezető adatbázis fejlesztő  |
 |  Dátum: |  2021.05.09 16:20  |
 
+### 5.5 Tesztelési jegyzőkönyv - 5. Adatbázis kapcsolat tesztelés
+
+|   |   |
+|---|---|
+| A teszt-eset leírás és célja:  |  A külső adatbázis oldal időben megkapja és feldoglozza a kapott adatokat.  |
+| A tesztelt folyamat/funkció leírása:  |  Amint elküldünk egy-egy adat/adatcsoportot a külső adatbázis oldalra, annak elhanyagolható időn belül meg kell kapnia azokat. |
+| A tesztelés előfeltételei:  |  Legalább 2 oszlopos tábla hozzákapcsolása a szoftverünkhez.  |
+| A tesztelés dátuma és időpontja:  |  2021.05.09. 16:30 |
+| A tesztadatok típusa:  | MySql, SQL |
+| A tesztet végző személy(ek):  | Lehóczky Csaba  |
+| A tesztelt rendszer beállításai:  | A program specifikációjában szereplő alap beállítások  |
+| A teszt-eset elvárt eredménye:  |  A specifikációban taglalt viselkedés |
+| A tesztelés eredménye:  | **Élesíthető**  |
+| Megjegyzések:  | -  |
+
+**Tesztelést elvégezte**
+
+|   |   |
+|---|---|
+|  Név: |  Lehóczky Csaba |
+|  Szervezeti egység/ beosztás: | Vezető adatbázis fejlesztő  |
+|  Dátum: |  2021.05.09 16:30  |
+
 ## #1: GUI teszt:
-## #2:Adatbázis teszt:
-## #3:Adatbázis Connection teszt:
