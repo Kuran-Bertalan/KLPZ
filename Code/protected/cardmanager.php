@@ -1,21 +1,21 @@
 <?php 
-function AddCard($userid, $name, $number, $expiration, $security) {
+function AddCard($userid, $name, $number, $expdate, $securitycode) {
     $query = "SELECT id FROM creditcards WHERE number = :number";
     $params = [':number' => $number];
     require_once DATABASE_CONTROLLER;
     $record = getRecord($query, $params);
     if(empty($record)) {
-        $query = "INSERT INTO creditcards (userid, name, cardnumber, expdate, security_code) VALUES (:userid, :cardname, :number, :expdate, :securitycode)";
+        $query = "INSERT INTO creditcards (userid, name, cardnumber, expdate, securitycode) VALUES (:userid, :cardname, :number, :expdate, :securitycode)";
         $params = [ 
                 ':userid' => $userid,
                 ':cardname' => $name,
                 ':number' => $number,
-                ':expdate' => $expiration,
-                ':securitycode' => $security
+                ':expdate' => $expdate,
+                ':securitycode' => $securitycode
                 ];
         if(executeDML($query, $params))
         {
-            header('Location: index.php?P=profile');
+            header('Location: index.php?P=profile.php');
         }
     } 
     return false;

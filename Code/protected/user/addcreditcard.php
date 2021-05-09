@@ -7,7 +7,7 @@
 				'expdate' => $_POST['expdate'],
 				'securitycode' => $_POST['securitycode'],
 			];
-			if(empty($postData['cardname']) || empty($postData['cardnumber']) || empty($postData['expdate']) || empty($postData['securitycode'])) {
+			if(empty($postData['cardname']) || empty($postData['number']) || empty($postData['expdate']) || empty($postData['securitycode'])) {
 				echo "Hiányzó adat(ok)!";
 			} else if(strlen($postData['cardname']) < 6) {
 				echo "A név túl rövid!";
@@ -15,23 +15,21 @@
 				echo "A név nem tartalmazhat kettő vagy több szóközt egymás mellett!";
 			} else if(1 === preg_match('~[0-9]~', $postData['cardname'])) {
 				echo "A név nem tartalmazhat számot!";
-			} else if(strlen($postData['cardnumber']) != 16) {
+			} else if(strlen($postData['number']) != 16) {
 				echo "A kártyaszámnak 16 karakterből kell állnia!";
-			} else if(!is_numeric(($postData['cardnumber']))) {
+			} else if(!is_numeric(($postData['number']))) {
 				echo "A kártyaszám csak szám lehet!";
-			} else if(strlen($postData['expdate']) != 2) {
+			} else if(strlen($postData['expdate']) != 4) {
 				echo "A lejárati év nem megfelelő!";
 			} else if(!is_numeric(($postData['expdate']))) {
 				echo "A lejárati év csak szám lehet!";
-			} else if($postData['expdate'] > date("y") + 5 || $postData['expdate'] < date("y")) {
-				echo "A lejárati év nem megfelelő!";
-			} else if(strlen($postData['security']) != 3) {
+			} else if(strlen($postData['securitycode']) != 3) {
 				echo "A biztonsági kód csak három karakter lehet!";
-			} else if(!is_numeric(($postData['security']))) {
+			} else if(!is_numeric(($postData['securitycode']))) {
 				echo "A biztonsági kód csak szám lehet!";
 			} else {
 				require_once CARD_MANAGER;
-				if(!AddCard($_SESSION['uid'], $postData['cardname'], $postData['cardnumber'], $postData['expirationM'].$postData['expirationY'], $postData['security'])) {
+				if(!AddCard($_SESSION['uid'], $postData['cardname'], $postData['number'], $postData['expdate'], $postData['securitycode'])) {
 					echo "A bankkártya hozzáadása nem sikerült!";
 				}
 			}
