@@ -189,6 +189,13 @@ A tesztkoordinátor juttatja el a projektmenedzsernek a tesztelési jelentést.
 | A tesztelés eredménye:  | **Hibás**  |
 | Megjegyzések:  | A felhasználói jelszónál a számokat nem fogadta el, annak hiányát pótoltuk, kijavítottuk. |
 
+**Tesztelést elvégezte**
+|   |   |
+|---|---|
+|  Név: |  Zsadányi Rózsa |
+|  Szervezeti egység/ beosztás: | Adatbázis fejlesztő  |
+|  Dátum: |  2021.05.07 18:10  |
+
 ## #1: GUI teszt:
 ## #2:Adatbázis teszt:
 ## #3:Adatbázis Connection teszt:
