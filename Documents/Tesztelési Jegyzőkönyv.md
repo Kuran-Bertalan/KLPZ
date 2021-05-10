@@ -175,6 +175,13 @@ A tesztkoordinátor juttatja el a projektmenedzsernek a tesztelési jelentést.
 |  Szervezeti egység/ beosztás: | Adatbázis fejlesztő  |
 |  Dátum: |  2021.05.09 13:10  |
 
+**Jóváhagyás**
+|   |   |
+|---|---|
+|  Név: |  Kurán Bertalan |
+|  Szervezeti egység/ beosztás: | Test manager |
+|  Dátum: |  2021.05.10  |
+
 ### 5.2 Tesztelési jegyzőkönyv - 2. Bejelentkezés, jelszóhasználat tesztelése
 
 |   |   |
@@ -195,6 +202,13 @@ A tesztkoordinátor juttatja el a projektmenedzsernek a tesztelési jelentést.
 |  Név: |  Zsadányi Rózsa |
 |  Szervezeti egység/ beosztás: | Adatbázis fejlesztő  |
 |  Dátum: |  2021.05.07 18:10  |
+
+**Jóváhagyás**
+|   |   |
+|---|---|
+|  Név: |  Kurán Bertalan |
+|  Szervezeti egység/ beosztás: | Test manager |
+|  Dátum: |  2021.05.10  |
 
 ### 5.3 Tesztelési jegyzőkönyv - 3. Profil szerkesztés funkció
 
@@ -218,6 +232,13 @@ A tesztkoordinátor juttatja el a projektmenedzsernek a tesztelési jelentést.
 |  Név: |  Zsadányi Rózsa |
 |  Szervezeti egység/ beosztás: | Adatbázis fejlesztő  |
 |  Dátum: |  2021.05.06 11:58  |
+
+**Jóváhagyás**
+|   |   |
+|---|---|
+|  Név: |  Kurán Bertalan |
+|  Szervezeti egység/ beosztás: | Test manager |
+|  Dátum: |  2021.05.10  |
 
 ### 5.4 Tesztelési jegyzőkönyv - 4. CSS stíluslapok szerkesztése
 
