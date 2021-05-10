@@ -424,16 +424,17 @@ A tesztkoordinátor juttatja el a projektmenedzsernek a tesztelési jelentést.
 |  Szervezeti egység/ beosztás: |  Test manager |
 |  Dátum: | 2021.05.09 17:20   |
 
+
 ### 6. Unit tesztek
-|   |   |   |  ||
+|   |   |   |  | ||
 |---|---|---|---|---|---|
-|  Teszter |  Unit teszt| Végeredmény |Dátum|Megjegyzés|
-|  Zsadányi Rózsa |  Deck-test-fill |Sikeres|2021.05.10
-|  Pusztai Dominik |  PokerBet |Sikeres|2021.05.10
-|  Pusztai Dominik |  PokerRefill |Sikeres|2021.05.10
-|  Pusztai Dominik |  BlackJackHandValues |Sikeres|2021.05.10
-|  Lehóczky Csaba |  BlackJackComputerHandValues  |Sikeres|2021.05.10
-|  Lehóczky Csaba |  BlackJackUpdateBalance  |Sikeres|2021.05.10
-|  Kurán Bertalan |  Shuffle-deck |Sikeres|2021.05.10
-|  Kurán Bertalan |  DrawOne-deck |Sikeres|2021.05.10
-|  Kurán Bertalan |  BlackJackPlayerWin |Sikeres|2021.05.10
+|  Teszter |  Unit teszt| Végeredmény | Dátum | Megjegyzés |
+|  Zsadányi Rózsa |  Deck-test-fill  |Sikeres | 2021.05.10|
+|  Pusztai Dominik |  PokerBet | Sikeres | 2021.05.10|
+|  Pusztai Dominik |  PokerRefill |Sikeres| 2021.05.10|
+|  Pusztai Dominik |  BlackJackHandValues | Sikeres| 2021.05.10|
+|  Lehóczky Csaba |  BlackJackComputerHandValues  | Sikeres | 2021.05.10|
+|  Lehóczky Csaba |  BlackJackUpdateBalance | Sikeres |2021.05.10|
+|  Kurán Bertalan |  Shuffle-deck |Sikeres| 2021.05.10|
+|  Kurán Bertalan |  DrawOne-deck |Sikeres| 2021.05.10|
+|  Kurán Bertalan |  BlackJackPlayerWin |Sikeres| 2021.05.10|
