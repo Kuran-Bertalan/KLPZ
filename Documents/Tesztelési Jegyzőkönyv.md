@@ -261,7 +261,14 @@ A tesztkoordinátor juttatja el a projektmenedzsernek a tesztelési jelentést.
 |---|---|
 |  Név: |  Lehóczky Csaba |
 |  Szervezeti egység/ beosztás: | Vezető adatbázis fejlesztő  |
-|  Dátum: |  2021.05.09 16:20  |
+|  Dátum: |  2021.05.09 16:25  |
+
+**Jóváhagyás**
+|   |   |
+|---|---|
+|  Név: |  Kurán Bertalan |
+|  Szervezeti egység/ beosztás: | Test manager |
+|  Dátum: |  2021.05.10  |
 
 ### 5.5 Tesztelési jegyzőkönyv - 5. Adatbázis kapcsolat tesztelés
 
@@ -284,7 +291,14 @@ A tesztkoordinátor juttatja el a projektmenedzsernek a tesztelési jelentést.
 |---|---|
 |  Név: |  Lehóczky Csaba |
 |  Szervezeti egység/ beosztás: | Vezető adatbázis fejlesztő  |
-|  Dátum: |  2021.05.09 16:30  |
+|  Dátum: |  2021.05.09 16:35 |
+
+**Jóváhagyás**
+|   |   |
+|---|---|
+|  Név: |  Kurán Bertalan |
+|  Szervezeti egység/ beosztás: | Test manager |
+|  Dátum: |  2021.05.10  |
 
 ### 5.6 Tesztelési jegyzőkönyv - 6. PHP oldalak kapcsolata, szerkesztése
 
