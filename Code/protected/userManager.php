@@ -73,4 +73,19 @@ function changePassword($id, $password) {
 		}
 	return false;
 }
+
+function addBalance($id, $balance) {
+	$balance+=$_SESSION['balance'];
+	$query = "UPDATE users SET balance = :balance WHERE id = :id";
+	$params = [
+		':id' => $id,
+		':balance' => $balance
+	];
+	require_once DATABASE_CONTROLLER;
+	if(executeDML($query, $params))
+		{
+			header('Location: index.php?P=profile');
+		}
+	return false;
+}
 ?>
