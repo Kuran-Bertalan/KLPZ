@@ -330,3 +330,25 @@ A tesztkoordinátor juttatja el a projektmenedzsernek a tesztelési jelentést.
 |  Név: |  Kurán Bertalan |
 |  Szervezeti egység/ beosztás: |  Test manager |
 |  Dátum: | 2021.05.09 17:10   |
+
+### 5.9 Tesztelési jegyzőkönyv - 9. Poker játék tesztelése
+
+|   |   |
+|---|---|
+| A teszt-eset leírás és célja:  | Poker játék tesztelése |
+| A tesztelt folyamat/funkció leírása:  | Játékmenete, Funkciók kiprobálása  |
+| A tesztelés előfeltételei:  | Bejelentkezve kell lenni, és megfelelő zsetonnal rendelkezni |
+| A tesztelés dátuma és időpontja:  | 2021.05.09 17:15 |
+| A tesztet végző személy(ek):  |  Kurán Bertalan |
+| A tesztelt rendszer beállításai:  | Bejelentkezett felhasználóval, 1000fölötti zsetonnal |
+| A teszt-eset elvárt eredménye:  | A specifikációban taglalt viselkedés |
+| A tesztelés eredménye:  | **Megfelelt/élesíthető** |
+| Megjegyzések:  | Megfelelő  |
+
+**Tesztelést elvégezte**
+
+|   |   |
+|---|---|
+|  Név: |  Kurán Bertalan |
+|  Szervezeti egység/ beosztás: |  Test manager |
+|  Dátum: | 2021.05.09 17:15   |
