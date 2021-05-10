@@ -321,7 +321,14 @@ A tesztkoordinátor juttatja el a projektmenedzsernek a tesztelési jelentést.
 |---|---|
 |  Név: |  Pusztai Dominik Tamás |
 |  Szervezeti egység/ beosztás: | Adatbázis fejlesztő, Tester  |
-|  Dátum: |  2021.05.09 16:40  |
+|  Dátum: |  2021.05.09 16:43  |
+
+**Jóváhagyás**
+|   |   |
+|---|---|
+|  Név: |  Kurán Bertalan |
+|  Szervezeti egység/ beosztás: | Test manager |
+|  Dátum: |  2021.05.10  |
 
 ### 5.7 Tesztelési jegyzőkönyv - 7. Tétek jóváírásának kapcsolata az adatbázissal
 
@@ -342,7 +349,14 @@ A tesztkoordinátor juttatja el a projektmenedzsernek a tesztelési jelentést.
 |---|---|
 |  Név: |  Pusztai Dominik Tamás |
 |  Szervezeti egység/ beosztás: | Adatbázis fejlesztő, Tester  |
-|  Dátum: |  2021.05.09 16:50  |
+|  Dátum: |  2021.05.09 16:56  |
+
+**Jóváhagyás**
+|   |   |
+|---|---|
+|  Név: |  Kurán Bertalan |
+|  Szervezeti egység/ beosztás: | Test manager |
+|  Dátum: |  2021.05.10  |
 
 ### 5.8 Tesztelési jegyzőkönyv - 8. Blackjack játék tesztelése
 
