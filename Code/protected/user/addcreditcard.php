@@ -28,9 +28,19 @@
 			} else if(!is_numeric(($postData['securitycode']))) {
 				echo "A biztonsági kód csak szám lehet!";
 			} else{
+				$_SESSION['creditcard']=1;
 				require_once CARD_MANAGER;
 				if(!AddCard($_SESSION['uid'], $postData['number'], $postData['expdate'], $postData['securitycode'], $postData['cardname'])) {
-					echo "A bankkártya hozzáadása nem sikerült!";
+					$query = "UPDATE users SET creditcard = :creditcard WHERE id = :id";
+					$params = [
+						':id' => $_SESSION['uid'],
+						':creditcard' => 1
+					];
+					require_once DATABASE_CONTROLLER;
+					if(executeDML($query, $params))
+					{
+						header('Location: index.php?P=profile');
+					}
 				}
 			}
 

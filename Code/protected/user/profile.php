@@ -20,6 +20,22 @@ require_once USER_MANAGER;
 	  else{echo 'Sikeres jelszóváltoztatás!';}
     }
 	$postData['password'] = $postData['password1'] = "";
+
+require_once USER_MANAGER;
+    if($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['balance'])) {
+        $postDatapw = [
+        'id' => $_SESSION['uid'],
+        'balance' => $_POST['balance'],
+        ];
+        if($_POST['balance']==0) {
+            echo "Rossz érték!";
+        }
+        else if(!addBalance($postDatapw['id'], $postDatapw['balance'])) {
+            echo "Hiba az összeg feltöltésnél!";
+          }
+          else{echo 'Sikeres feltöltés!';}
+        }
+
 ?>
 
 
@@ -72,11 +88,17 @@ require_once USER_MANAGER;
                                     </div>
                                     <div class="col-sm-6">
                                         <p class="m-b-10 f-w-600">Bankkártya</p>
-                                        <h6 class="text-muted f-w-400"><?=$_SESSION['creditcard'] == 1 ? 'Használt' :'Nem használt'; ?></h6>
+                                        <h6 class="text-muted f-w-400"><?=$_SESSION['creditcard'] != 0 ? 'Használt' :'Nem használt'; ?></h6>
                                         <?php 
                                         if($_SESSION['creditcard']==0):?>
                                             <a href="index.php?P=creditcard">Bankkártya hozzáadása</button>
-                                            <?php endif; ?>
+                                        <?php 
+                                        else:?>
+                                        <form method="POST" class="addBalance">
+                                        <input id="balance" name="balance" type="number">
+                                        <input type="submit" name="addBalance" value="Összeg hozzáadása"></input>
+                                        </form>
+                                        <?php endif; ?>
                                     </div>
                                 </div>
                             </div>
