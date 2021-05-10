@@ -423,3 +423,16 @@ A tesztkoordinátor juttatja el a projektmenedzsernek a tesztelési jelentést.
 |  Név: |  Kurán Bertalan |
 |  Szervezeti egység/ beosztás: |  Test manager |
 |  Dátum: | 2021.05.09 17:20   |
+
+### 6. Unit tesztek
+|   |   |   |  |
+|---|---|---|---|---|
+|  Teszter |  Unit teszt| Végeredmény |Megjegyzés|
+|  Zsadányi Rózsa |  Deck-test-fill |Sikeres|
+|  Pusztai Dominik |  PokerBet |Sikeres|
+|  Pusztai Dominik |  PokerRefill |Sikeres|
+|  Pusztai Dominik |  BlackJackHandValues |Sikeres|
+|  Lehóczky Csaba |  BlackJackComputerHandValues  |Sikeres|
+|  Lehóczky Csaba |  BlackJackUpdateBalance  |Sikeres|
+|  Kurán Bertalan |  Shuffle-deck |Sikeres|
+|  Kurán Bertalan |  DrawOne-deck |Sikeres| 
