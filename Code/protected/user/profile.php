@@ -88,12 +88,14 @@ require_once USER_MANAGER;
                                     </div>
                                     <div class="col-sm-6">
                                         <p class="m-b-10 f-w-600">Bankkártya</p>
-                                        <h6 class="text-muted f-w-400"><?=$_SESSION['creditcard'] != 0 ? 'Használt' :'Nem használt'; ?></h6>
+                                        <h6 class="text-muted f-w-400"><?=$_SESSION['creditcard'] != 0 ? 'Hozzáadva' :'Nincs hozzáadva'; ?></h6>
                                         <?php 
                                         if($_SESSION['creditcard']==0):?>
                                             <a href="index.php?P=creditcard">Bankkártya hozzáadása</button>
                                         <?php 
                                         else:?>
+										<br>
+										<h6 class="m-b-20 p-b-5 b-b-default f-w-600">Egyenleg feltöltés</h6>
                                         <form method="POST" class="addBalance">
                                         <input id="balance" name="balance" type="number">
                                         <input type="submit" name="addBalance" value="Összeg hozzáadása"></input>
@@ -107,6 +109,7 @@ require_once USER_MANAGER;
                 </div>
             </div>
 			<div class="changepw">
+			<h6 class="m-b-20 p-b-5 b-b-default f-w-600">Információk</h6>
 			  <form method="POST" class="changepwform">
 				<input type="password" name="newpassword" placeholder="Adja meg az új jelszavát" id="newpassword"><i id="npw" class="fa fa-eye" aria-hidden="true"></i>
 				<input type="password" name="newpassword1" placeholder="Erősítse meg a jelszavát" id="newpassword1"><i id="npw2" class="fa fa-eye" aria-hidden="true"></i>
