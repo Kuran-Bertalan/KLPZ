@@ -424,6 +424,28 @@ A tesztkoordinátor juttatja el a projektmenedzsernek a tesztelési jelentést.
 |  Szervezeti egység/ beosztás: |  Test manager |
 |  Dátum: | 2021.05.09 17:20   |
 
+### 5.11 Tesztelési jegyzőkönyv - 11. Játék oldalakon belüli, játék gomb funkció tesztelése.
+
+|   |   |
+|---|---|
+| A teszt-eset leírás és célja:  |  A "játék" oldalakon lévő, játék gomb funkciója  |
+| A tesztelt folyamat/funkció leírása:  |  Adott php oldalakon, a "játék" oldalakon lévő, játék gomb funkciója, elindítja a kívánt munkamenetet. |
+| A tesztelés előfeltételei:  |  Bejelentkezett fiók, megfelelő zsetonszám, illetve megfelelő tétválasztás.  |
+| A tesztelés dátuma és időpontja:  |  2021.05.10. 21:20 |
+| A tesztadatok típusa:  | PHP szerveroldali script nyelv |
+| A tesztet végző személy(ek):  | Pusztai Dominik Tamás  |
+| A teszt-eset elvárt eredménye:  |  A specifikációban taglalt viselkedés |
+| A tesztelés eredménye:  | **Megfelelt/élesíthető**  |
+| Megjegyzések:  | -  |
+
+**Tesztelést elvégezte**
+
+|   |   |
+|---|---|
+|  Név: |  Pusztai Dominik Tamás |
+|  Szervezeti egység/ beosztás: | Adatbázis fejlesztő, Tester  |
+|  Dátum: |  2021.05.09 21:28  |
+
 
 ### 6. Unit tesztek
 |   |   |   |  | ||
